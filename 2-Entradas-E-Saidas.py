@@ -40,12 +40,12 @@ print(numero * 3 )
     
     
 '''    
-    retângulo, 
+    Calcular a área de um retângulo, 
 '''  
     
     
 '''    
-    triângulo,etc
+    Calcular a área de um triângulo
 ''' 
 
 
