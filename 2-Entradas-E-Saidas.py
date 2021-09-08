@@ -65,9 +65,10 @@ print(numero * 3 )
 
 
 
-
+                          
 
 '''
+                           :::: Entradas E Saidas ::::
     Sintaxe do "Se"
     Em Portugol:
     
@@ -88,3 +89,154 @@ print(numero * 3 )
    
    
 '''
+
+
+
+
+'''
+                    :::: Função Revcursiva :::
+
+'''
+
+
+
+
+'''
+                    :::: Laços Enquanto :::
+
+'''
+
+
+
+
+
+'''
+                    :::: Matrizes De Matrizes :::
+
+'''
+
+
+
+
+
+'''
+                    ::: Analise Combinatória :::
+
+'''
+
+
+
+
+
+
+'''
+                    :::: Ordenamento Borbulhamento:::
+
+'''
+
+
+
+
+
+
+'''
+                    :::: Ordenamento Inserção:::
+
+'''
+
+
+
+
+
+
+'''
+                    :::: Ordenamento Mergesort :::
+
+'''
+
+
+
+
+
+'''
+                    :::: Ordenamento Quicksort:::
+
+'''
+
+
+
+
+
+'''
+                    :::: Ordenamento Seleção:::
+
+'''
+
+
+
+
+
+'''
+                    ::: Lista Encadeadas:::
+
+'''
+
+
+
+
+
+
+'''
+                    ::: POO Construtores :::
+
+'''
+
+ 
+
+
+
+
+'''
+                    :::: POO Herança :::
+
+'''
+
+
+
+
+
+'''
+                    :::: POO Objetos :::
+
+'''
+
+
+
+
+
+'''
+                    :::: POO Polimorfismo :::
+
+'''
+
+
+
+
+
+
+'''
+                    :::: POO Sobrecarga de Métodos :::
+
+'''
+
+
+
+
+
+
+
+'''
+                    :::: POO Sobrecarga De Operadores :::
+
+'''
+
