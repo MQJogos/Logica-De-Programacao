@@ -34,7 +34,7 @@ print(numero * 3 )
 '''
     Calcular a área de um círculo, 
 ''''
-   raio = input (" Digite o valor do raio ")
+   raio = int(input (" Digite o valor do raio "))
    area = 3.1415926  * raio * raio
    print("Area Do Circulo é ".area)
     
@@ -42,11 +42,10 @@ print(numero * 3 )
 '''    
     Calcular a área de um retângulo, 
 ''' 
-  lado1 = input(" Digite O Primeiro Lado Do Triângulo: ")
-  lado2 = input(" Digite O Segundo Lado Do Triângulo: ")
-  lado3 = input(" Digite O Terceiro Lado Do Triângulo: ")
-  area = 
-  print(" ")
+  ladoA = int(input(" Digite O Valor Do Lado A --- Inteiro --- "))
+  ladoB = int(input(" Digite O Valor Do Lado B --- Inteiro --- "))
+  area = ladoA * ladoB
+  print(" A Area Do Retângulo É ".area )
     
     
 '''    
