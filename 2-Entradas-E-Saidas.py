@@ -41,13 +41,20 @@ print(numero * 3 )
     
 '''    
     Calcular a área de um retângulo, 
-'''  
+''' 
+  lado1 = input(" Digite O Primeiro Lado Do Triângulo: ")
+  lado2 = input(" Digite O Segundo Lado Do Triângulo: ")
+  lado3 = input(" Digite O Terceiro Lado Do Triângulo: ")
+  area = 
+  print(" ")
     
     
 '''    
     Calcular a área de um triângulo
 ''' 
-
+  input(" ")
+  area = 
+  print( "   ")
 
 '''
     Calcular o valor líquido de um salário dado, dadas também as alíquotas dos impostos sobre o valor bruto.
