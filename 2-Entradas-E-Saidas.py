@@ -49,11 +49,13 @@ print(numero * 3 )
     
     
 '''    
-    Calcular a área de um triângulo
+    Calcular a hipotenusa de um triângulo retângulo
 ''' 
-  input(" ")
-  area = 
-  print( "   ")
+  import math
+  A = int(input("Digite O Lado A "))
+  B = int(input("Digite O Lado B "))
+  Hipotenusa = math.sqrt(A * A + B * B)
+  print(" Hipotenusa = ".Hipotenusa)
 
 '''
     Calcular o valor líquido de um salário dado, dadas também as alíquotas dos impostos sobre o valor bruto.
