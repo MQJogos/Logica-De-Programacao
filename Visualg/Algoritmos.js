@@ -114,12 +114,21 @@ algoritmo "Exercício 04"
 // Ex: Insira o valor do carro: 98000 Carro de alto padrão? VERDADEIRO
 // Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
 var
-   DiasTrabalhados, HorasTrabalhadas, Salario: Real
-   NomeCarro: caractere
+  ValorCarro, CarroAltoPadrao: Real
+  NomeCliente: caractere
 inicio
-  Escreva("Digite  o nome do carro:   ")
-  Leia(NomeCarro)
+ Escreval(":::::::::::::::::::::::::::: LOCADORA DOMÍNIO ABSOLUTO ::::::::::::::::::::::::::")
+ Escreval("Insira o valor do carro:  ")
+ Leia(ValorCarro)
+ CarroAltoPadrao <- 
+ 
+ Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+ Escreval(" Carro de alto padrão......  ", CarroAltoPadrao )
 fimalgoritmo
+
+
+
+
 
 
 
