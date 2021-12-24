@@ -114,8 +114,8 @@ algoritmo "Exercício 04"
 // Ex: Insira o valor do carro: 98000 Carro de alto padrão? VERDADEIRO
 // Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
 var
-  ValorCarro, CarroAltoPadrao: Real
-  NomeCliente: caractere
+  ValorCarro: Real
+  CarroAltoPadrao: Logico
 inicio
  Escreval(":::::::::::::::::::::::::::: LOCADORA DOMÍNIO ABSOLUTO ::::::::::::::::::::::::::")
  Escreval("Insira o valor do carro:  ")
@@ -213,7 +213,8 @@ algoritmo "Exercício 07"
 //  Ex2: Insira um numero: 2549 Divisivel por 3? FALSO
 
 var
-    DivisivelPor3, Numero : Real
+    DivisivelPor3: Logico
+    Numero : Real
 inicio
     Escreva("Digite um numero: ")
     Leia(Numero)
