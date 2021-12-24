@@ -1,3 +1,375 @@
+VIDEO 4
+Exercício 01
+
+
+Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+seu novo salário, com 15% de aumento.
+algoritmo "AumentoSalario"
+
+var
+   Salario, Aumento: Real
+inicio
+  Escreva("Digite  o salário do funcionário:   ")
+  Leia(Salario)
+  Aumento<- Salario + (Salario * 0.15/100)
+  Escreval("O salário do funcionário era R$ " ,Salario, " com o aumento de 15% agora será R$ " ,Aumento)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+Exercício 02
+
+
+
+A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva
+um programa que pergunte a quantidade de Km percorridos por um carro alugado e a
+quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar,
+sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
+
+
+algoritmo "Exercício 02"
+// A locadora de carros precisa da sua ajuda para cobrar seus serviços. Escreva
+// um programa que pergunte a quantidade de Km percorridos por um carro alugado e a
+// quantidade de dias pelos quais ele foi alugado. Calcule o preço total a pagar,
+// sabendo que o carro custa R$90 por dia e R$0,20 por Km rodado.
+var
+  Quilometragem, QuantidadeDias, TotalQuilometragem, ValorDiaria, PrecoTotal: Real
+  NomeCliente: caractere
+inicio
+ Escreval(":::::::::::::::::::::::::::: LOCADORA VOLTE SEMPRE ::::::::::::::::::::::::::")
+ Escreval("Por gentileza, qual é o seu nome?  ")
+ Leia(NomeCliente)
+ Escreval("Informe a quantidade de quilometragem percorridas:  ")
+ Leia(Quilometragem)
+ Escreval("Informe a quantidade de dias que o carro ficou alugado:  ")
+ Leia(QuantidadeDias)
+ TotalQuilometragem <- Quilometragem * 0.20
+ ValorDiaria<- QuantidadeDias * 90
+ PrecoTotal<- TotalQuilometragem + ValorDiaria
+ Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
+ Escreval(" Total Quilometragem Percorrida...... R$ ",  TotalQuilometragem )
+ Escreval(" Total Dos Dias Alugados...... R$ ", ValorDiaria )
+ Escreval(" Total Do Serviço...... R$ ", PrecoTotal)
+ Escreval(" ::::::::::: Tenha um ótimo dia Sr(ª) ", NomeCliente, " :::::::::::")
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+Exercício 03
+
+
+
+Crie um programa que leia o número de dias trabalhados em um mês e mostre o
+salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
+por hora trabalhada.
+algoritmo "Exercício 03"
+// Crie um programa que leia o número de dias trabalhados em um mês e mostre o
+// salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
+// por hora trabalhada.
+var
+   DiasTrabalhados, HorasTrabalhadas, Salario: Real
+   NomeFuncionario: caractere
+inicio
+  Escreva("Digite  o nome da funcionária:   ")
+  Leia(NomeFuncionario)
+  Escreva("Digite  o número de dias trabalhados em um mês:   ")
+  Leia(DiasTrabalhados)
+  Escreva("Digite  o salário a quantidade de hora trabalhada:   ")
+  Leia(HorasTrabalhadas)
+  Salario<- (DiasTrabalhados * 8)  + (HorasTrabalhados * 25)
+  Escreval("O salário " ,NomeFuncionario, " será R$  ",Salario,
+  " por ter trabalho um total de " ,HorasTrabalhadas, " horas, por "
+  ,DiasTrabalhados, " dias " )
+
+
+
+
+Exercício 04
+
+Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
+Ex:
+Insira o valor do carro: 98000
+Carro de alto padrão? VERDADEIRO
+Ex2:
+Insira o valor do carro: 51000
+Carro de alto padrão? FALSO
+
+algoritmo "Exercício 04"
+// Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão
+// ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
+// Ex: Insira o valor do carro: 98000 Carro de alto padrão? VERDADEIRO
+// Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
+var
+   DiasTrabalhados, HorasTrabalhadas, Salario: Real
+   NomeCarro: caractere
+inicio
+  Escreva("Digite  o nome do carro:   ")
+  Leia(NomeCarro)
+fimalgoritmo
+
+
+
+
+
+
+
+Exercício 05
+
+Crie um programa que leia um número e informe se o número é impar ou par. (Caso tenha dúvias de como descobrir se um número é par ou impar, consulte os instrutores)
+Ex:
+Insira um numero: 9
+Numero impar? VERDADEIRO
+Numero par? FALSO
+
+Ex2:
+Insira um numero: 0
+Numero impar? FALSO
+Numero par? VERDADEIRO
+algoritmo "Exercício 05"
+// Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão
+// ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
+// Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
+// Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
+var
+   Numero: Real
+inicio
+  Escreva("Insira um numero:   ")
+  Leia(Numero)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+Exercício 06
+
+Crie um programa que leia a nota de um aluno e informe se ele ficou de recuperação ou não. (Considere que um aluno fica de recuperação se a nota dele for menor que 5)
+Ex:
+Insira a nota do aluno: 4
+RECUPERACAO? VERDADEIRO
+Ex2:
+Insira a nota do aluno: 10
+RECUPERACAO? FALSO
+algoritmo "Exercício 06"
+// Crie um programa que leia a nota de um aluno e informe se ele ficou de recuperação ou não.
+// (Considere que um aluno fica de recuperação se a nota dele for menor que 5)
+// Ex: Insira a nota do aluno: 4 RECUPERACAO? VERDADEIRO
+// Ex2: Insira a nota do aluno: 10 RECUPERACAO? FALSO
+var
+   Numero: Real
+inicio
+  Escreva("Insira um numero:   ")
+  Leia(Numero)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+Exercício 07
+
+Faça um algoritmo que leia um número e informe se ele é divisível por 3 ou não. (Caso tenha dúvias de como descobrir se um número é divisível por 3 ou não, consulte os instrutores)
+Ex:
+Insira um numero: 9
+Divisivel por 3? VERDADEIRO
+Ex2:
+Insira um numero: 2549
+Divisivel por 3? FALSO
+algoritmo "Exercício 07"
+// Faça um algoritmo que leia um número e informe se ele é divisível por 3 ou não.
+// (Caso tenha dúvias de como descobrir se um número é divisível por 3 ou não, consulte os instrutores)
+//  Ex:Insira um numero: 9 Divisivel por 3? VERDADEIRO
+//  Ex2: Insira um numero: 2549 Divisivel por 3? FALSO
+
+var
+    DivisivelPor3, Numero : Real
+inicio
+    Escreva("Digite um numero: ")
+    Leia(Numero)
+    DivisivelPor3<-
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+Exercício 08
+
+Faça um algoritmo que leia dois números inteiros e informe se o numero A é divisível pelo número B.
+Ex:
+Insira o numero A: 9
+Insira o numero B: 9
+
+Numero A eh divisivel pelo numero B? VERDADEIRO
+Ex2:
+Insira o numero A: 554
+Insira o numero B: 3
+
+Numero A eh divisivel pelo numero B? FALSO
+algoritmo "Exercício 08"
+// Faça um algoritmo que leia dois números inteiros e informe se o numero A é divisível pelo número B.
+// Ex: Insira o numero A: 9 Insira o numero B: 9 Numero A eh divisivel pelo numero B? VERDADEIRO
+// Ex2:Insira o numero A: 554 Insira o numero B: 3 Numero A eh divisivel pelo numero B? FALSO
+var
+    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+inicio
+    Escreva("Insira o numero A: ")
+    Leia(NumeroA)
+    Escreva("Insira o numero B: ")
+    Leia(NumeroB)
+    Escreva("Insira o numero C: ")
+    Leia(NumeroC)
+    NumerosDiferentes<-
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+Exercício 09
+
+Faça um algoritmo que leia tres números e informe se todos são diferentes.
+Ex:
+Insira o numero A: 9
+Insira o numero B: 9
+
+Insira o numero C: 9
+
+Numeros diferentes? FALSO
+Ex2:
+Insira o numero A: 554
+Insira o numero B: 3
+
+Insira o numero C: 554
+
+Numeros diferentes? FALSO
+
+Ex3:
+Insira o numero A: 554
+Insira o numero B: 3
+
+Insira o numero C: 54
+
+Numeros diferentes? VERDADEIRO
+algoritmo "Exercício 09"
+// Faça um algoritmo que leia tres números e informe se todos são diferentes.
+// Ex: Insira o numero A: 9 Insira o numero B: 9 Insira o numero C: 9 Numeros diferentes? FALSO
+// Ex2:Insira o numero A: 554 Insira o numero B: 3 Insira o numero C: 554 Numeros diferentes? FALSO
+// Insira o numero A: 554 Insira o numero B: 3 Insira o numero C: 54 Numeros diferentes? VERDADEIRO
+
+
+var
+    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+inicio
+    Escreva("Insira o numero A: ")
+    Leia(NumeroA)
+    Escreva("Insira o numero B: ")
+    Leia(NumeroB)
+    Escreva("Insira o numero C: ")
+    Leia(NumeroC)
+    NumerosDiferentes<-
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+Exercício 10
+
+Faça um algoritmo que leia três números e informe se ao menos um deles são diferentes.
+Ex:
+Insira o numero A: 9
+Insira o numero B: 9
+
+Insira o numero C: 9
+
+Numeros diferentes? FALSO
+Ex2:
+Insira o numero A: 554
+Insira o numero B: 3
+
+Insira o numero C: 554
+
+Numeros diferentes? VERDADEIRO
+
+Ex3:
+Insira o numero A: 554
+Insira o numero B: 3
+
+Insira o numero C: 54
+
+Numeros diferentes? VERDADEIRO
+algoritmo "Exercício 10"
+// Faça um algoritmo que leia três números e informe se ao menos um deles são diferentes.
+// Ex:Insira o numero A: 9 Insira o numero B: 9 Insira o numero C: 9 Numeros diferentes? FALSO
+// Ex2: Insira o numero A: 55 4 Insira o numero  B: 3 Insira o numero  C: 554 Numeros diferentes? VERDADEIRO
+// Ex3: Insira o numero A: 554 Insira o numero B: 3 Insira o numero C: 54 Numeros diferentes? VERDADEIRO
+
+
+var
+    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+inicio
+    Escreva("Insira o numero A: ")
+    Leia(NumeroA)
+    Escreva("Insira o numero B: ")
+    Leia(NumeroB)
+    Escreva("Insira o numero C: ")
+    Leia(NumeroC)
+    NumerosDiferentes<-
+
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 algoritmo "diasdasemana"
 // Função :
 // Autor :
