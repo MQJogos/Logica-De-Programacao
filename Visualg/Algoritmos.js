@@ -31,7 +31,7 @@ fimalgoritmo
 
 
 Exercício 03
-algoritmo "Exercício03"
+algoritmo "Exercício 03"
 //Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
 //Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
 var
@@ -47,7 +47,7 @@ fimalgoritmo
 
 
 Exercício 04
-algoritmo "Exercício04"
+algoritmo "Exercício 04"
 // Uma fruteira está vendendo morangos com a seguinte tabela de preços:
 // Até 5 Kg  - R$ 2,50 por Kg
 // Acima de 5 Kg   - R$ 2,20 por Kg
@@ -65,7 +65,7 @@ fimalgoritmo
 
 
 Exercício 05
-algoritmo "Exercício05"
+algoritmo "Exercício 05"
 //Faça um algoritmo para ler um número que é um código de usuário. 
 // Caso este código seja diferente de 1234 deve ser apresentada a
 // mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve 
@@ -89,7 +89,7 @@ fimalgoritmo
 
 
 Exercício 06
-algoritmo "Exercício06"
+algoritmo "Exercício 06"
 // Uma empresa concederá um aumento de salário aos seus
 // funcionários, variável de acordo com o cargo, conforme a tabela
 // abaixo. Faça um programa que leia o salário e o código do cargo
@@ -109,7 +109,7 @@ fimalgoritmo
 
 
 Exercício 07
-algoritmo "Exercício07"
+algoritmo "Exercício 07"
 //Escreva um programa para ler o número de lados de um polígono regular. Calcular e imprimir o seguinte: 
 //Se  o número de lados for  inferior a 3 escrever NÃO É UM POLÍGONO
 //Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
@@ -126,7 +126,7 @@ fimalgoritmo
 
 
 Exercício 08
-algoritmo "Exercício08"
+algoritmo "Exercício 08"
 //Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que:
 //Se quantidade <= 5 o desconto será de 2%
 //Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
@@ -169,7 +169,7 @@ fimalgoritmo
 
 
 Exercício 02
-algoritmo "Exercício02"
+algoritmo "Exercício 02"
 //Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
 //média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
 //não um bom aproveitamento. (se ficou acima da média 7.0)
@@ -212,7 +212,7 @@ fimalgoritmo
 
 
 Exercício 04
-algoritmo "Exercício04"
+algoritmo "Exercício 04"
 //Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua
 //situação em relação ao alistamento militar. 
 //   - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o
@@ -230,7 +230,7 @@ fimalgoritmo
 
 
 Exercício 05
-algoritmo "Exercício05"
+algoritmo "Exercício 05"
 //Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
 //para todos, mas especialmente para mulheres. Faça um programa que leia nome,
 //sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
@@ -255,7 +255,7 @@ fimalgoritmo
 
 
 Exercício 06
-algoritmo "Exercício06"
+algoritmo "Exercício 06"
 //Faça um algoritmo que pergunte a distância que um passageiro deseja
 //percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
 //viagens até 200Km e R$0.45 para viagens mais longas.
@@ -285,7 +285,7 @@ fimalgoritmo
 
 
 Exercício 07
-algoritmo "Exercício07"
+algoritmo "Exercício 07"
 //Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
 //   - Ter no mínimo 65 anos de idade.
 //   - Ter trabalhado no mínimo 30 anos.
@@ -305,7 +305,7 @@ fimalgoritmo
 
 
 Exercício 08
-algoritmo "Exercício08"
+algoritmo "Exercício 08"
 //Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
 //Fórmulas para
 //cálculo do peso:
@@ -322,7 +322,7 @@ fimalgoritmo
 
 
 Exercício 09
-algoritmo "Exercício09"
+algoritmo "Exercício 09"
 //Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
 //fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser
 //pago.
@@ -340,7 +340,7 @@ fimalgoritmo
 
 
 Exercício 10
-algoritmo "Exercício10"
+algoritmo "Exercício 10"
 //Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 //tela em ordem crescente (do menor para o maior).
 var
