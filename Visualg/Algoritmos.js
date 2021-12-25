@@ -1,6 +1,6 @@
 VIDEO 08
 Exercício 01
-algoritmo "semnome"
+algoritmo "Exercício 01"
 //Crie um programa que leia 3 valores e escreva o maior deles. 
 //(considere que não serão informados valores iguais) 
 var
@@ -15,7 +15,7 @@ fimalgoritmo
 
 
 Exercício 02
-algoritmo "semnome"
+algoritmo "Exercício 02"
 //Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
 //(considere que não serão informados valores iguais) 
 var
