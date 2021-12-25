@@ -1,7 +1,8 @@
 VIDEO 08
 Exercício 01
 
-Crie um programa que leia 3 valores e escreva o maior deles. (considere que não serão informados valores iguais) 
+//Crie um programa que leia 3 valores e escreva o maior deles. 
+//(considere que não serão informados valores iguais) 
 
 
 
@@ -9,8 +10,8 @@ Crie um programa que leia 3 valores e escreva o maior deles. (considere que não
 
 
 Exercício 02
-
-Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. (considere que não serão informados valores iguais) 
+//Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
+//(considere que não serão informados valores iguais) 
 
 
 
@@ -18,22 +19,20 @@ Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. (considere q
 
 
 Exercício 03
-
-Ler o nome de 2 times e o número de gols marcados na partida (para cada time). Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+//Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
+//Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
 
 
 
 
 
 Exercício 04
-
-Uma fruteira está vendendo morangos com a seguinte tabela de preços:
-Até 5 Kg             - R$ 2,50 por Kg
-Acima de 5 Kg   - R$ 2,20 por Kg
-
-Se o cliente comprar mais de 8 Kg em morangos ou o valor total da compra ultrapassar R$ 25,00, receberá
-ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
-morangos e escreva o valor a ser pago pelo cliente.
+// Uma fruteira está vendendo morangos com a seguinte tabela de preços:
+// Até 5 Kg  - R$ 2,50 por Kg
+// Acima de 5 Kg   - R$ 2,20 por Kg
+// Se o cliente comprar mais de 8 Kg em morangos ou o valor total da compra ultrapassar R$ 25,00, receberá
+// ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
+// morangos e escreva o valor a ser pago pelo cliente.
 
 
 
@@ -41,9 +40,12 @@ morangos e escreva o valor a ser pago pelo cliente.
 
 
 Exercício 05
-
-Faça um algoritmo para ler um número que é um código de usuário. Caso este código seja diferente de 1234 deve ser apresentada a
-mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve ser lido outro valor que é a senha. Se esta senha estiver incorreta (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
+//Faça um algoritmo para ler um número que é um código de usuário. 
+// Caso este código seja diferente de 1234 deve ser apresentada a
+// mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve 
+// ser lido outro valor que é a senha. Se esta senha estiver incorreta 
+// (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
+// Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
 
 
 
@@ -57,25 +59,14 @@ mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve ser lido o
 
 
 Exercício 06
-
-
-Uma empresa concederá um aumento de salário aos seus
-funcionários, variável de acordo com o cargo, conforme a tabela
-abaixo. Faça um programa que leia o salário e o código do cargo
-de um funcionário e calcule o seu novo salário. Mostre o salário antigo, o novo salário e a diferença
-entre ambos.
-
-
-Para o código 310 - aumento de 5%
-Para o código 456 - aumento de 7.5%
-Para o código 885 - aumento de 10%
-Para quaisquer outros códigos - aumento de 15%
-
-
-
-
-
-
+// Uma empresa concederá um aumento de salário aos seus
+// funcionários, variável de acordo com o cargo, conforme a tabela
+// abaixo. Faça um programa que leia o salário e o código do cargo
+// de um funcionário e calcule o seu novo salário. Mostre o salário antigo, o novo salário e a diferença entre ambos.
+//Para o código 310 - aumento de 5%
+//Para o código 456 - aumento de 7.5%
+//Para o código 885 - aumento de 10%
+//Para quaisquer outros códigos - aumento de 15%
 
 
 
@@ -83,36 +74,22 @@ Para quaisquer outros códigos - aumento de 15%
 
 
 Exercício 07
-
-
-Escreva um programa para ler o número de lados de um polígono regular. Calcular e imprimir o seguinte: 
-Se  o número de lados for  inferior a 3 escrever NÃO É UM POLÍGONO
-Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da
-área
-Se o número de lados for igual a 4 escrever QUADRADO e o valor da
-sua área
-Se o número de lados for igual a 5 escrever PENTÁGONO
-Se o número de lados for superior a 5 escrever POLÍGONO NÃO
-IDENTIFICADO
-
-
-
-
-
-
-
+//Escreva um programa para ler o número de lados de um polígono regular. Calcular e imprimir o seguinte: 
+//Se  o número de lados for  inferior a 3 escrever NÃO É UM POLÍGONO
+//Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
+//Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área
+//Se o número de lados for igual a 5 escrever PENTÁGONO
+//Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 
 
 
 
 
 Exercício 08
-
-
-Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que:
-Se quantidade <= 5 o desconto será de 2%
-Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
-Se quantidade > 10 o desconto será de 5%
+//Faça um algoritmo para ler: a descrição do produto (nome), a quantidade adquirida e o preço unitário. Calcular e escrever o total (total = quantidade adquirida * preço unitário), o desconto e o total a pagar (total a pagar = total - desconto), sabendo-se que:
+//Se quantidade <= 5 o desconto será de 2%
+//Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
+//Se quantidade > 10 o desconto será de 5%
 
 
 
@@ -127,9 +104,9 @@ Se quantidade > 10 o desconto será de 5%
 VIDEO 07
 Exercício 01
 
-Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse
-80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
-o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+//Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse
+//80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
+//o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 
 
 
@@ -143,10 +120,9 @@ o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 
 
 Exercício 02
-
-Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
-média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
-não um bom aproveitamento. (se ficou acima da média 7.0)
+//Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
+//média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
+//não um bom aproveitamento. (se ficou acima da média 7.0)
 
 
 
@@ -161,9 +137,8 @@ não um bom aproveitamento. (se ficou acima da média 7.0)
 
 
 Exercício 03
-
-Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
-BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
+//Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
+//BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
 
 
 
@@ -178,20 +153,12 @@ BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divis�
 
 
 Exercício 04
-
-Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua
-situação em relação ao alistamento militar. 
-   - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o
-alistamento. 
-   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
-alistamento.
-
-
-
-
-
-
-
+//Escreva um programa que leia o ano de nascimento de um rapaz e mostre a sua
+//situação em relação ao alistamento militar. 
+//   - Se estiver antes dos 18 anos, mostre em quantos anos faltam para o
+//alistamento. 
+//   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
+// alistamento.
 
 
 
@@ -199,13 +166,12 @@ alistamento.
 
 
 Exercício 05
-
-Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
-para todos, mas especialmente para mulheres. Faça um programa que leia nome,
-sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
-que: 
-   - Homens ganham 5% de desconto 
-   - Mulheres ganham 13% de desconto
+//Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
+//para todos, mas especialmente para mulheres. Faça um programa que leia nome,
+//sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
+//que: 
+//   - Homens ganham 5% de desconto 
+//   - Mulheres ganham 13% de desconto
 
 
 
@@ -220,10 +186,9 @@ que:
 
 
 Exercício 06
-
-Faça um algoritmo que pergunte a distância que um passageiro deseja
-percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
-viagens até 200Km e R$0.45 para viagens mais longas.
+//Faça um algoritmo que pergunte a distância que um passageiro deseja
+//percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
+//viagens até 200Km e R$0.45 para viagens mais longas.
 
 
 
@@ -238,15 +203,11 @@ viagens até 200Km e R$0.45 para viagens mais longas.
 
 
 Exercício 07
-
-Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
-   - Ter no mínimo 65 anos de idade.
-   - Ter trabalhado no mínimo 30 anos.
-   - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
-
-Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
-
-
+//Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+//   - Ter no mínimo 65 anos de idade.
+//   - Ter trabalhado no mínimo 30 anos.
+//   - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
+//Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
 
 
 
@@ -257,17 +218,11 @@ Com base nas informações acima, faça um algoritmo que leia: o ano do nascimen
 
 
 Exercício 08
-
-Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
-Fórmulas para
-cálculo do peso:
-
-   - peso ideal de homem = (72,7 x altura) - 58
-   - peso ideal da mulher = (62,1 x altura) - 44,7
-
-
-
-
+//Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
+//Fórmulas para
+//cálculo do peso:
+//  - peso ideal de homem = (72,7 x altura) - 58
+//   - peso ideal da mulher = (62,1 x altura) - 44,7
 
 
 
@@ -275,14 +230,9 @@ cálculo do peso:
 
 
 Exercício 09
-
-Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
-fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser
-pago.
-
-
-
-
+//Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
+//fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser
+//pago.
 
 
 
@@ -293,8 +243,8 @@ pago.
 
 
 Exercício 10
-
-Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na tela em ordem crescente (do menor para o maior).
+//Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
+//tela em ordem crescente (do menor para o maior).
 
 
 
@@ -306,11 +256,9 @@ Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 
 VIDEO 4
 Exercício 01
-
-
-Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
-seu novo salário, com 15% de aumento.
-algoritmo "AumentoSalario"
+//Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
+//seu novo salário, com 15% de aumento.
+//algoritmo "AumentoSalario"
 
 var
    Salario, Aumento: Real
@@ -535,6 +483,8 @@ inicio
 fimalgoritmo
 
 
+
+::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
 
 
