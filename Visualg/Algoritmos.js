@@ -17,7 +17,11 @@ Exercício 02
 algoritmo "semnome"
 //Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
 //(considere que não serão informados valores iguais) 
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -27,7 +31,11 @@ Exercício 03
 algoritmo "semnome"
 //Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
 //Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -40,7 +48,11 @@ algoritmo "semnome"
 // Se o cliente comprar mais de 8 Kg em morangos ou o valor total da compra ultrapassar R$ 25,00, receberá
 // ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
 // morangos e escreva o valor a ser pago pelo cliente.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -54,7 +66,11 @@ algoritmo "semnome"
 // ser lido outro valor que é a senha. Se esta senha estiver incorreta 
 // (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
 // Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -76,7 +92,11 @@ algoritmo "semnome"
 //Para o código 456 - aumento de 7.5%
 //Para o código 885 - aumento de 10%
 //Para quaisquer outros códigos - aumento de 15%
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -90,7 +110,11 @@ algoritmo "semnome"
 //Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área
 //Se o número de lados for igual a 5 escrever PENTÁGONO
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -101,7 +125,11 @@ algoritmo "semnome"
 //Se quantidade <= 5 o desconto será de 2%
 //Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
 //Se quantidade > 10 o desconto será de 5%
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -118,7 +146,11 @@ algoritmo "semnome"
 //Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse
 //80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
 //o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -135,7 +167,11 @@ algoritmo "semnome"
 //Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
 //média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
 //não um bom aproveitamento. (se ficou acima da média 7.0)
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -152,7 +188,11 @@ Exercício 03
 algoritmo "semnome"
 //Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
 //BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -173,7 +213,11 @@ algoritmo "semnome"
 //alistamento. 
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -187,7 +231,11 @@ algoritmo "semnome"
 //que: 
 //   - Homens ganham 5% de desconto 
 //   - Mulheres ganham 13% de desconto
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -237,7 +285,11 @@ algoritmo "semnome"
 //   - Ter trabalhado no mínimo 30 anos.
 //   - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
 //Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -253,7 +305,11 @@ algoritmo "semnome"
 //cálculo do peso:
 //  - peso ideal de homem = (72,7 x altura) - 58
 //   - peso ideal da mulher = (62,1 x altura) - 44,7
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -264,7 +320,11 @@ algoritmo "semnome"
 //Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
 //fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser
 //pago.
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
@@ -277,7 +337,11 @@ Exercício 10
 algoritmo "semnome"
 //Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 //tela em ordem crescente (do menor para o maior).
+var
 
+inicio
+// Seção de Comandos 
+fimalgoritmo
 
 
 
