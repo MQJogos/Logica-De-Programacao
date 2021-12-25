@@ -38,6 +38,7 @@ var
  NomeTime1, NomeTime2, 
  GolsTime1, GolsTime2, Resultado: Real
 inicio
+ Escreval(":::::::::::::::::::::::::::: CAMPEONATO PÉ DE CHNEOO ::::::::::::::::::::::::::")
  Escreval(" ")
  Leia()
 fimalgoritmo
@@ -57,7 +58,7 @@ algoritmo "Exercício 04"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: FRUTEIRA DE QUALIDADE ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -75,7 +76,7 @@ algoritmo "Exercício 05"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -101,7 +102,7 @@ algoritmo "Exercício 06"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: CIA TALENTO::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -119,7 +120,7 @@ algoritmo "Exercício 07"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: CALCULADORA DE LADOS ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -155,7 +156,7 @@ algoritmo "Exercício01"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: VIAGENS TRANQUILAS ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -176,7 +177,7 @@ algoritmo "Exercício 02"
 var
 
 inicio
-// Seção de Comandos 
+Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -197,7 +198,7 @@ algoritmo "Exercício03"
 var
 
 inicio
-// Seção de Comandos 
+Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -222,7 +223,7 @@ algoritmo "Exercício 04"
 var
 
 inicio
-// Seção de Comandos 
+Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -240,7 +241,7 @@ algoritmo "Exercício 05"
 var
 
 inicio
-// Seção de Comandos 
+Escreval(":::::::::::::::::::::::::::: LOJA BOM PREÇO ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
