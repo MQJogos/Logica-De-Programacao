@@ -436,17 +436,16 @@ algoritmo "Exercício 04"
 // Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
 var
   ValorCarro: Real
-  CarroAltoPadrao: Logico
 inicio
  Escreval(":::::::::::::::::::::::::::: LOCADORA DOMÍNIO ABSOLUTO ::::::::::::::::::::::::::")
  Escreval("Insira o valor do carro:  ")
  Leia(ValorCarro)
- CarroAltoPadrao <- 
- 
- Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
- Escreval(" Carro de alto padrão......  ", CarroAltoPadrao )
+ Se (ValorCarro >= 92000) entao
+ Escreval(" Carro de alto padrão...... VERDADEIRO ")
+ Senao
+ Escreval(" Carro de alto padrão...... FALSO ")
+ Fimse
 fimalgoritmo
-
 
 
 
@@ -454,16 +453,14 @@ Exercício 05
 algoritmo "Exercício 05"
 // Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão
 // ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
-// Ex:Insira o valor do carro: 98000 Carro de alto padrão? VERDADEIRO
-// Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
-
+// Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
+// Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
 var
    Numero: Real
 inicio
   Escreva("Insira um numero:   ")
   Leia(Numero)
 fimalgoritmo
-
 
 
 
