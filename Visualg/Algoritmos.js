@@ -454,8 +454,9 @@ Exercício 05
 algoritmo "Exercício 05"
 // Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão
 // ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
-// Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
-// Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
+// Ex:Insira o valor do carro: 98000 Carro de alto padrão? VERDADEIRO
+// Ex2:Insira o valor do carro: 51000 Carro de alto padrão? FALSO
+
 var
    Numero: Real
 inicio
@@ -478,7 +479,7 @@ algoritmo "Exercício 06"
 // Ex: Insira a nota do aluno: 4 RECUPERACAO? VERDADEIRO
 // Ex2: Insira a nota do aluno: 10 RECUPERACAO? FALSO
 var
-   NotaFinal: Real
+   NotaFinal: Integer
 inicio
   Escreval("Insira a nota final do(a) aluno(a) :   ")
   Leia(Nota)
@@ -496,8 +497,8 @@ Exercício 07
 algoritmo "Exercício 07"
 // Faça um algoritmo que leia um número e informe se ele é divisível por 3 ou não.
 // (Caso tenha dúvias de como descobrir se um número é divisível por 3 ou não, consulte os instrutores)
-//  Ex:Insira um numero: 9 Divisivel por 3? VERDADEIRO
-//  Ex2: Insira um numero: 2549 Divisivel por 3? FALSO
+//  Ex:Insira um numero: 9  Divisivel por 3? VERDADEIRO
+//  Ex2: Insira um numero: 2549  Divisivel por 3? FALSO
 
 var
     DivisivelPor3: Logico
