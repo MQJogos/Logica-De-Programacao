@@ -534,16 +534,18 @@ algoritmo "Exercício 08"
 // Ex: Insira o numero A: 9 Insira o numero B: 9 Numero A eh divisivel pelo numero B? VERDADEIRO
 // Ex2:Insira o numero A: 554 Insira o numero B: 3 Numero A eh divisivel pelo numero B? FALSO
 var
-    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+    NumeroA, NumeroB, NumerosDivisiveis : Inteiro
 inicio
     Escreva("Insira o numero A: ")
     Leia(NumeroA)
     Escreva("Insira o numero B: ")
     Leia(NumeroB)
-    Escreva("Insira o numero C: ")
-    Leia(NumeroC)
-    NumerosDiferentes<-
-
+    Se (NumeroA%NumeroB = 0) entao
+    Escreval(" Não há divisão por 0")
+    Se A%B==0
+ Senao
+ Escreval(" Carro de alto padrão...... FALSO ")
+ Fimse
 fimalgoritmo
 
 
@@ -572,6 +574,11 @@ inicio
     Escreval("Insira o numero C: ")
     Leia(NumeroC)
     NumerosDiferentes<-(nao((A=B) ou (C>A)))
+     Se (ValorCarro = 92000) entao
+ Escreval(" Carro de alto padrão...... VERDADEIRO ")
+ Senao
+ Escreval(" Carro de alto padrão...... FALSO ")
+ Fimse
     Escreval(" Numeros diferentes ?  ", NumerosDiferentes )
 
 fimalgoritmo
@@ -598,6 +605,11 @@ inicio
     Escreva("Insira o numero C: ")
     Leia(NumeroC)
     NumerosDiferentes<-
+     Se (ValorCarro = 92000) entao
+ Escreval(" Carro de alto padrão...... VERDADEIRO ")
+ Senao
+ Escreval(" Carro de alto padrão...... FALSO ")
+ Fimse
 
 fimalgoritmo
 
