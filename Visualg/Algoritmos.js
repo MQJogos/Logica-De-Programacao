@@ -451,8 +451,7 @@ fimalgoritmo
 
 Exercício 05
 algoritmo "Exercício 05"
-// Crie um programa que leia o valor de um carro, e informe ao usuário se é um carro de alto padrão
-// ou não. Um carro é considerador alto padrão se o valor dele for maior que R$ 92.000,00.
+//Crie um programa que leia um número e informe se o número é impar ou par.
 // Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
 // Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
 var
