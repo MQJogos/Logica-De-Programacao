@@ -508,12 +508,18 @@ algoritmo "Exercício 07"
 //  Ex2: Insira um numero: 2549  Divisivel por 3? FALSO
 
 var
-    DivisivelPor3: Logico
-    Numero : Real
+    Numero, Cont : Real
 inicio
     Escreva("Digite um numero: ")
     Leia(Numero)
-    DivisivelPor3<-
+    Cont <- 30
+    Enquanto (Cont >= 1) Faca
+    Se (Cont Mod 3 = 0)
+    Entao
+    Escreva("  Divisivel por 3? VERDADEIRO[ ", Cont:1, " ] ")
+    Senao
+    Escreva (" Divisivel por 3? FALSO ", Cont:1)
+    Fimse
 
 fimalgoritmo
 
