@@ -118,9 +118,9 @@ algoritmo "Exercício 07"
 //Se o número de lados for igual a 5 escrever PENTÁGONO
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 var
-
+   L1, L2, L3: Real
 inicio
-Escreval(":::::::::::::::::::::::::::: CALCULADORA DE LADOS ::::::::::::::::::::::::::")
+Escreval(":::::::::::::::::::::::::::: TRIÂNGUOOS ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -440,7 +440,7 @@ inicio
  Escreval(":::::::::::::::::::::::::::: LOCADORA DOMÍNIO ABSOLUTO ::::::::::::::::::::::::::")
  Escreval("Insira o valor do carro:  ")
  Leia(ValorCarro)
- Se (ValorCarro >= 92000) entao
+ Se (ValorCarro = 92000) entao
  Escreval(" Carro de alto padrão...... VERDADEIRO ")
  Senao
  Escreval(" Carro de alto padrão...... FALSO ")
@@ -549,13 +549,14 @@ algoritmo "Exercício 09"
 var
     NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
 inicio
-    Escreva("Insira o numero A: ")
+    Escreval("Insira o numero A: ")
     Leia(NumeroA)
-    Escreva("Insira o numero B: ")
+    Escreval("Insira o numero B: ")
     Leia(NumeroB)
-    Escreva("Insira o numero C: ")
+    Escreval("Insira o numero C: ")
     Leia(NumeroC)
-    NumerosDiferentes<-
+    NumerosDiferentes<-(nao((A=B) ou (C>A)))
+    Escreval(" Numeros diferentes ?  ", NumerosDiferentes )
 
 fimalgoritmo
 
