@@ -455,10 +455,16 @@ algoritmo "Exercício 05"
 // Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
 // Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
 var
-   Numero: Real
+   Numero, Resultado: Real
 inicio
-  Escreva("Insira um numero:   ")
+  Escreval("Insira um número:  ")
   Leia(Numero)
+  Resultado = Numero % 2
+  Se (Resultado = 0) entao
+  Escreval(" Número impar...... FALSO")
+  Senao
+  Escreval(" Número impar...... VERDADEIRO")
+ Fimse
 fimalgoritmo
 
 
@@ -479,6 +485,11 @@ var
 inicio
   Escreval("Insira a nota final do(a) aluno(a) :   ")
   Leia(Nota)
+  Se (Nota < 5) entao
+  Escreval(" Recuperação?...... VERDADEIRO ")
+ Senao
+ Escreval(" Recuperação?...... FALSO ")
+ Fimse
 fimalgoritmo
 
 
