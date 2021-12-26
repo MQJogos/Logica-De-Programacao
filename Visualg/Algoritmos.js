@@ -38,7 +38,7 @@ var
  NomeTime1, NomeTime2, 
  GolsTime1, GolsTime2, Resultado: Real
 inicio
- Escreval(":::::::::::::::::::::::::::: CAMPEONATO PÉ DE CHNEOO ::::::::::::::::::::::::::")
+ Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
  Escreval(" ")
  Leia()
 fimalgoritmo
@@ -58,7 +58,7 @@ algoritmo "Exercício 04"
 var
 
 inicio
-Escreval(":::::::::::::::::::::::::::: FRUTEIRA DE QUALIDADE ::::::::::::::::::::::::::")
+Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -102,7 +102,7 @@ algoritmo "Exercício 06"
 var
 
 inicio
-Escreval(":::::::::::::::::::::::::::: CIA TALENTO::::::::::::::::::::::::::")
+Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -156,7 +156,7 @@ algoritmo "Exercício01"
 var
 
 inicio
-Escreval(":::::::::::::::::::::::::::: VIAGENS TRANQUILAS ::::::::::::::::::::::::::")
+Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -177,7 +177,7 @@ algoritmo "Exercício 02"
 var
 
 inicio
-Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
+Escreval("::::::::::::::::::::::::::::  CALCULAR MÉDIA ENTRE DUAS NOTAS::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -223,7 +223,7 @@ algoritmo "Exercício 04"
 var
 
 inicio
-Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
+Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -241,7 +241,7 @@ algoritmo "Exercício 05"
 var
 
 inicio
-Escreval(":::::::::::::::::::::::::::: LOJA BOM PREÇO ::::::::::::::::::::::::::")
+Escreval(":::::::::::::::::::::::::::: CALCULAR DESCONTO ::::::::::::::::::::::::::")
 fimalgoritmo
 
 
@@ -262,9 +262,9 @@ algoritmo "Exercício 06"
 //viagens até 200Km e R$0.45 para viagens mais longas.
 var
   Quilometragem, PrecoPassagem, PrecoTotal: Real
-  NomePassageiro: caractere
+  
  inicio
- Escreval(":::::::::::::::::::::::::::: VIAGENS TRANQUILAS ::::::::::::::::::::::::::")
+ Escreval(":::::::::::::::::::::::::::: CALCULO DO PREÇO DA PASSAGEM ::::::::::::::::::::::::::")
  Escreval("Informe a quantidade de distância percorrida em Km:  ")
  Leia(Quilometragem)
  PrecoPassagem <- TotalQuilometragem + ValorDiaria
@@ -386,7 +386,7 @@ var
   Quilometragem, QuantidadeDias, TotalQuilometragem, ValorDiaria, PrecoTotal: Real
   NomeCliente: caractere
 inicio
- Escreval(":::::::::::::::::::::::::::: LOCADORA VOLTE SEMPRE ::::::::::::::::::::::::::")
+ Escreval(":::::::::::::::::::::::::::: LOCADORA DE VEICULOS ::::::::::::::::::::::::::")
  Escreval("Por gentileza, qual é o seu nome?  ")
  Leia(NomeCliente)
  Escreval("Informe a quantidade de quilometragem percorridas:  ")
@@ -437,7 +437,7 @@ algoritmo "Exercício 04"
 var
   ValorCarro: Real
 inicio
- Escreval(":::::::::::::::::::::::::::: LOCADORA DOMÍNIO ABSOLUTO ::::::::::::::::::::::::::")
+ Escreval(":::::::::::::::::::::::::::: VALOR DE UM CARRO ALTO PADRÃO::::::::::::::::::::::::::")
  Escreval("Insira o valor do carro:  ")
  Leia(ValorCarro)
  Se (ValorCarro = 92000) entao
