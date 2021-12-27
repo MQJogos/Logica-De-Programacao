@@ -594,17 +594,17 @@ algoritmo "Exercício 10"
 var
     NumeroA, NumeroB, NumeroC : Real
      NumerosDiferentes: Logico
-inicio
+Inicio
     Escreva("Insira o numero A: ")
     Leia(NumeroA)
     Escreva("Insira o numero B: ")
     Leia(NumeroB)
     Escreva("Insira o numero C: ")
     Leia(NumeroC)
-    Se (NumeroA <> NumeroB) E (NumeroA <> NumeroC) E (NumeroB <> NumeroC) Entao
+    Se (NumeroA <> NumeroB) OU (NumeroA <> NumeroC) OU (NumeroB <> NumeroC) Entao
     NumerosDiferentes <- VERDADEIRO
     Escreval ("Os números são diferentes ?", NumerosDiferentes)
-    Senao Se (NumeroA=NumeroB) OU (NumeroA=NumeroC) OU (NumeroB=NumeroC)  Entao
+    Senao Se (NumeroA=NumeroB) E (NumeroA=NumeroC) E (NumeroB=NumeroC)  Entao
     NumerosDiferentes <- FALSO
     Escreval ("Os números são diferentes ?", NumerosDiferentes)
     Fimse
