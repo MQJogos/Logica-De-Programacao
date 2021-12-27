@@ -1,83 +1,128 @@
-algoritmo "BuscaBinaria"
-
+algoritmo "Cronometro"
 var
-   v : vetor[1..20] de inteiro
-   vbusca, ind : inteiro
+   Hora, Minuto, Segundo: inteiro
 
-funcao  buscabinrec( vbusca, li,ls  : inteiro ;  var ind: inteiro ) : logico
-// Busca binária
-var achou : logico
 inicio
-   Escreval("::::::: Exemplo de Busca Binaria Recursiva, Procedimentos, etc :::::::::")
-   achou <- falso
-   ind <- (li+ls) div 2
-   se (li > ls) entao
-      retorne falso
-   senao
-      se v[ind] = vbusca entao
-         retorne verdadeiro
-      senao
-         se v[ind] < vbusca entao
-            li <- ind + 1
-         senao
-            ls <- ind - 1
-        fimse
-        retorne buscabinrec( vbusca, li,ls,ind )
-      fimse
-   fimse
+      Hora <- 0
+      Minuto <- 0
+      Segundo <- 0
+      enquanto Hora < 25 faca
+          timer 1000
+          timer 0
+          segundo <- segundo + 1
+          se segundo > 59 entao
+             Segundo <- 0
+             Minuto <- Minuto + 1
+             se Minuto > 59 entao
+                Minuto <- 0
+                Hora <- Hora + 1
+                se Hora > 24 entao
+                   Hora <- 0
+                fimse
+             fimse
+          fimse
+          limpatela
+          escreva(numpcaraczero(Hora,2),":",numpcaraczero(Minuto,2),":",numpcaraczero(Segundo,2))
+      fimenquanto
+fimalgoritmo
+
+
+
+
+algoritmo "Decimal para Outras Bases"
+// Função :
+// Autor :
+// Data : 14/4/2003
+// Seção de Declarações 
+Var
+   opcao, res : caracter
+   digitos : vetor[1..16] de caracter
+   valor, J : inteiro
+
+funcao menu : caracter
+var opcao : caracter
+inicio
+   limpatela
+   escreval( "Programa de Conversão de Bases")
+   escreval( "Da Base 10 para Binária, Octal ou Hexa")
+   escreval( "--------------------------------------")
+   escreval
+   escreval( "Opções")
+   escreval( "   B - Binária")
+   escreval( "   O - Octal")
+   escreval( "   H - Hexa")
+   escreval( "   F - Fim")
+   escreval
+   repita
+      escreva("Escolha uma base : ")
+      leia(opcao)
+   ate (Opcao = "F") ou (Opcao="B") ou (Opcao="O") ou (Opcao="H")
+   retorne opcao
 fimfuncao
 
-procedimento troca( var a, b : inteiro )
-var t : inteiro
 inicio
-    t <- a
-    a <- b
-    b <- t
-fimprocedimento
-
-procedimento ordena
-var a,b : inteiro
-inicio
-// Ordena o vetor, usando Bubblesort e reaproveitando as variáveis
-para a de 1 ate 20 faca
-   para b de 1 ate 19 faca
-      se v[b] > v[b+1] entao
-         troca(v[b],v[b+1])
-      fimse
-   fimpara
-fimpara
-fimprocedimento
-
-procedimento carregavetor
-var j : inteiro
-inicio
-// Preenche o vetor com 20 números inteiros aleatórios, entre 0 e 100
-para j de 1 ate 20 faca
-   v[j] <- randi(100)
-fimpara
-fimprocedimento
-
-procedimento exibevetor
-var j : inteiro
-inicio
-para j de 1 ate 20 faca
-   escreval(j:5,v[j]:5)
-fimpara
-fimprocedimento
-
-inicio
-carregavetor
-ordena
-exibevetor
+// Seção de Comandos
 repita
-   escreva( "Valor para busca (ESC ou menor que 0 termina) : ")
-   leia( vbusca)
-   se vbusca >= 0 entao
-      se buscabinrec(vbusca, 1,20,ind) entao
-         escreval( "Valor encontrado na posição ", ind)
-      senao
-         escreval( "O valor ", vbusca, " não está na lista.")
-      fimse
+   escolha menu
+   caso "B"
+   caso "O"
+   caso "H"
+   fimescolha
+   se Opcao <> "F" entao
+      escreva("Tecle ENTER para continuar")
+      leia(res)
+      limpatela
    fimse
-ate vbusca < 0
+ate Opcao = "F"
+
 fimalgoritmo
+
+
+
+
+algoritmo "DECIMAL PARA BINARIO"
+// Seção de Declarações
+var
+x : caracter
+y,d : inteiro
+inicio
+// Seção de Comandos
+escreva("Entre com um número inteiro :")
+leia(y)
+d <- y
+enquanto y > 0 faca
+   se (y mod 2) = 0 entao
+      x <-  "0" +  x
+   senao
+      x <-  "1" +  x
+   fimse
+   y <- y div 2
+fimenquanto
+escreval("A representação binária de", d, " é ", x)
+fimalgoritmo
+
+
+
+
+
+algoritmo "DECIMAL PARA BINARIO USANDO PARA...FACA"
+// Seção de Declarações
+var
+x : caracter
+j,y,d : inteiro
+inicio
+// Seção de Comandos
+escreva("Entre com um número inteiro :")
+leia(y)
+d <- y
+para j de 1 ate 10 faca
+   se (y mod 2) = 0 entao
+      x <-  "0" +  x
+   senao
+      x <-  "1" +  x
+   fimse
+   y <- y div 2
+fimpara
+escreval("A representação binária de", d, " é ", x)
+fimalgoritmo
+
