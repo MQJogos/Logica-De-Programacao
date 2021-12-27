@@ -1,3 +1,78 @@
+algoritmo "Demonstrar o uso do comento ESCOLHA"
+
+var time : caracter
+inicio
+// Seção de Comandos 
+escreva("Entre com o nome de um time de futebol:")
+leia(time)
+escolha time
+caso "Fluminense", "Flamengo", "Vasco", "Botafogo"
+   escreva("É um time carioca.")
+caso "São Paulo", "Palmeiras", "Santos", "Corínthians"
+   escreva("É um time paulista.")
+outrocaso
+   escreva("É de outro estado.")
+fimescolha
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+algoritmo "Populacao"
+
+var popa,popb,anos : real
+
+funcao fincrpop(pop,taxa : real ) : real
+// Retorna o incremento de TAXA% sobre a população
+inicio
+   retorne pop + pop * taxa
+fimfuncao
+
+procedimento pincrpop(var pop : real ; taxa : real )
+inicio
+    // Coloca em POP o valor da populacao acrescido de um incremento de TAXA%
+    pop <- pop + pop * taxa
+fimprocedimento
+
+inicio
+   // A cidade A tem 100.000 hab., e a cidade B, 60.000
+   // A populacao de A cresce 10% por ano, e a de B, 13%
+   // Em quantos anos a populacao de A ficará maior que a de B?
+    popa <- 100000
+    popb <- 60000
+    anos <- 0
+    repita
+       // Incremento da populacao - usando FUNÇÃO
+       popa <- fincrpop(popa,0.10)
+       popb <- fincrpop(popb,0.13)
+       anos <- anos + 1
+    ate popb >= popa
+    escreval( "Anos : " , anos, " Pop A:", popa:6:0, " Pop B:", popb : 6 : 0 )
+
+    popa <- 100000
+    popb <- 60000
+    anos <- 0
+    repita
+       // Incremento da populacao - usando PROCEDIMENTO
+       pincrpop(popa,0.10)
+       pincrpop(popb,0.13)
+       anos <- anos + 1
+    ate popb >= popa
+    escreval( "Anos : " , anos, " Pop A:", popa:6:0, " Pop B:", popb : 6 : 0 )
+
+fimalgoritmo
+
+
+
+
+
+
+
 algoritmo "semnome"
  
 var
