@@ -454,20 +454,17 @@ algoritmo "Exercício 05"
 //Crie um programa que leia um número e informe se o número é impar ou par.
 // Ex: Insira um numero: 9 Numero impar? VERDADEIRO Numero par? FALSO
 // Ex2:Insira um numero: 0 Numero impar? FALSO Numero par? VERDADEIRO
-var
-   Numero, Resultado: Real
-inicio
-  Escreval("Insira um número:  ")
-  Leia(Numero)
-  Resultado = Numero % 2
-  Se (Resultado = 0) entao
-  Escreval(" Número impar...... FALSO")
-  Senao
-  Escreval(" Número impar...... VERDADEIRO")
- Fimse
-fimalgoritmo
-
-
+Var
+    Numero : Inteiro
+Inicio
+     Escreva("Escreva um número: ")
+     Leia(Numero)
+     Se Numero mod 2 = 0 Entao
+     Escreva( Numero, " é impar? FALSO! " , Numero, " é par? VERDADEIRO" )
+     Senao
+     Escreva( Numero, " é ímpar: VERDADEIRO " , Numero, " é par? FALSO")
+     Fimse
+Fimalgoritmo
 
 
 
@@ -481,14 +478,14 @@ algoritmo "Exercício 06"
 // Ex: Insira a nota do aluno: 4 RECUPERACAO? VERDADEIRO
 // Ex2: Insira a nota do aluno: 10 RECUPERACAO? FALSO
 var
-   NotaFinal: Integer
-inicio
-  Escreval("Insira a nota final do(a) aluno(a) :   ")
+   Nota: Inteiro
+Inicio
+  Escreval("Insira a nota do(a) aluno(a) :   ")
   Leia(Nota)
   Se (Nota < 5) entao
-  Escreval(" Recuperação?...... VERDADEIRO ")
+  Escreval("Nota do(a) aluno(a) : ", Nota,"Recuperação? VERDADEIRO ")
  Senao
- Escreval(" Recuperação?...... FALSO ")
+ Escreval("Nota do(a) aluno(a) : ", Nota," Recuperação?...... FALSO ")
  Fimse
 fimalgoritmo
 
@@ -508,17 +505,14 @@ algoritmo "Exercício 07"
 //  Ex2: Insira um numero: 2549  Divisivel por 3? FALSO
 
 var
-    Numero, Cont : Real
+    Numero: Inteiro
 inicio
     Escreva("Digite um numero: ")
     Leia(Numero)
-    Cont <- 30
-    Enquanto (Cont >= 1) Faca
-    Se (Cont Mod 3 = 0)
-    Entao
-    Escreva("  Divisivel por 3? VERDADEIRO[ ", Cont:1, " ] ")
+    Se Numero mod 3 = 0 Entao
+    Escreva(Numero, " é Divisivel por 3? VERDADEIRO ")
     Senao
-    Escreva (" Divisivel por 3? FALSO ", Cont:1)
+    Escreva (Numero, " é Divisivel por 3? FALSO" )
     Fimse
 
 fimalgoritmo
@@ -531,21 +525,23 @@ fimalgoritmo
 Exercício 08
 algoritmo "Exercício 08"
 // Faça um algoritmo que leia dois números inteiros e informe se o numero A é divisível pelo número B.
-// Ex: Insira o numero A: 9 Insira o numero B: 9 Numero A eh divisivel pelo numero B? VERDADEIRO
-// Ex2:Insira o numero A: 554 Insira o numero B: 3 Numero A eh divisivel pelo numero B? FALSO
+// Ex: Insira o numero A: 9 Insira o numero B: 9 Numero A eh divisível pelo numero B? VERDADEIRO
+// Ex2:Insira o numero A: 554 Insira o numero B: 3 Numero A eh divisível pelo numero B? FALSO
 var
-    NumeroA, NumeroB, NumerosDivisiveis : Inteiro
+    NumeroA, NumeroB: Inteiro
 inicio
-    Escreva("Insira o numero A: ")
+    Escreval("Insira o numero A: ")
     Leia(NumeroA)
-    Escreva("Insira o numero B: ")
+    Escreval("Insira o numero B: ")
     Leia(NumeroB)
-    Se (NumeroA%NumeroB = 0) entao
-    Escreval(" Não há divisão por 0")
-    Se A%B==0
- Senao
- Escreval(" Carro de alto padrão...... FALSO ")
- Fimse
+    Se NumeroA mod NumeroB = 0 Entao
+    Escreval,(NumeroA, " é  divisível por " ,NumeroB,"...." )
+    Escreval("... VERDADEIRO! ")
+    Senao
+    Escreval (NumeroA, " é  divisível por " ,NumeroB,"...." )
+    Escreval("... FALSO!")
+    Fimse
+
 fimalgoritmo
 
 
@@ -565,7 +561,8 @@ algoritmo "Exercício 09"
 
 
 var
-    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+    NumeroA, NumeroB, NumeroC : Real
+    NumerosDiferentes: Logico
 inicio
     Escreval("Insira o numero A: ")
     Leia(NumeroA)
@@ -573,14 +570,13 @@ inicio
     Leia(NumeroB)
     Escreval("Insira o numero C: ")
     Leia(NumeroC)
-    NumerosDiferentes<-(nao((A=B) ou (C>A)))
-     Se (ValorCarro = 92000) entao
- Escreval(" Carro de alto padrão...... VERDADEIRO ")
- Senao
- Escreval(" Carro de alto padrão...... FALSO ")
- Fimse
-    Escreval(" Numeros diferentes ?  ", NumerosDiferentes )
-
+    Se (NumeroA <> NumeroB) E (NumeroA <> NumeroC) E (NumeroB <> NumeroC) Entao
+    NumerosDiferentes <- VERDADEIRO
+    Escreval ("Os números são diferentes ?", NumerosDiferentes)
+    Senao Se (NumeroA=NumeroB) OU (NumeroA=NumeroC) OU (NumeroB=NumeroC)  Entao
+    NumerosDiferentes <- FALSO
+    Escreval ("Os números são diferentes ?", NumerosDiferentes)
+    Fimse
 fimalgoritmo
 
 
@@ -596,7 +592,8 @@ algoritmo "Exercício 10"
 
 
 var
-    NumeroA, NumeroB, NumeroC, NumerosDiferentes : Real
+    NumeroA, NumeroB, NumeroC : Real
+     NumerosDiferentes: Logico
 inicio
     Escreva("Insira o numero A: ")
     Leia(NumeroA)
@@ -604,16 +601,15 @@ inicio
     Leia(NumeroB)
     Escreva("Insira o numero C: ")
     Leia(NumeroC)
-    NumerosDiferentes<-
-     Se (ValorCarro = 92000) entao
- Escreval(" Carro de alto padrão...... VERDADEIRO ")
- Senao
- Escreval(" Carro de alto padrão...... FALSO ")
- Fimse
-
+    Se (NumeroA <> NumeroB) E (NumeroA <> NumeroC) E (NumeroB <> NumeroC) Entao
+    NumerosDiferentes <- VERDADEIRO
+    Escreval ("Os números são diferentes ?", NumerosDiferentes)
+    Senao Se (NumeroA=NumeroB) OU (NumeroA=NumeroC) OU (NumeroB=NumeroC)  Entao
+    NumerosDiferentes <- FALSO
+    Escreval ("Os números são diferentes ?", NumerosDiferentes)
+    Fimse
+    
 fimalgoritmo
-
-
 
 ::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
 
