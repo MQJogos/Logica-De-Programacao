@@ -4,11 +4,18 @@ algoritmo "Exercício 01"
 //Crie um programa que leia 3 valores e escreva o maior deles. 
 //(considere que não serão informados valores iguais) 
 var
+ Opcao: Caractere
  Valor1, Valor2, Valor3: Real
-inicio
+ Inicio
+ Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
  Escreval(" ")
  Leia()
-fimalgoritmo
+ Escreval"Deseja (S/N)? ")
+ Leia(Opcao)
+       Se Opcao = "N" Entao
+       InicioPrograma <- 0
+    Fimse
+Fimalgoritmo
 
 
 
@@ -18,7 +25,18 @@ Exercício 02
 algoritmo "Exercício 02"
 //Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
 //(considere que não serão informados valores iguais) 
-var
+varvar
+ Opcao: Caractere
+ Valor1, Valor2, Valor3: Real
+ Inicio
+ Escreval(" ")
+ Leia()
+ Escreval"Deseja (S/N)? ")
+ Leia(Opcao)
+       Se Opcao = "N" Entao
+       programa <- 0
+    Fimse
+Fimalgoritmo
  Valor1, Valor2, Valor3: Real
 inicio
  Escreval(" ")
