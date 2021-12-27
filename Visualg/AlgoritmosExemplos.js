@@ -1,3 +1,34 @@
+algoritmo "semnome"
+// Função : Demonstrar a passagem de parametros por referencia no Visualg versao 2.0
+
+
+
+procedimento troca(var x,y : inteiro)
+var t : inteiro
+inicio
+   t <- x
+   x <- y
+   y <- t
+fimprocedimento
+
+inicio
+// Seção de Comandos 
+a <- 3
+b <- 4
+escreval("A : ", a, " B : ", b)
+troca(a,b)
+escreval("A : ", a, " B : ", b)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
 algoritmo "Demonstrar o uso do comento ESCOLHA"
 
 var time : caracter
