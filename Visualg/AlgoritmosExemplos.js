@@ -1,3 +1,171 @@
+algoritmo “Servico militar“
+var
+programa, idade, apto: inteiro
+nome, sexo, saude, opc: caractere
+totApto, total: inteiro
+inicio
+programa <- 1
+enquanto programa = 1 faca
+ limpatela
+ apto <- 1
+ saude <- "B"
+ total <- total + 1
+ escreva("Digite o nome: ")
+ leia(nome)
+ escreva("Digite o sexo (M/F): ")
+ leia(sexo)
+ escreva("Digite a idade: ")
+ leia(idade)
+ se idade < 18 entao
+ apto <- 0
+ fimse
+
+
+ escreval("Digite o estado de saúde: ")
+ escreva("(B) Bom - (R) - Ruim - ")
+ leia(saude)
+ se saude = "R" entao
+ apto <- 0
+ senao
+ se saude <> "B" entao
+ apto <- 0
+ fimse
+ fimse
+se apto = 1 entao
+ totApto <- totApto + 1
+ fimse
+ escreval("Deseja continuar filtrando (S/N)?
+")
+ leia(opc)
+ se opc = "N" entao
+ programa <- 0
+ fimse
+fimenquanto
+limpatela
+escreval("Resumo geral: ")
+escreval("Foram filtrados: ",total," pessoas")
+escreval("Aptos: ",totApto)
+escreval("")
+fimalgoritmo
+
+
+
+
+
+algoritmo “carango"
+var
+programa, opc: caractere
+ano, total, total2000: inteiro
+valor, valorFinal, desconto: real
+inicio
+programa <- "S"
+enquanto programa <> "N" faca
+ limpatela
+ escreva("Digite o valor do carro: ")
+ leia(valor)
+ escreva("Digite o ano do carro: ")
+ leia(ano)
+ se ano <= 2000 entao
+ desconto <- 0.12
+ total2000 <- total2000 + 1
+ total <- total + 1
+ senao
+ desconto <- 0.07
+ total <- total + 1
+ fimse
+desconto <- desconto * valor
+valorFinal <- valor - desconto
+
+escreval("O valor com desconto:” valorFinal)
+escreva("Deseja continuar calculando? (S) Sim
+- (N) Não - ")
+ leia(opc)
+ escolha opc
+ caso "S"
+ programa <- "S"
+ caso "N"
+ programa <- "N"
+ outrocaso
+ programa <- "S"
+ limpatela
+ escreval("As opções disponíveis
+são apenas S ou N!!!")
+ leia(opc)
+ fimescolha
+fimenquanto
+escreval("Foram calculados",total2000,"
+carro(s) com ano até 2000")
+escreval("Total geral: ",total)
+fimalgoritmo
+
+
+
+
+
+
+
+
+ALGORITMO "SOMA DOIS NÚMEROS"
+var
+N1, N2, S:numerico
+programa:inteiro
+opc:caractere
+Inicio
+programa <- 1
+enquanto programa = 1 faca
+escreval("Digite dois números:")
+leia(N1, N2)
+S<- N1 + N2
+escreval("SOMA = ",S)
+escreval("Deseja continuar somando (S/N)? ")
+leia(opc)
+se opc = "N" entao
+ programa <- 0
+fimse
+fimenquanto
+
+
+
+
+
+
+
+
+
+
+
+
+
+algoritmo “definirnumero“
+var
+N1,a: inteiro
+Inicio
+Repita
+a<-a+1
+escreval ("Digite um numero:")
+ leia (n1)
+ se (n1=0) entao
+ escreval ("nulo")
+ fimse
+ se (n1<0) entao
+ escreval ("Numero negativo")
+ fimse
+ se (n1>0) entao
+ escreval ("Numero positivo")
+ fimse
+ate (a=10)
+fimalgoritmo
+
+
+
+
+
+
+
+
+
+
+
 algoritmo "semnome"
 // Função : Demonstrar a passagem de parametros por referencia no Visualg versao 2.0
 
