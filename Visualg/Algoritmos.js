@@ -154,9 +154,14 @@ algoritmo "Exercício01"
 //80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
 //o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 var
-
+ VelocidadeCarro, 
+ ValorMulta: Real
+ 
 inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
+Escreval("Por gentileza, digite a velocidade do carro")
+Leia(VelocidadeCarro)
+Se (VelocidadeCarro > VelocidadePermitida
 fimalgoritmo
 
 
