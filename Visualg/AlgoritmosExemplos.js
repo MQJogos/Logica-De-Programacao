@@ -1,12 +1,10 @@
-algoritmo "semnome"
+algoritmo "ProcedimentoObterValor"
 
 var valor : inteiro
 
-procedimento obtervalor
-var x : inteiro
 inicio
 escreva("Digite um número:")
-leia(x)
+leia(valor)
 valor <- x
 fimprocedimento
 
