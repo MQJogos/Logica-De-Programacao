@@ -344,19 +344,26 @@ fimalgoritmo
 
 Exercício 08
 Algoritmo "Exercício 08"
-//Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
-//Fórmulas para
-//cálculo do peso:
+//Construa um algoritmo que calcule o peso ideal de uma pessoa. 
+//Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
+//Fórmulas para cálculo do peso:
 //  - peso ideal de homem = (72,7 x altura) - 58
 //   - peso ideal da mulher = (62,1 x altura) - 44,7
 Var
-   Massa, Altura: Real
+   Altura: Real
+   Genero: caracter
 Inicio
-   Escreval("Massa (Kg): ")
-   Leia(Massa)
-   Escreval("Altura (Metros): ")
-   Leia(A)
-   IMC<- Massa/ Altura
+   Escreval("Altura Metros: ")
+   Leia(Altura)
+   Escreval("Genero M/F: ")
+   Leia(Genero)
+   PesoIdealM <- (72,7 x Altura) - 58
+   PesoIdealF <- (62,1 x altura) - 44,7
+   Se Genero = M Entao
+   Escreva("Peso ideal: ", PesoIdealM)
+   Senao
+       Escreva(" Peso ideal: ", PesoIdealF)
+   Fimse
 Fimalgoritmo
 
 
@@ -366,8 +373,8 @@ Fimalgoritmo
 Exercício 09
 algoritmo "Exercício 09"
 //Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
-//fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser
-//pago.
+//fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. 
+//Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser pago.
 var
 
 inicio
