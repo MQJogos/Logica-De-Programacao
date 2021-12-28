@@ -179,7 +179,7 @@ Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA :::::::::
 Escreval(" Por gentileza, digite a velocidade do carro ")
 Leia(VelocidadeCarro)
 Se VelocidadeCarro > 80
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -214,8 +214,7 @@ Inicio
           Senao
           Escreval( NomeAluno, " Não teve um bom aproveitamento com a média ",Media)
           Fimse
-      Fimse
-Fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -233,12 +232,17 @@ algoritmo "Exercício03"
 //Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
 //BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
 Var
-
+Ano: Inteiro
 Inicio
 Escreval(":::::::::::::::::::::::::::: ANO BISSEXTO  ::::::::::::::::::::::::::")
-Fimalgoritmo
-
-
+Escreval(" Digite um ano : ")
+Leia(Ano)
+Se<-(Ano/2) E (Ano/1000) E (Ano/400) Entao
+     Escreval(Ano, " É um ano Bissexto")
+     Senao
+     Escreval (Ano, "Não é um ano  Bissexto")
+    Fimse
+FimAlgotitmo
 
 
 
@@ -258,10 +262,13 @@ algoritmo "Exercício 04"
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
 Var
-
+  AnoNascimento, AnoAtual, AnoAlistamento
 Inicio
 Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
-fimalgoritmo
+Escreval(" Digite o ano de nascimento,do rapaz ")
+Leia(AnoNasimento)
+
+FimAlgoritmo
 
 
 
