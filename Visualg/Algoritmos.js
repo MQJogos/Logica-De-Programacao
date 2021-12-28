@@ -174,11 +174,11 @@ algoritmo "Exercício01"
 var
  VelocidadeCarro, ValorMulta: Real
  
-inicio
-Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
-Escreval(" Por gentileza, digite a velocidade do carro ")
-Leia(VelocidadeCarro)
-Se VelocidadeCarro > 80
+Inicio
+ Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
+ Escreval(" Por gentileza, digite a velocidade do carro ")
+ Leia(VelocidadeCarro)
+ Se VelocidadeCarro > 80 Entao
 FimAlgoritmo
 
 
@@ -192,12 +192,12 @@ FimAlgoritmo
 
 
 Exercício 02
-algoritmo "Exercício 02"
+Algoritmo "Exercício 02"
 //Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
 //média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
 //não um bom aproveitamento. (se ficou acima da média 7.0)
 Var
-   NomeAluno: caracter
+   NomeAluno: Caracter
    Nota1,Nota2, Media: Real
    
 Inicio
@@ -228,7 +228,7 @@ FimAlgoritmo
 
 
 Exercício 03
-algoritmo "Exercício03"
+Algoritmo "Exercício03"
 //Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
 //BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
 Var
@@ -265,14 +265,14 @@ Var
   AnoNascimento, AnoAtual, AnoAlistamento: Inteiro
   NomeDoRapaz: caracter
 Inicio
-Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
-Escreval(" Digite o ano de nascimento,do rapaz ")
-Leia(AnoNasimento)
-Escreval(" Digite o ano atual")
-Leia(AnoAtual)
-AnoAlistamento<- AnoNascimento - AnoAtual
-Se AnoListamento=18 Entao
-Escreval(Nome, " já tem idade para o alistamento militar")
+ Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
+ Escreval(" Digite o ano de nascimento,do rapaz ")
+ Leia(AnoNasimento)
+ Escreval(" Digite o ano atual")
+ Leia(AnoAtual)
+ AnoAlistamento<- AnoNascimento - AnoAtual
+ Se AnoListamento=18 Entao
+ Escreval(Nome, " já tem idade para o alistamento militar")
    Senao
  
 
@@ -283,7 +283,7 @@ FimAlgoritmo
 
 
 Exercício 05
-algoritmo "Exercício 05"
+Algoritmo "Exercício 05"
 //Numa promoção exclusiva para o Dia da Mulher, uma loja quer dar descontos
 //para todos, mas especialmente para mulheres. Faça um programa que leia nome,
 //sexo e o valor das compras do cliente e calcule o preço com desconto. Sabendo
@@ -294,7 +294,7 @@ Var
   Nome, Genero: Caracter
   ValorCompra, PrecoDesconto: Real
 
-inicio
+Inicio
 Escreval(":::::::::::::::::::::::::::: CALCULAR DESCONTO ::::::::::::::::::::::::::")
 Escreval(" Digite o nome do cliente: ")
 Leia(Nome)
@@ -351,7 +351,7 @@ FimAlgoritmo
 
 
 Exercício 07
-algoritmo "Exercício 07"
+Algoritmo "Exercício 07"
 //Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
 //   - Ter no mínimo 65 anos de idade.
 //   - Ter trabalhado no mínimo 30 anos.
@@ -399,13 +399,13 @@ FimAlgoritmo
 
 
 Exercício 09
-algoritmo "Exercício 09"
+Algoritmo "Exercício 09"
 //Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
 //fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. 
 //Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser pago.
 Var
-AnoCarro: Inteiro 
-PrecoCarro: Real
+ AnoCarro: Inteiro 
+ PrecoCarro: Real
 Inicio
   Escreva("Digite o ano do carro: ")
   Leia(AnoCarro)
@@ -426,7 +426,7 @@ FimAlgoritmo
 
 
 Exercício 10
-algoritmo "Exercício 10"
+Algoritmo "Exercício 10"
 //Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 //tela em ordem crescente (do menor para o maior).
 Var
@@ -448,7 +448,7 @@ FimAlgoritmo
 
 VIDEO 4
 Exercício 01
-algoritmo "Exercício 01 "
+Algoritmo "Exercício 01 "
 //Faça um algoritmo que leia o salário de um funcionário, calcule e mostre o
 //seu novo salário, com 15% de aumento.
 //algoritmo "AumentoSalario"
@@ -495,14 +495,14 @@ fimalgoritmo
 
 
 Exercício 03
-algoritmo "Exercício 03"
+Algoritmo "Exercício 03"
 // Crie um programa que leia o número de dias trabalhados em um mês e mostre o
 // salário de um funcionário, sabendo que ele trabalha 8 horas por dia e ganha R$25
 // por hora trabalhada.
-var
+Var
    DiasTrabalhados, HorasTrabalhadas, Salario: Real
    NomeFuncionario: caractere
-inicio
+Inicio
   Escreva("Digite  o nome da funcionária:   ")
   Leia(NomeFuncionario)
   Escreva("Digite  o número de dias trabalhados em um mês:   ")
@@ -511,8 +511,8 @@ inicio
   Leia(HorasTrabalhadas)
   Salario<- (DiasTrabalhados * 8)  + (HorasTrabalhados * 25)
   Escreval("O salário " ,NomeFuncionario, " será R$  ",Salario,
-  " por ter trabalho um total de " ,HorasTrabalhadas, " horas, por "
-  ,DiasTrabalhados, " dias " )
+           " por ter trabalho um total de " ,HorasTrabalhadas, " horas, por "
+            ,DiasTrabalhados, " dias " )
 
 
 
