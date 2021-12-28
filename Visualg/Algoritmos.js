@@ -172,14 +172,13 @@ algoritmo "Exercício01"
 //80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
 //o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 var
- VelocidadeCarro, 
- ValorMulta: Real
+ VelocidadeCarro, ValorMulta: Real
  
 inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
-Escreval("Por gentileza, digite a velocidade do carro")
+Escreval(" Por gentileza, digite a velocidade do carro ")
 Leia(VelocidadeCarro)
-Se (VelocidadeCarro > VelocidadePermitida
+Se (VelocidadeCarro > 80
 fimalgoritmo
 
 
@@ -197,11 +196,26 @@ algoritmo "Exercício 02"
 //Crie um algoritmo que leia o nome e as duas notas de um aluno, calcule a sua
 //média e mostre na tela. No final, analise a média e mostre se o aluno teve ou
 //não um bom aproveitamento. (se ficou acima da média 7.0)
-var
-
-inicio
-Escreval("::::::::::::::::::::::::::::  CALCULAR MÉDIA ENTRE DUAS NOTAS::::::::::::::::::::::::::")
-fimalgoritmo
+Var
+   NomeAluno: caracter
+   Nota1,Nota2, Media: Real
+   
+Inicio
+      Escreval("::::::::::::::::::::::::::::  CALCULAR MÉDIA ENTRE DUAS NOTAS::::::::::::::::::::::::::")
+      Escreval("Digite o nome do(a) aluno(a):  ")
+      Leia(NomeAluno)
+      Escreval("Digite a primeira nota:  ")
+      Leia(Nota1)
+      Escreval("Digite a segunda nota:  ")
+      Leia(Nota2)
+      Media <-(Nota1+Nota2)/2
+      Se Media > 7 Entao
+         Escreval( NomeAluno, " Foi aprovado(a) com a média ",Media)
+          Senao
+          Escreval( NomeAluno, " Não teve um bom aproveitamento com a média ",Media)
+          Fimse
+      Fimse
+Fimalgoritmo
 
 
 
@@ -218,11 +232,11 @@ Exercício 03
 algoritmo "Exercício03"
 //Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
 //BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
-var
+Var
 
-inicio
-Escreval("::::::::::::::::::::::::::::  ::::::::::::::::::::::::::")
-fimalgoritmo
+Inicio
+Escreval(":::::::::::::::::::::::::::: ANO BISSEXTO  ::::::::::::::::::::::::::")
+Fimalgoritmo
 
 
 
@@ -243,9 +257,9 @@ algoritmo "Exercício 04"
 //alistamento. 
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
-var
+Var
 
-inicio
+Inicio
 Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
 fimalgoritmo
 
@@ -329,13 +343,13 @@ fimalgoritmo
 
 
 Exercício 08
-algoritmo "Exercício 08"
+Algoritmo "Exercício 08"
 //Construa um algoritmo que calcule o peso ideal de uma pessoa. Dados de entrada: altura e sexo. (o sexo poder ser lido como M ou F; M para Masculino e F para Feminino)
 //Fórmulas para
 //cálculo do peso:
 //  - peso ideal de homem = (72,7 x altura) - 58
 //   - peso ideal da mulher = (62,1 x altura) - 44,7
-var
+Var
 
 inicio
 // Seção de Comandos 
