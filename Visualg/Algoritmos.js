@@ -262,11 +262,19 @@ algoritmo "Exercício 04"
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
 Var
-  AnoNascimento, AnoAtual, AnoAlistamento
+  AnoNascimento, AnoAtual, AnoAlistamento: Inteiro
+  NomeDoRapaz: caracter
 Inicio
 Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
 Escreval(" Digite o ano de nascimento,do rapaz ")
 Leia(AnoNasimento)
+Escreval(" Digite o ano atual")
+Leia(AnoAtual)
+AnoAlistamento<- AnoNascimento - AnoAtual
+Se AnoListamento=18 Entao
+Escreval(Nome, " já tem idade para o alistamento militar")
+   Senao
+ 
 
 FimAlgoritmo
 
@@ -282,11 +290,25 @@ algoritmo "Exercício 05"
 //que: 
 //   - Homens ganham 5% de desconto 
 //   - Mulheres ganham 13% de desconto
-var
+Var
+  Nome, Genero: Caracter
+  ValorCompra, PrecoDesconto: Real
 
 inicio
 Escreval(":::::::::::::::::::::::::::: CALCULAR DESCONTO ::::::::::::::::::::::::::")
-fimalgoritmo
+Escreval(" Digte o nome do cliente: ")
+Leia(Nome)
+Escreval(" Digite o genero do cliente (M/H):  ")
+Leia(Genero)
+Escreval(" Digite o valor total da compra: ")
+Leia(ValorCompra)
+  Se<- Genero = M Faca
+  ValorCompra - 13.0
+  Senao
+  Valor - 0.5
+  (" A cmra ")
+  FimSe
+FimAlgoritmo
 
 
 
