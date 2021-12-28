@@ -321,14 +321,14 @@ FimAlgoritmo
 
 
 Exercício 06
-algoritmo "Exercício 06"
+Algoritmo "Exercício 06"
 //Faça um algoritmo que pergunte a distância que um passageiro deseja
 //percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
 //viagens até 200Km e R$0.45 para viagens mais longas.
-var
+Var
   Quilometragem, PrecoPassagem, PrecoTotal: Real
   
- inicio
+ Inicio
  Escreval(":::::::::::::::::::::::::::: CALCULO DO PREÇO DA PASSAGEM ::::::::::::::::::::::::::")
  Escreval("Informe a quantidade de distância percorrida em Km:  ")
  Leia(Quilometragem)
@@ -336,7 +336,7 @@ var
  Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
  Escreval(" Total Quilometragem Percorrida...... R$ ",  PrecoPassagem )
  Escreval(" ::::::::::: Tenha um ótimo dia :::::::::::")
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -357,11 +357,11 @@ algoritmo "Exercício 07"
 //   - Ter trabalhado no mínimo 30 anos.
 //   - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
 //Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
-var
+Var
 
-inicio
+Inicio
 // Seção de Comandos 
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -390,9 +390,9 @@ Inicio
    Se Genero = M Entao
    Escreva("Peso ideal: ", PesoIdealM)
    Senao
-       Escreva(" Peso ideal: ", PesoIdealF)
-   Fimse
-Fimalgoritmo
+       Escreva(" O resultado do calculo do peso ideal, de acordo com seu gênero e sua altura é: ", PesoIdealF)
+   FimSe
+FimAlgoritmo
 
 
 
@@ -403,11 +403,20 @@ algoritmo "Exercício 09"
 //Num determinado Estado, para transferências de veículos, o DETRAN cobra uma taxa de 1% para carros
 //fabricados antes de 1990 e uma taxa de 1.5% para os fabricados de 1990 em diante. 
 //Escreva um programa que lê o ano e o preço do carro e a seguir calcula o imposto a ser pago.
-var
-
-inicio
-// Seção de Comandos 
-fimalgoritmo
+Var
+AnoCarro: Inteiro 
+PrecoCarro: Real
+Inicio
+  Escreva("Digite o ano do carro: ")
+  Leia(AnoCarro)
+  Escreva("Digite o preço do carro: ")
+  Leia(PrecoCarro)
+  Se AnoCarro < 1990 Entao
+  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 0.1)
+    Senao
+  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 1.0)
+  FimSe
+FimAlgoritmo
 
 
 
@@ -420,11 +429,15 @@ Exercício 10
 algoritmo "Exercício 10"
 //Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 //tela em ordem crescente (do menor para o maior).
-var
+Var
+  Numero1, Numero2: Real
 
-inicio
-// Seção de Comandos 
-fimalgoritmo
+Inicio
+  Escreval(" Digite o 1° número: ")
+  Leia(Numero1)
+  Escreval(" Digite o 2° número: ")
+  Leia(Numero2)
+FimAlgoritmo
 
 
 
@@ -447,7 +460,7 @@ inicio
   Leia(Salario)
   Aumento<- Salario + (Salario * 0.15/100)
   Escreval("O salário do funcionário era R$ " ,Salario, " com o aumento de 15% agora será R$ " ,Aumento)
-fimalgoritmo
+Fimalgoritmo
 
 
 
