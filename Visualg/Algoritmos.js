@@ -178,7 +178,7 @@ inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
 Escreval(" Por gentileza, digite a velocidade do carro ")
 Leia(VelocidadeCarro)
-Se (VelocidadeCarro > 80
+Se VelocidadeCarro > 80
 fimalgoritmo
 
 
@@ -350,10 +350,14 @@ Algoritmo "Exercício 08"
 //  - peso ideal de homem = (72,7 x altura) - 58
 //   - peso ideal da mulher = (62,1 x altura) - 44,7
 Var
-
-inicio
-// Seção de Comandos 
-fimalgoritmo
+   Massa, Altura: Real
+Inicio
+   Escreval("Massa (Kg): ")
+   Leia(Massa)
+   Escreval("Altura (Metros): ")
+   Leia(A)
+   IMC<- Massa/ Altura
+Fimalgoritmo
 
 
 
