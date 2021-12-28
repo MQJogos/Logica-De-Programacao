@@ -296,17 +296,16 @@ Var
 
 inicio
 Escreval(":::::::::::::::::::::::::::: CALCULAR DESCONTO ::::::::::::::::::::::::::")
-Escreval(" Digte o nome do cliente: ")
+Escreval(" Digite o nome do cliente: ")
 Leia(Nome)
 Escreval(" Digite o genero do cliente (M/H):  ")
 Leia(Genero)
 Escreval(" Digite o valor total da compra: ")
 Leia(ValorCompra)
-  Se<- Genero = M Faca
-  ValorCompra - 13.0
+  Se<- Genero = M Entao
+  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
   Senao
-  Valor - 0.5
-  (" A cmra ")
+  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
   FimSe
 FimAlgoritmo
 
@@ -559,7 +558,7 @@ var
 Inicio
   Escreval("Insira a nota do(a) aluno(a) :   ")
   Leia(Nota)
-  Se (Nota < 5) entao
+  Se Nota < 5 Entao
   Escreval("Nota do(a) aluno(a) : ", Nota,"Recuperação? VERDADEIRO ")
  Senao
  Escreval("Nota do(a) aluno(a) : ", Nota," Recuperação?...... FALSO ")
