@@ -8,8 +8,15 @@ var
  Valor1, Valor2, Valor3: Real
  Inicio
  Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
- Escreval(" ")
- Leia()
+ Escreval(" Digite o 1° Valor: ")
+ Leia(Valor1)
+ Escreval(" Digite o 2° Valor: ")
+ Leia(Valor2)
+ Escreval(" Digite o 3° Valor: ")
+ Leia(Valor3) 
+ Se Valor1 > Valor2 Entao
+    Se Valor1 > Valor3 Entao
+       EscrevaL(Valor1, " é o naior ")
  Escreval"Deseja (S/N)? ")
  Leia(Opcao)
        Se Opcao = "N" Entao
