@@ -29,19 +29,14 @@ varvar
  Opcao: Caractere
  Valor1, Valor2, Valor3: Real
  Inicio
- Escreval(" ")
- Leia()
- Escreval"Deseja (S/N)? ")
- Leia(Opcao)
-       Se Opcao = "N" Entao
-       programa <- 0
-    Fimse
-Fimalgoritmo
- Valor1, Valor2, Valor3: Real
-inicio
- Escreval(" ")
- Leia()
-fimalgoritmo
+ Escreval(" Digite o 1° Valor: ")
+ Leia(Valor1)
+ Escreval(" Digite o 2° Valor: ")
+ Leia(Valor2)
+ Escreval(" Digite o 3° Valor: ")
+ Leia(Valor3)
+ 
+FimAlgoritmo
 
 
 
@@ -52,13 +47,15 @@ Exercício 03
 algoritmo "Exercício 03"
 //Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
 //Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
-var
+Var
  NomeTime1, NomeTime2, 
  GolsTime1, GolsTime2, Resultado: Real
-inicio
+Inicio
  Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
- Escreval(" ")
- Leia()
+ Escreval(" Digite o nome do 1° Time: ")
+ Leia(NomeTime1)
+ Escreval(" Digite o nome do 2° Time: ")
+ Leia(NomeTime2)
 fimalgoritmo
 
 
@@ -108,7 +105,7 @@ fimalgoritmo
 
 
 Exercício 06
-algoritmo "Exercício 06"
+Algoritmo "Exercício 06"
 // Uma empresa concederá um aumento de salário aos seus
 // funcionários, variável de acordo com o cargo, conforme a tabela
 // abaixo. Faça um programa que leia o salário e o código do cargo
@@ -117,11 +114,11 @@ algoritmo "Exercício 06"
 //Para o código 456 - aumento de 7.5%
 //Para o código 885 - aumento de 10%
 //Para quaisquer outros códigos - aumento de 15%
-var
+Var
 
-inicio
+Inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
-fimalgoritmo
+FimAlgoritmo
 
 
 
