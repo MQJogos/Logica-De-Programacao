@@ -16,12 +16,17 @@ var
  Leia(Valor3) 
  Se Valor1 > Valor2 Entao
     Se Valor1 > Valor3 Entao
-       EscrevaL(Valor1, " é o naior ")
- Escreval"Deseja (S/N)? ")
- Leia(Opcao)
-       Se Opcao = "N" Entao
-       InicioPrograma <- 0
+       Escreval(Valor1, " é o maior ")
+    Senao
+       Escreval(Valor3, " é o maior ")
     Fimse
+  Senao
+       Se Valor2 > Valor3 Entao
+          Escreval(Valor2, " é o maior ")
+       Senao
+          Escreval(Valor3, " é o maior ")
+       FimSe
+  FimSe
 Fimalgoritmo
 
 
@@ -279,7 +284,8 @@ Inicio
  Escreval(Nome, " já tem idade para o alistamento militar")
    Senao
  
-
+ 
+ Fimse
 FimAlgoritmo
 
 
@@ -356,15 +362,17 @@ FimAlgoritmo
 
 Exercício 07
 Algoritmo "Exercício 07"
-//Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
+//Uma empresa quer verificar se um empregado está qualificado para a aposentadoria ou não. 
+//Para estar em condições, um dos seguintes requisitos deve ser satisfeito:
 //   - Ter no mínimo 65 anos de idade.
 //   - Ter trabalhado no mínimo 30 anos.
 //   - Ter no mínimo 60 anos e ter trabalhado no mínimo 25 anos.
-//Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
+//Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. 
+//O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
 Var
-
+  AnoNasc, AnoIngresso, Aponsetadoria: Inteiro
 Inicio
-// Seção de Comandos 
+  Escreva
 FimAlgoritmo
 
 
