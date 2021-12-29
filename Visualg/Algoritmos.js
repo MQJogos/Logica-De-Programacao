@@ -176,18 +176,24 @@ fimalgoritmo
 
 VIDEO 07
 Exercício 01
-algoritmo "Exercício01"
+Algoritmo "Exercício01"
 //Escreva um programa que pergunte a velocidade de um carro. Caso ultrapasse
 //80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
 //o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 var
- VelocidadeCarro, ValorMulta: Real
+ VelocidadeCarro, ValorMulta, Ultrapassou: Real
  
 Inicio
  Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
  Escreval(" Por gentileza, digite a velocidade do carro ")
  Leia(VelocidadeCarro)
+ Ultrapassou<- VelocidadeCarro - 80
  Se VelocidadeCarro > 80 Entao
+Escreval (" Cidadão você ultrapassou o limite, indo a  " VelocidadeCarro, " Km por hora " )
+ Escreval (" Receberás uma multa, no valor simbólico de de R$:   " , Ultrapassou * 5 , " Não se preocupe, nós sabemos seu endereço! ")
+Senao
+Escreval( " Parabéns cidadão, continue cumprindo com a sua função !!!! ")
+FimSe
 FimAlgoritmo
 
 
