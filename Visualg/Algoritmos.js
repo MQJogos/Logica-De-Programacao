@@ -159,11 +159,11 @@ algoritmo "Exercício 08"
 //Se quantidade <= 5 o desconto será de 2%
 //Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
 //Se quantidade > 10 o desconto será de 5%
-var
+Var
 
-inicio
+Inicio
 // Seção de Comandos 
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -326,7 +326,7 @@ Escreval(" Digite o genero do cliente (M/H):  ")
 Leia(Genero)
 Escreval(" Digite o valor total da compra: ")
 Leia(ValorCompra)
-  Se<- Genero = M Entao
+  Se Genero = M Entao
   Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
   Senao
   Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
@@ -384,7 +384,7 @@ Algoritmo "Exercício 07"
 //Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. 
 //O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
 Var
-  AnoNascimento, AnoIngresso: Inteiro
+  AnoNascimento, AnoIngresso, AnosIngressados: Inteiro
 
 Inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO PARA REQUERER APONSETADORIA ::::::::::::::::::::::::::")
@@ -392,10 +392,12 @@ Escreval(" Digite o ano de nascimento do(a) funcionário(a): ")
 Leia(AnoNascimento)
 Escreval(" Digite o ano de ingresso do(a) funcionário(a): ")
 Leia(AnoIngresso)
-  Se<- Genero = M Entao
-  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
+Idade<-AnoAtual - AnoNascimmento
+AnosRegistrados<- AnoAtual - AnoIngresso
+  Se (AnoNascimento = 65 E AnoIngresso = 30 ) Ou (AnoNascimento = 60 E AnoIngresso = 25) Entao
+  Escreval( " Com a idade de ",Idade," e com " , AnosRegistrados, " de registro, já pode requerer aposentadoria") ou 'Não requerer'.
   Senao
-  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
+  Escreval(" ")
   FimSe
 FimAlgoritmo
 
