@@ -190,7 +190,7 @@ Inicio
  Ultrapassou<- VelocidadeCarro - 80
  Se VelocidadeCarro > 80 Entao
 Escreval (" Cidadão você ultrapassou o limite, indo a  " VelocidadeCarro, " Km por hora " )
- Escreval (" Receberás uma multa, no valor simbólico de de R$:   " , Ultrapassou * 5 , " Não se preocupe, nós sabemos seu endereço! ")
+Escreval (" Receberás uma multa, no valor simbólico de de R$:   " , Ultrapassou * 5 )
 Senao
 Escreval( " Parabéns cidadão, continue cumprindo com a sua função !!!! ")
 FimSe
@@ -281,30 +281,31 @@ algoritmo "Exercício 04"
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
 Var
-  AnoNascimento, AnoAtual, Idade: Inteiro
-  NomeDoRapaz: caracter
+  AnoNascimento, AnoAtual, Idade, SaldoMenor, SaldoMaior: Inteiro
+  NomeDoRapaz: Caracter
 Inicio
  Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
- Escreval(" Digite o ano de nascimento,do rapaz ")
- Leia(AnoNasimento)
- Escreval(" Digite o ano atual")
+ Escreval(" Digite o ano de nascimento do rapaz:  ")
+ Leia(AnoNascimento)
+ Escreval(" Digite o ano atual: ")
  Leia(AnoAtual)
- Idade<- AnoAtual - AnoNascimeno
- Escreval(" O rapaz que nasceu em ", AnoNascimento, " tem ", Idade , " em ", AnoAtual)
+ SaldoMenor<- 18 - Idade
+ SaldoMaior<- 18 + Idade
+ Idade<- AnoAtual - AnoNascimento
+ Escreval("...............................................................................")
+ Escreval(" O rapaz que nasceu em ", AnoNascimento, " tem ", Idade , " anos em ", AnoAtual)
    Se Idade = 18 Entao
-      Escreval(" Agora é seu momeno rapaz, bora lá se alistar")
+      Escreval("...Então, bora lá se alistar rapaz!")
    FimSe
-     Senao
-      Se Idade < 18 Entao
-         Saldo = 18 - Idade
-         Escreval(" Rapaz, você ainda não tem 18 anos. Fique tranquilo que ainda faltam ",Saldo," para o grande dia")
+     Se Idade < 18 Entao
+         Escreval(" O garoto, ainda não tem 18 anos.")
+         Escreval("...Então, menor dispensado, ainda faltão ",SaldoMenor," anos para o alistamento! ")
       FimSe
-        Senao
-         Se Idade > 18 Entao
-            Saldo = Idade - 18
-            Escreval(" Você já deveria ter se alistado há",Saldo,"anos.")
+        Se Idade > 18 Entao
+            Escreval("... Então, este cidadão já deveria ter se alistado há ",SaldoMaior," anos!")
          FimSe
 FimAlgoritmo
+
 
 
 
