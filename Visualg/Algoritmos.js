@@ -384,13 +384,20 @@ Algoritmo "Exercício 07"
 //Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. 
 //O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
 Var
-  AnoNasc, AnoIngresso, Aponsetadoria: Inteiro
+  AnoNascimento, AnoIngresso: Inteiro
+
 Inicio
-  Escreva
+Escreval(":::::::::::::::::::::::::::: CALCULO PARA REQUERER APONSETADORIA ::::::::::::::::::::::::::")
+Escreval(" Digite o ano de nascimento do(a) funcionário(a): ")
+Leia(AnoNascimento)
+Escreval(" Digite o ano de ingresso do(a) funcionário(a): ")
+Leia(AnoIngresso)
+  Se<- Genero = M Entao
+  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
+  Senao
+  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
+  FimSe
 FimAlgoritmo
-
-
-
 
 
 
