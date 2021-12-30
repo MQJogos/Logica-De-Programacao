@@ -394,10 +394,10 @@ Escreval(" Digite o ano de ingresso do(a) funcionário(a): ")
 Leia(AnoIngresso)
 Idade<-AnoAtual - AnoNascimmento
 AnosRegistrados<- AnoAtual - AnoIngresso
-  Se (AnoNascimento = 65 E AnoIngresso = 30 ) Ou (AnoNascimento = 60 E AnoIngresso = 25) Entao
-  Escreval( " Com a idade de ",Idade," e com " , AnosRegistrados, " de registro, já pode requerer aposentadoria") ou 'Não requerer'.
+  Se (Idade = 65 E AnosRegistrado = 30 ) Ou (Idade = 60 E AnosRegistrado = 25) Entao
+  Escreval( " Com a idade de ",Idade," anos, junto com os " , AnosRegistrados, " de anos de registrados, pode requerer aposentadoria")
   Senao
-  Escreval(" ")
+  Escreval(" Com a idade de ", Idade, " anos, junto com os " , AnosRegistrados, "de anos de registrados , não poderá requerer aposentadoria")
   FimSe
 FimAlgoritmo
 
