@@ -292,11 +292,14 @@ Inicio
    FimSe
      Senao
       Se Idade < 18 Entao
-         Escreva
- 
- 
- 
-    Fimse
+         Saldo = 18 - Idade
+         Escreval(" Rapaz, você ainda não tem 18 anos. Fique tranquilo que ainda faltam ",Saldo," para o grande dia")
+      FimSe
+        Senao
+         Se Idade > 18 Entao
+            Saldo = Idade - 18
+            Escreval(" Você já deveria se alistado há",Saldo,"anos.")
+         FimSe
 FimAlgoritmo
 
 
