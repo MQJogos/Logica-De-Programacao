@@ -247,17 +247,21 @@ Algoritmo "Exercício03"
 //Faça um algoritmo que leia um determinado ano e mostre se ele é ou não
 //BISSEXTO. (Matematicamente podemos dizer que um ano é bisexto se ele for divisível por 4, por 100 e por 400)
 Var
-Ano: Inteiro
+
+  ANO : Inteiro
+
 Inicio
-Escreval(":::::::::::::::::::::::::::: ANO BISSEXTO  ::::::::::::::::::::::::::")
-Escreval(" Digite um ano : ")
-Leia(Ano)
-Se (Ano Mod 4 = 0) E (Ano Mod <> 100) Ou (Ano Mod 400 = 0 ) Entao
-         Escreval(Ano, " É um ano Bissexto")
-     Senao
-         Escreval (Ano, "Não é um ano  Bissexto")
-     Fimse
-FimAlgotitmo
+
+      Escreva("Informe o ano: ")
+      Leia(ANO)
+
+      Se (ANO MOD 4 = 0) E (ANO MOD 100 <> 0) Ou (ANO MOD 400 = 0) Entao
+         Escreval(ANO , " é bissexto")
+      Senao
+         Escreval(ANO, " não é bissexto")
+      Fimse
+
+FimAlgoritmo
 
 
 
@@ -298,7 +302,7 @@ Inicio
         Senao
          Se Idade > 18 Entao
             Saldo = Idade - 18
-            Escreval(" Você já deveria se alistado há",Saldo,"anos.")
+            Escreval(" Você já deveria ter se alistado há",Saldo,"anos.")
          FimSe
 FimAlgoritmo
 
@@ -327,9 +331,9 @@ Leia(Genero)
 Escreval(" Digite o valor total da compra: ")
 Leia(ValorCompra)
   Se Genero = M Entao
-  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
+  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
   Senao
-  Escreval("O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
+  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
   FimSe
 FimAlgoritmo
 
