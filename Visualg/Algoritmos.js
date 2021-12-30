@@ -321,7 +321,7 @@ Algoritmo "Exercício 05"
 //   - Mulheres ganham 13% de desconto
 Var
   Nome, Genero: Caracter
-  ValorCompra, PrecoDesconto: Real
+  ValorCompra, DescontoH, DescontoM: Real
 
 Inicio
 Escreval(":::::::::::::::::::::::::::: CALCULAR DESCONTO ::::::::::::::::::::::::::")
@@ -331,10 +331,12 @@ Escreval(" Digite o genero do cliente (M/H):  ")
 Leia(Genero)
 Escreval(" Digite o valor total da compra: ")
 Leia(ValorCompra)
-  Se Genero = M Entao
-  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",ValorCompra - 13.0)
+DescontoM<- ValorCompra - 0.13
+DescontoH<- ValorCompra - 0.05
+  Se Genero = " M " Entao
+  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 13% será R$ ",DescontoM)
   Senao
-  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", ValorCompra - 0.5)
+  Escreval(Nome,"O valor da compra que foi R$ ",ValorCompra, " , com desconto de 5% será R$ ", DescontoH)
   FimSe
 FimAlgoritmo
 
