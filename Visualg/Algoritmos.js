@@ -252,11 +252,11 @@ Inicio
 Escreval(":::::::::::::::::::::::::::: ANO BISSEXTO  ::::::::::::::::::::::::::")
 Escreval(" Digite um ano : ")
 Leia(Ano)
-Se<-(Ano/2) E (Ano/1000) E (Ano/400) Entao
-     Escreval(Ano, " É um ano Bissexto")
+Se (Ano Mod 4 = 0) E (Ano Mod <> 100) Ou (Ano Mod 400 = 0 ) Entao
+         Escreval(Ano, " É um ano Bissexto")
      Senao
-     Escreval (Ano, "Não é um ano  Bissexto")
-    Fimse
+         Escreval (Ano, "Não é um ano  Bissexto")
+     Fimse
 FimAlgotitmo
 
 
@@ -277,7 +277,7 @@ algoritmo "Exercício 04"
 //   - Se já tiver depois dos 18 anos, mostre quantos anos já se passaram do
 // alistamento.
 Var
-  AnoNascimento, AnoAtual, AnoAlistamento: Inteiro
+  AnoNascimento, AnoAtual, Idade: Inteiro
   NomeDoRapaz: caracter
 Inicio
  Escreval("::::::::::::::::::::::::::::ALISTAMENTO MILITAR  ::::::::::::::::::::::::::")
@@ -285,13 +285,18 @@ Inicio
  Leia(AnoNasimento)
  Escreval(" Digite o ano atual")
  Leia(AnoAtual)
- AnoAlistamento<- AnoNascimento - AnoAtual
- Se AnoListamento=18 Entao
- Escreval(Nome, " já tem idade para o alistamento militar")
-   Senao
+ Idade<- AnoAtual - AnoNascimeno
+ Escreval(" O rapaz que nasceu em ", AnoNascimento, " tem ", Idade , " em ", AnoAtual)
+   Se Idade = 18 Entao
+      Escreval(" Agora é seu momeno rapaz, bora lá se alistar")
+   FimSe
+     Senao
+      Se Idade < 18 Entao
+         Escreva
  
  
- Fimse
+ 
+    Fimse
 FimAlgoritmo
 
 
