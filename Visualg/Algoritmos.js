@@ -457,9 +457,9 @@ Inicio
   Escreva("Digite o preço do carro: ")
   Leia(PrecoCarro)
   Se AnoCarro < 1990 Entao
-  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 0.1)
+  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 0.01)
     Senao
-  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 1.0)
+  Escreval("A taxa de transferência do ",NomeCarro, ", será R$ ", AnoCarro * 0.015)
   FimSe
 FimAlgoritmo
 
