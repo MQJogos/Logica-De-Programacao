@@ -475,26 +475,27 @@ Algoritmo "Exercício 10"
 //Escreva um algoritmo que leia dois valores inteiros distintos e escreva eles na 
 //tela em ordem crescente (do menor para o maior).
 Var
-  Valor1, Valor2: Inteiro
-  Repet: Caractere
-  
-
+  Valor1, Valor2, Maior, Menor: Inteiro
 Inicio
-  Repita
-  
-  Valor1 := 1
-  
-  Enquanto Valor1 <> Valor2 Faca
-  
-  Escreval(" Digite o 1° número: ")
+  Escreval(" Digite o 1° valor : ")
   Leia(Valor1)
-  Escreval(" Digite o 2° número: ")
+  Escreval(" Digite o 2° valor: ")
   Leia(Valor2)
-   Se Valor2 < Valor1 Entao
-          Escreval("Ordem Crescente: " ,Valor2, " é o maior ")
-       Senao
-          Escreval(Valor1, " é o maior ")
-FimAlgoritmo
+   Se (Valor1 <> Valor2) E (Valor1 > Valor2) Entao
+          Maior<-Valor1
+          Menor<-Valor2
+          Escreval("Ordem Crescente: ",Menor," e",Maior)
+          FimSe
+           Se (Valor1 <> Valor2) E (Valor2 > Valor1) Entao
+           Maior<-Valor2
+           Menor<-Valor1
+           Escreval("Ordem Crescente: ",Menor," e",Maior)
+           Senao
+           Se (Valor1 = Valor2) Entao
+           Escreval("......ERRO OS VALORES SÃO OS MESMOS, TENTE NOVAMENTE......")
+           FimSe
+    FimSe
+ FimAlgoritmo
 
 
 
