@@ -360,16 +360,18 @@ Algoritmo "Exercício 06"
 //percorrer em Km. Calcule o preço da passagem, cobrando R$0.50 por Km para
 //viagens até 200Km e R$0.45 para viagens mais longas.
 Var
-  Quilometragem, PrecoPassagem, PrecoTotal: Real
+  Quilometragem, PrecoPassagem: Real
   
  Inicio
- Escreval(":::::::::::::::::::::::::::: CALCULO DO PREÇO DA PASSAGEM ::::::::::::::::::::::::::")
- Escreval("Informe a quantidade de distância percorrida em Km:  ")
- Leia(Quilometragem)
- PrecoPassagem <- TotalQuilometragem + ValorDiaria
- Escreval("::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::")
- Escreval(" Total Quilometragem Percorrida...... R$ ",  PrecoPassagem )
- Escreval(" ::::::::::: Tenha um ótimo dia :::::::::::")
+      Escreval(":::::::::::::::::::::::::::: CALCULO DO PREÇO DA PASSAGEM ::::::::::::::::::::::::::")
+      Escreval("Informe a quantidade de distância percorrida em Km:  ")
+      Leia(Quilometragem)
+      Se (Quilometragem) <= 200 Entao
+        Escreval("Para a viagem de ",Quilometragem,"Km, o preço da passagem será R$",Quilometragem * 0.50,",00 ")
+      Senao
+        Escreval("Para a viagem de ",Quilometragem,"Km, o preço da passagem será R$",Quilometragem * 0.45,",00 ")
+      Escreval(" ::::::::::: Tenha uma ótimo viagem :::::::::::")
+      FimSe
 FimAlgoritmo
 
 
@@ -394,20 +396,24 @@ Algoritmo "Exercício 07"
 //Com base nas informações acima, faça um algoritmo que leia: o ano do nascimento do funcionário e o ano de seu ingresso na empresa. 
 //O programa deverá escrever a idade e o tempo de trabalho do empregado e a mensagem 'Requerer aposentadoria' ou 'Não requerer'.
 Var
-  AnoNascimento, AnoIngresso, AnosIngressados: Inteiro
+  AnoNascimento, AnoIngresso, AnosRegistrados, AnoAtual, Idade: Inteiro
 
 Inicio
 Escreval(":::::::::::::::::::::::::::: CALCULO PARA REQUERER APONSETADORIA ::::::::::::::::::::::::::")
 Escreval(" Digite o ano de nascimento do(a) funcionário(a): ")
 Leia(AnoNascimento)
-Escreval(" Digite o ano de ingresso do(a) funcionário(a): ")
+Escreval(" Digite o ano de ingresso do(a) funcionário(a) na empresa: ")
 Leia(AnoIngresso)
-Idade<-AnoAtual - AnoNascimmento
-AnosRegistrados<- AnoAtual - AnoIngresso
-  Se (Idade = 65 E AnosRegistrado = 30 ) Ou (Idade = 60 E AnosRegistrado = 25) Entao
-  Escreval( " Com a idade de ",Idade," anos, junto com os " , AnosRegistrados, " de anos de registrados, pode requerer aposentadoria")
+Escreval(" Digite o ano atual: ")
+Leia(AnoAtual)
+Idade<-(AnoAtual - AnoNascimento)
+AnosRegistrados<- (AnoAtual - AnoIngresso)
+  Se(Idade = 65) E ( AnosRegistrados = 30) OU ( Idade = 60) E ( AnosRegistrados = 25) Entao
+  Escreval( " Com a idade de ",Idade," anos, somado aos  " , AnosRegistrados)
+  Escreval (" de anos de registrados... pode requerer aposentadoria")
   Senao
-  Escreval(" Com a idade de ", Idade, " anos, junto com os " , AnosRegistrados, "de anos de registrados , não poderá requerer aposentadoria")
+  Escreval(" Com a idade de ", Idade, " anos, somados aos  " , AnosRegistrados)
+  Escreval (" de anos de registrados... não poderá requerer aposentadoria" )
   FimSe
 FimAlgoritmo
 
@@ -423,22 +429,23 @@ Algoritmo "Exercício 08"
 //  - peso ideal de homem = (72,7 x altura) - 58
 //   - peso ideal da mulher = (62,1 x altura) - 44,7
 Var
-   Altura: Real
+   Altura, PesoIdealM, PesoIdealF : Real
    Genero: caracter
 Inicio
-   Escreval("Altura Metros: ")
+   Escreval(" Altura em metros: ")
    Leia(Altura)
-   Escreval("Genero M/F: ")
+   Escreval(" Genero M/F: ")
    Leia(Genero)
-   PesoIdealM <- (72,7 x Altura) - 58
-   PesoIdealF <- (62,1 x altura) - 44,7
-   Se Genero = M Entao
-   Escreva("Peso ideal: ", PesoIdealM)
+   PesoIdealM <-(72.7 * Altura) - 58
+   PesoIdealF <-(62.1 * Altura) - 44.7
+   Se Genero = "M" Entao
+       Escreva("Peso ideal: ", PesoIdealM)
    Senao
-       Escreva(" O resultado do calculo do peso ideal, de acordo com seu gênero e sua altura é: ", PesoIdealF)
+       Se Genero = "F" Entao
+       Escreva("Peso ideal: ", PesoIdealF)
+   FimSe
    FimSe
 FimAlgoritmo
-
 
 
 
