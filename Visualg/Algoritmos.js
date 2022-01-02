@@ -35,7 +35,7 @@ Var
           Escreval(Valor3, " E O MAIOR ")
           FimSe
          FimSe
-          Escreva("Desejs Continuar? (S) Sim / (N) Não ")
+          Escreva("Deseja Continuar? Digite S ou N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -45,7 +45,7 @@ Var
           Outrocaso
           Programa <- "S"
           Limpatela
-          Escreval("As opções disponíveis são apenas S ou N!!!")
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N")
           Leia(Opcao)
           FimEscolha
 
@@ -63,9 +63,11 @@ algoritmo "Exercício 02"
 //Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
 //(considere que não serão informados valores iguais) 
 Var
- Opcao: Caractere
+ Opcao, Programa: Caractere
  Valor1, Valor2, Valor3: Real
  Inicio
+      Programa<- "S"
+       Enquanto Programa <> "N" Faca 
       Escreval(" Digite O 1° Valor: ")
       Escreval("............................................")  
       Leia(Valor1)
@@ -75,7 +77,26 @@ Var
       Escreval(" Digite O 3° Valor: ")
       Escreval("............................................")
       Leia(Valor3)
- 
+
+
+
+
+      Escreva("Deseja Continuar? (S ou N)")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
 
@@ -88,9 +109,12 @@ algoritmo "Exercício 03"
 //Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
 //Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
 Var
+ Opcao, Programa: Caractere
  NomeTime1, NomeTime2, 
  GolsTime1, GolsTime2, Resultado: Real
 Inicio
+     Programa<- "S"
+       Enquanto Programa <> "N" Faca
      Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
      Escreval(" Digite O Nome Do 1° Time: ")
      Escreval("............................................")
@@ -113,11 +137,34 @@ algoritmo "Exercício 04"
 // ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
 // morangos e escreva o valor a ser pago pelo cliente.
 Var
-
+  Opcao, Programa: Caractere
 Inicio
-Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
-Escreval(" ")
-Escreval("............................................")
+     Programa<- "S"
+       Enquanto Programa <> "N" Faca
+     Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
+     Escreval(" ")
+     Escreval("............................................")
+
+
+
+
+     Escreva("Deseja Continuar? Digite S ou N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
+
 FimAlgoritmo
 
 
@@ -133,11 +180,33 @@ algoritmo "Exercício 05"
 // (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
 // Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
 Var
+  Opcao, Programa: Caractere
   Codigo: Inteiro
 Inicio
+      Programa<- "S"
+       Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
       Escreval(" ")
       Escreval("............................................")
+
+
+
+
+      Escreva("Deseja Continuar? Digite S ou N  ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+     FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
 
@@ -161,12 +230,32 @@ Algoritmo "Exercício 06"
 //Para o código 885 - aumento de 10%
 //Para quaisquer outros códigos - aumento de 15%
 Var
+   Opcao, Programa: Caractere
    Salario: Real
 Inicio
+      Programa<- "S"
+       Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
       Escreval(" Qual É O Salário Do Funcionário? R$")
       Escreval("............................................") 
       Leia(Salario)
+
+
+      Escreva("Deseja Continuar? Digite S ou N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
 
@@ -182,9 +271,31 @@ algoritmo "Exercício 07"
 //Se o número de lados for igual a 5 escrever PENTÁGONO
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 Var
+   Opcao, Programa: Caractere
    L1, L2, L3: Real
 Inicio
-      Escreval(":::::::::::::::::::::::::::: TRIÂNGULOS ::::::::::::::::::::::::::")
+      Programa<- "S"
+       Enquanto Programa <> "N" Faca
+      Escreval(":::::::::::::::::::::::::::: LADOS DE UM POLÍGONO ::::::::::::::::::::::::::")
+
+
+
+    Escreva("Deseja Continuar? Digite S ou N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+         Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
 
@@ -197,7 +308,7 @@ algoritmo "Exercício 08"
 //Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
 //Se quantidade > 10 o desconto será de 5%
 Var
-   NomeProduto: Caracter
+   Opcao, Programa, NomeProduto: Caracter
    Quantidade, PrecoUnitario: Real
 Inicio
       Escreval(" Digite O Nome Do Produto: ")
@@ -212,6 +323,25 @@ Inicio
       Se Quantidade<= 5 Entao
       Se (Quantidade>5 E Quantidade<=10) Entao
       Senao (Quantidade>10 E 
+             
+             
+       Escreva("Deseja Continuar? Digite S ou N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Leia(Opcao)
+          FimEscolha
+
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")       
+             
 FimAlgoritmo
 
 
@@ -230,7 +360,7 @@ Algoritmo "Exercício01"
 //80Km/h, exiba uma mensagem dizendo que o usuário foi multado. Nesse caso, exiba
 //o valor da multa, cobrando R$5 por cada Km acima da velocidade permitida.
 var
- VelocidadeCarro, ValorMulta, Ultrapassou: Real
+   VelocidadeCarro, ValorMulta, Ultrapassou: Real
  
 Inicio
  Escreval(":::::::::::::::::::::::::::: CALCULO DA VELOCIDADE PERMITIDA ::::::::::::::::::::::::::")
