@@ -128,9 +128,11 @@ Algoritmo "Exercício 06"
 //Para o código 885 - aumento de 10%
 //Para quaisquer outros códigos - aumento de 15%
 Var
-
+   Salario: Real
 Inicio
-Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
+      Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
+      Escreval(" Qual é o salário do funcionário? R$")
+:     Leia(Salario)
 FimAlgoritmo
 
 
