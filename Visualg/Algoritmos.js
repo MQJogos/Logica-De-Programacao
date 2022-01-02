@@ -37,16 +37,16 @@ Exercício 02
 algoritmo "Exercício 02"
 //Crie um programa que leia 3 valores e escreva a soma dos 2 maiores. 
 //(considere que não serão informados valores iguais) 
-varvar
+Var
  Opcao: Caractere
  Valor1, Valor2, Valor3: Real
  Inicio
- Escreval(" Digite o 1° Valor: ")
- Leia(Valor1)
- Escreval(" Digite o 2° Valor: ")
- Leia(Valor2)
- Escreval(" Digite o 3° Valor: ")
- Leia(Valor3)
+      Escreval(" Digite o 1° Valor: ")
+      Leia(Valor1)
+      Escreval(" Digite o 2° Valor: ")
+      Leia(Valor2)
+      Escreval(" Digite o 3° Valor: ")
+      Leia(Valor3)
  
 FimAlgoritmo
 
@@ -63,11 +63,11 @@ Var
  NomeTime1, NomeTime2, 
  GolsTime1, GolsTime2, Resultado: Real
 Inicio
- Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
- Escreval(" Digite o nome do 1° Time: ")
- Leia(NomeTime1)
- Escreval(" Digite o nome do 2° Time: ")
- Leia(NomeTime2)
+     Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
+     Escreval(" Digite o nome do 1° Time: ")
+     Leia(NomeTime1)
+     Escreval(" Digite o nome do 2° Time: ")
+     Leia(NomeTime2)
  FimAlgoritmo
 
 
@@ -101,9 +101,10 @@ algoritmo "Exercício 05"
 // (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
 // Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
 Var
-
+  Codigo: Inteiro
 Inicio
-Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
+      Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
+      Escreval(" ")
 FimAlgoritmo
 
 
