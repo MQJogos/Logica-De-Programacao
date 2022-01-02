@@ -3,33 +3,44 @@ Exercício 01
 algoritmo "Exercício 01"
 //Crie um programa que leia 3 valores e escreva o maior deles. 
 //(considere que não serão informados valores iguais) 
-var
- Opcao: Caractere
+Var
+ Opcao, Programa: Caractere
  Valor1, Valor2, Valor3: Real
+
  Inicio
- Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
- Escreval(" Digite O 1° Valor: ")
- Escreval("............................................")
- Leia(Valor1)
- Escreval(" Digite O 2° Valor: ")
- Escreval("............................................")
- Leia(Valor2)
- Escreval(" Digite O 3° Valor: ")
- Escreval("............................................")
- Leia(Valor3) 
- Se Valor1 > Valor2 Entao
-    Se Valor1 > Valor3 Entao
-       Escreval(Valor1, " É O MAIOR ")
-    Senao
-       Escreval(Valor3, " É O MAIOR ")
-    Fimse
-  Senao
-       Se Valor2 > Valor3 Entao
-          Escreval(Valor2, " É O MAIOR ")
+       Programa<- "S"
+       Enquanto Programa <> "N" Faca
+       Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
+       Escreval(" Digite O 1° Valor: ")
+       Escreval("............................................")
+       Leia(Valor1)
+       Escreval(" Digite O 2° Valor: ")
+       Escreval("............................................")
+       Leia(Valor2)
+       Escreval(" Digite O 3° Valor: ")
+       Escreval("............................................")
+       Leia(Valor3) 
+       Se Valor1 > Valor2 Entao
+          Se Valor1 > Valor3 Entao
+          Escreval(Valor1, " É O MAIOR ")
+           Senao
+          Escreval(Valor3, " É O MAIOR ")
+       Fimse
        Senao
+         Se Valor2 > Valor3 Entao
+          Escreval(Valor2, " É O MAIOR ")
+             Senao
           Escreval(Valor3, " Ė O MAIOR ")
+          Escreval( " Deseja continuar? Digite S (Sim) ou N (Nao): ")
+          Leia(Opcao)
+            Se Opcao = "Sim" Entao
+            Programa <- "S"
+            Senao Opcao = "Não" Entao
+            LimpaTela   
+          FimSe
        FimSe
   FimSe
+FimEnquanto
 Fimalgoritmo
 
 
