@@ -68,7 +68,7 @@ Inicio
  Leia(NomeTime1)
  Escreval(" Digite o nome do 2° Time: ")
  Leia(NomeTime2)
-fimalgoritmo
+ FimAlgoritmo
 
 
 
@@ -82,11 +82,11 @@ algoritmo "Exercício 04"
 // Se o cliente comprar mais de 8 Kg em morangos ou o valor total da compra ultrapassar R$ 25,00, receberá
 // ainda um desconto de 10% sobre este total. Escreva um algoritmo para ler a quantidade (em Kg) de
 // morangos e escreva o valor a ser pago pelo cliente.
-var
+Var
 
-inicio
+Inicio
 Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -100,11 +100,11 @@ algoritmo "Exercício 05"
 // ser lido outro valor que é a senha. Se esta senha estiver incorreta 
 // (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
 // Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
-var
+Var
 
-inicio
+Inicio
 Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -144,11 +144,11 @@ algoritmo "Exercício 07"
 //Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área
 //Se o número de lados for igual a 5 escrever PENTÁGONO
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
-var
+Var
    L1, L2, L3: Real
-inicio
+Inicio
 Escreval(":::::::::::::::::::::::::::: TRIÂNGUOOS ::::::::::::::::::::::::::")
-fimalgoritmo
+FimAlgoritmo
 
 
 
@@ -160,9 +160,18 @@ algoritmo "Exercício 08"
 //Se quantidade > 5 e quantidade <= 10 o desconto será de 3%
 //Se quantidade > 10 o desconto será de 5%
 Var
-
+   NomeProduto: Caracter
+   Quantidade, PrecoUnitario: Real
 Inicio
-// Seção de Comandos 
+      Escreval(" Digite a descrição(nome) do produto: ") 
+      Leia(NomeProduto)
+      Escreval(" Digite a quantidade adquriida do produto: ") 
+      Leia(PrecUnitario)
+      Escreval(" Digite o preço unitário do produto: ") 
+      Leia(Quantdade>10)
+      Se Quantidade<= 5 Entao
+      Se (Quantidade>5 E Quantidade<=10) Entao
+      Senao (Quantidade>10 E 
 FimAlgoritmo
 
 
