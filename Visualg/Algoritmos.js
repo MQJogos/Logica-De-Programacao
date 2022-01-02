@@ -8,23 +8,23 @@ var
  Valor1, Valor2, Valor3: Real
  Inicio
  Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
- Escreval(" Digite o 1° Valor: ")
+ Escreval(" Digite O 1° Valor: ")
  Leia(Valor1)
- Escreval(" Digite o 2° Valor: ")
+ Escreval(" Digite O 2° Valor: ")
  Leia(Valor2)
- Escreval(" Digite o 3° Valor: ")
+ Escreval(" Digite O 3° Valor: ")
  Leia(Valor3) 
  Se Valor1 > Valor2 Entao
     Se Valor1 > Valor3 Entao
-       Escreval(Valor1, " é o maior ")
+       Escreval(Valor1, " É O MAIOR ")
     Senao
-       Escreval(Valor3, " é o maior ")
+       Escreval(Valor3, " É O MAIOR ")
     Fimse
   Senao
        Se Valor2 > Valor3 Entao
-          Escreval(Valor2, " é o maior ")
+          Escreval(Valor2, " É O MAIOR ")
        Senao
-          Escreval(Valor3, " é o maior ")
+          Escreval(Valor3, " Ė O MAIOR ")
        FimSe
   FimSe
 Fimalgoritmo
@@ -41,11 +41,14 @@ Var
  Opcao: Caractere
  Valor1, Valor2, Valor3: Real
  Inicio
-      Escreval(" Digite o 1° Valor: ")
+      Escreval(" Digite O 1° Valor: ")
+      Escreval("............................................")  
       Leia(Valor1)
-      Escreval(" Digite o 2° Valor: ")
+      Escreval(" Digite O 2° Valor: ")
+      Escreval("............................................")
       Leia(Valor2)
-      Escreval(" Digite o 3° Valor: ")
+      Escreval(" Digite O 3° Valor: ")
+      Escreval("............................................")
       Leia(Valor3)
  
 FimAlgoritmo
@@ -64,9 +67,11 @@ Var
  GolsTime1, GolsTime2, Resultado: Real
 Inicio
      Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
-     Escreval(" Digite o nome do 1° Time: ")
+     Escreval(" Digite O Nome Do 1° Time: ")
+     Escreval("............................................")
      Leia(NomeTime1)
-     Escreval(" Digite o nome do 2° Time: ")
+     Escreval(" Digite O Nome Do 2° Time: ")
+     Escreval("............................................")
      Leia(NomeTime2)
  FimAlgoritmo
 
@@ -86,6 +91,8 @@ Var
 
 Inicio
 Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
+Escreval(" ")
+Escreval("............................................")
 FimAlgoritmo
 
 
@@ -105,6 +112,7 @@ Var
 Inicio
       Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
       Escreval(" ")
+      Escreval("............................................")
 FimAlgoritmo
 
 
@@ -131,8 +139,9 @@ Var
    Salario: Real
 Inicio
       Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
-      Escreval(" Qual é o salário do funcionário? R$")
-:     Leia(Salario)
+      Escreval(" Qual É O Salário Do Funcionário? R$")
+      Escreval("............................................") 
+      Leia(Salario)
 FimAlgoritmo
 
 
@@ -150,7 +159,7 @@ algoritmo "Exercício 07"
 Var
    L1, L2, L3: Real
 Inicio
-Escreval(":::::::::::::::::::::::::::: TRIÂNGUOOS ::::::::::::::::::::::::::")
+      Escreval(":::::::::::::::::::::::::::: TRIÂNGULOS ::::::::::::::::::::::::::")
 FimAlgoritmo
 
 
@@ -166,11 +175,14 @@ Var
    NomeProduto: Caracter
    Quantidade, PrecoUnitario: Real
 Inicio
-      Escreval(" Digite a descrição(nome) do produto: ") 
+      Escreval(" Digite O Nome Do Produto: ")
+      Escreval("............................................")
       Leia(NomeProduto)
-      Escreval(" Digite a quantidade adquriida do produto: ") 
-      Leia(PrecUnitario)
-      Escreval(" Digite o preço unitário do produto: ") 
+      Escreval(" Digite A Quantidade Adquirida Do Produto: ") 
+      Escreval("............................................")
+      Leia(PrecoUnitario)
+      Escreval(" Digite O Preço Unitário Do Produto: ")
+      Escreval("............................................")
       Leia(Quantdade>10)
       Se Quantidade<= 5 Entao
       Se (Quantidade>5 E Quantidade<=10) Entao
