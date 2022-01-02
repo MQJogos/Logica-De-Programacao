@@ -9,10 +9,13 @@ var
  Inicio
  Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
  Escreval(" Digite O 1° Valor: ")
+ Escreval("............................................")
  Leia(Valor1)
  Escreval(" Digite O 2° Valor: ")
+ Escreval("............................................")
  Leia(Valor2)
  Escreval(" Digite O 3° Valor: ")
+ Escreval("............................................")
  Leia(Valor3) 
  Se Valor1 > Valor2 Entao
     Se Valor1 > Valor3 Entao
