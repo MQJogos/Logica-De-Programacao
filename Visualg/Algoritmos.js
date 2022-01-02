@@ -1,8 +1,7 @@
 VIDEO 08
-Exercício 01
-algoritmo "Exercício 01"
-//Crie um programa que leia 3 valores e escreva o maior deles. 
-//(considere que não serão informados valores iguais) 
+Algoritmo "Exercício 01"
+//Crie um programa que leia 3 valores e escreva o maior deles.
+//(considere que não serão informados valores iguais)
 Var
  Opcao, Programa: Caractere
  Valor1, Valor2, Valor3: Real
@@ -11,15 +10,18 @@ Var
        Programa<- "S"
        Enquanto Programa <> "N" Faca
        Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
+       Escreval("............................................")
        Escreval(" Digite O 1° Valor: ")
        Escreval("............................................")
        Leia(Valor1)
+       Escreval("............................................")
        Escreval(" Digite O 2° Valor: ")
        Escreval("............................................")
        Leia(Valor2)
+       Escreval("............................................")
        Escreval(" Digite O 3° Valor: ")
        Escreval("............................................")
-       Leia(Valor3) 
+       Leia(Valor3)
        Se Valor1 > Valor2 Entao
           Se Valor1 > Valor3 Entao
           Escreval(Valor1, " É O MAIOR ")
@@ -30,18 +32,27 @@ Var
          Se Valor2 > Valor3 Entao
           Escreval(Valor2, " É O MAIOR ")
              Senao
-          Escreval(Valor3, " Ė O MAIOR ")
-          Escreval( " Deseja continuar? Digite S (Sim) ou N (Nao): ")
-          Leia(Opcao)
-            Se Opcao = "Sim" Entao
-            Programa <- "S"
-            Senao Opcao = "Não" Entao
-            LimpaTela   
+          Escreval(Valor3, " E O MAIOR ")
           FimSe
-       FimSe
-  FimSe
-FimEnquanto
+         FimSe
+          Escreva("Desejs Continuar? (S) Sim / (N) Não ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("As opções disponíveis são apenas S ou N!!!")
+          Leia(Opcao)
+          FimEscolha
+
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 Fimalgoritmo
+
 
 
 
