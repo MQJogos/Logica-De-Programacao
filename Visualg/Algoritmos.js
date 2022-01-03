@@ -151,15 +151,13 @@ Inicio
      Leia(Quilograma)
      ValorMenor5<-Quilograma * 2.50
      ValorAcima5<-Quilograma * 2.20
-     ValorMais8<-ValorAcima8 - 
      Se Quilograma<5 Entao
         ValorTotal
         Escreval("Comprado Kg: ",Quilograma,"de morangos, então o valor da compra é R$",ValorMenor5, "Reais")
         FimSe
         Se Quilograma>5 Entao
-           Escreval("Comprado Kg: ",Quilograma,"de morangos,então o valor da compra é R$",ValorMaior5, "Reais")
+           Escreval("Comprado Kg: ",Quilograma,"de morangos,então o valor da compra é R$",ValorAcima5, "Reais")
         FimSe
-        Se Quilograma>8 E ValorTotal= Entao
  
 
              
@@ -259,7 +257,7 @@ Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
-      Escreval(" Qual É O Salário Do Funcionário? R$")
+      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
       Escreval("............................................") 
       Leia(Salario)
 
