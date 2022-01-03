@@ -219,7 +219,7 @@ Inicio
         Senao
           Escreval(" ACESSO PERMITIDO " )
       Escreval("............................................")
-
+      FimSe
 
 
 
@@ -273,8 +273,12 @@ Inicio
       Escreval(" DIGITE O CÓDIGO DO CARGO: ")
       Escreval("............................................")
       Leia(Codigo)
-      Se 
-
+      Se Codigo=310 Entao
+         Aumento15<-Salario * 0.15
+         Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
+         Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Salario-Aumento15,",00 REAIS")
+         FimSe
+         
 
       Escreva("Deseja Continuar? Digite S ou N ")
           Leia(Opcao)
