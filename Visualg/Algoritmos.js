@@ -138,12 +138,32 @@ algoritmo "Exercício 04"
 // morangos e escreva o valor a ser pago pelo cliente.
 Var
   Opcao, Programa: Caractere
+  Quilograma, ValorCompra: Real
 Inicio
      Programa<- "S"
        Enquanto Programa <> "N" Faca
-     Escreval(":::::::::::::::::::::::::::: CALULAR DESCONTO ::::::::::::::::::::::::::")
-     Escreval(" ")
-     Escreval("............................................")
+     Escreval(":::::::::::::::::::::::::::: TABELA DE PREÇOS PARA CALULAR DESCONTO ::::::::::::::::::::::::::")
+     Escreval(" ATÉ 5 Kg - R$ 2,50 por kg")
+     Escreval(" ACIMA DE 5 Kg  - R$ 2,20 por kg" )
+     Escreval(" MAIS DE 8 Kg Ou Valor Compra Ultrapassa R$ 25,00 - Desconto de 10%")
+     Escreval(".....................................................................")
+     Leia(Quilograma)
+     Escolha Quilograma
+             Caso Quilograma<=5
+                  ValorCompra<- Quilograma * 2.50
+             
+             Caso Quilograma>5
+                  ValorCompra<- Quilograma * 2.20
+
+             Caso Quilograma>8
+                  ValorCompra <- (Quilograma *2.20) - 0.10
+ 
+
+             
+              
+              
+              
+              
 
 
 
