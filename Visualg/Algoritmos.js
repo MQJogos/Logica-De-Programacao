@@ -207,7 +207,17 @@ Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
-      Escreval(" ")
+      Escreval(" Digite o código de usuário")
+      Leia(Codigo)
+         Se Codigo <> 1234 Entao
+          Escreval(" USUÁRIO INVÁLIDO ")
+        Senao
+          Escreval(" DIGITE A SENHA ")
+        FimSe
+        Se Senha<>9999 Entao
+          Escreval("Senha Inorreta")
+        Senao
+          Escreval(" ACESSO PERMITIDO " )
       Escreval("............................................")
 
 
