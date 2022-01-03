@@ -138,7 +138,7 @@ algoritmo "Exercício 04"
 // morangos e escreva o valor a ser pago pelo cliente.
 Var
   Opcao, Programa: Caractere
-  Quilograma, ValorCompra: Real
+  Quilograma, ValorTotal: Real
 Inicio
      Programa<- "S"
        Enquanto Programa <> "N" Faca
@@ -147,16 +147,19 @@ Inicio
      Escreval(" ACIMA DE 5 Kg  - R$ 2,20 por kg" )
      Escreval(" MAIS DE 8 Kg Ou Valor Compra Ultrapassa R$ 25,00 - Desconto de 10%")
      Escreval(".....................................................................")
+     Escreval(" Digite a quantidade de morangos Kg: ")
      Leia(Quilograma)
-     Escolha Quilograma
-             Caso Quilograma<=5
-                  ValorCompra<- Quilograma * 2.50
-             
-             Caso Quilograma>5
-                  ValorCompra<- Quilograma * 2.20
-
-             Caso Quilograma>8
-                  ValorCompra <- (Quilograma *2.20) - 0.10
+     ValorMenor5<-Quilograma * 2.50
+     ValorAcima5<-Quilograma * 2.20
+     ValorMais8<-ValorAcima8 - 
+     Se Quilograma<5 Entao
+        ValorTotal
+        Escreval("Comprado Kg: ",Quilograma,"de morangos, então o valor da compra é R$",ValorMenor5, "Reais")
+        FimSe
+        Se Quilograma>5 Entao
+           Escreval("Comprado Kg: ",Quilograma,"de morangos,então o valor da compra é R$",ValorMaior5, "Reais")
+        FimSe
+        Se Quilograma>8 E ValorTotal= Entao
  
 
              
