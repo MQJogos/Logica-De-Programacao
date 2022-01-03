@@ -262,7 +262,7 @@ Algoritmo "Exercício 06"
 //Para quaisquer outros códigos - aumento de 15%
 Var
    Opcao, Programa: Caractere
-   Salario: Real
+   Salario, Codigo: Real
 Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
@@ -270,6 +270,10 @@ Inicio
       Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
       Escreval("............................................") 
       Leia(Salario)
+      Escreval(" DIGITE O CÓDIGO DO CARGO: ")
+      Escreval("............................................")
+      Leia(Codigo)
+      Se 
 
 
       Escreva("Deseja Continuar? Digite S ou N ")
