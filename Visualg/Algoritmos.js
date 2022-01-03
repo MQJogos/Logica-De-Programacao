@@ -267,6 +267,11 @@ Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: CALCULO AUMENTO DE SALÁRIO::::::::::::::::::::::::::")
+      Escreval("PARA O CÓDIGO 310 - AUMENTO DE 5%")
+      Escreval("PARA O CÓDIGO 456 - AUMENTO DE 7.5%")
+      Escreval("PARA O CÓDIGO 885 - AUMENTO DE 10%")
+      Escreval("PARA QUAISQUER OUTROS CÓDIGOS - AUMENTO DE 15%")
+      Escreval(".....................................................................")
       Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
       Escreval("............................................") 
       Leia(Salario)
@@ -276,8 +281,7 @@ Inicio
       Se Codigo=310 Entao
          Aumento15<-Salario * 0.05
          Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-         Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Aumento5 - Salario
-,",00 REAIS")
+         Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Aumento5 - Salario,",00 REAIS")
          FimSe
          Se Codigo=456 Entao
             Aumento15<-Salario * 0.075
