@@ -11,15 +11,15 @@ Var
        Enquanto Programa <> "N" Faca
        Escreval(":::::::::::::::::::::::::: MAIOR DE TRÊS ::::::::::::::::::::::::::")
        Escreval("............................................")
-       Escreval(" Digite O 1° Valor: ")
+       Escreval(" DIGITE O 1° VALOR: ")
        Escreval("............................................")
        Leia(Valor1)
        Escreval("............................................")
-       Escreval(" Digite O 2° Valor: ")
+       Escreval(" DIGITE O 2° VALOR: ")
        Escreval("............................................")
        Leia(Valor2)
        Escreval("............................................")
-       Escreval(" Digite O 3° Valor: ")
+       Escreval(" DIGITE O 3° VALOR: ")
        Escreval("............................................")
        Leia(Valor3)
        Se Valor1 > Valor2 Entao
@@ -35,7 +35,7 @@ Var
           Escreval(Valor3, " E O MAIOR ")
           FimSe
          FimSe
-          Escreva("Deseja Continuar? Digite S ou N ")
+          Escreva("DESEJA CONTINUAR? DIGITE S OU N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -45,7 +45,7 @@ Var
           Outrocaso
           Programa <- "S"
           Limpatela
-          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N")
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S OU N")
           Leia(Opcao)
           FimEscolha
 
@@ -68,20 +68,20 @@ Var
  Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca 
-      Escreval(" Digite O 1° Valor: ")
+      Escreval(" DIGITE O 1° VALOR: ")
       Escreval("............................................")  
       Leia(Valor1)
-      Escreval(" Digite O 2° Valor: ")
+      Escreval(" DIGITE O 2° VALOR: ")
       Escreval("............................................")
       Leia(Valor2)
-      Escreval(" Digite O 3° Valor: ")
+      Escreval(" DIGITE O 3° VALOR: ")
       Escreval("............................................")
       Leia(Valor3)
 
 
 
 
-      Escreva("Deseja Continuar? (S ou N)")
+      Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -116,10 +116,10 @@ Inicio
      Programa<- "S"
        Enquanto Programa <> "N" Faca
      Escreval(":::::::::::::::::::::::::: PARTIDA DE FUTEBOL ::::::::::::::::::::::::::")
-     Escreval(" Digite O Nome Do 1° Time: ")
+     Escreval(" DIGITE O NOME DO 1° TIME: ")
      Escreval("............................................")
      Leia(NomeTime1)
-     Escreval(" Digite O Nome Do 2° Time: ")
+     Escreval(" DIGITE O NOME DO 2° TIME: ")
      Escreval("............................................")
      Leia(NomeTime2)
  FimAlgoritmo
@@ -138,25 +138,25 @@ algoritmo "Exercício 04"
 // morangos e escreva o valor a ser pago pelo cliente.
 Var
   Opcao, Programa: Caractere
-  Quilograma, ValorTotal: Real
+  Quilograma, ValorTotal, ValorMenor5, ValorAcima5: Real
 Inicio
      Programa<- "S"
        Enquanto Programa <> "N" Faca
      Escreval(":::::::::::::::::::::::::::: TABELA DE PREÇOS PARA CALULAR DESCONTO ::::::::::::::::::::::::::")
-     Escreval(" ATÉ 5 Kg - R$ 2,50 por kg")
-     Escreval(" ACIMA DE 5 Kg  - R$ 2,20 por kg" )
-     Escreval(" MAIS DE 8 Kg Ou Valor Compra Ultrapassa R$ 25,00 - Desconto de 10%")
+     Escreval(" ATÉ 5 KG - R$ 2,50 por kg")
+     Escreval(" ACIMA DE 5 KG  - R$ 2,20 por kg" )
+     Escreval(" MAIS DE 8 KG OU VALOR COMPRA ULTRAPASSAR R$ 25,00 - DESCONTO DE 10%")
      Escreval(".....................................................................")
-     Escreval(" Digite a quantidade de morangos Kg: ")
+     Escreval(" DIGITE A QUANTIDADE DE MORANGOS Kg: ")
      Leia(Quilograma)
      ValorMenor5<-Quilograma * 2.50
      ValorAcima5<-Quilograma * 2.20
      Se Quilograma<5 Entao
         ValorTotal
-        Escreval("Comprado Kg: ",Quilograma,"de morangos, então o valor da compra é R$",ValorMenor5, "Reais")
+        Escreval("FOI COMPRADO Kg: ",Quilograma,"DE MORANGOS, POR ISSO O VALOR A SER PAGO É R$",ValorMenor5,"REAIS")
         FimSe
         Se Quilograma>5 Entao
-           Escreval("Comprado Kg: ",Quilograma,"de morangos,então o valor da compra é R$",ValorAcima5, "Reais")
+           Escreval("FOI COMPRADO Kg: ",Quilograma,"DE MORANGOS,ENTÃO O VALOR A SER PAGO É R$",ValorAcima5,"REAIS")
         FimSe
  
 
@@ -169,7 +169,7 @@ Inicio
 
 
 
-     Escreva("Deseja Continuar? Digite S ou N ")
+     Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -207,7 +207,7 @@ Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
-      Escreval(" Digite o código de usuário")
+      Escreval(" DIGITE O CÓDIGO DE USUÁRIO")
       Leia(Codigo)
          Se Codigo <> 1234 Entao
           Escreval(" USUÁRIO INVÁLIDO ")
@@ -215,7 +215,7 @@ Inicio
           Escreval(" DIGITE A SENHA ")
         FimSe
         Se Senha<>9999 Entao
-          Escreval("Senha Inorreta")
+          Escreval("SENHA INCORRETA")
         Senao
           Escreval(" ACESSO PERMITIDO " )
       Escreval("............................................")
@@ -223,7 +223,7 @@ Inicio
 
 
 
-      Escreva("Deseja Continuar? Digite S ou N  ")
+      Escreva("DESEJA CONTINUAR? DIGITE S ou N  ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -233,7 +233,7 @@ Inicio
           Outrocaso
           Programa <- "S"
           Limpatela
-          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S ou N ")
           Leia(Opcao)
           FimEscolha
      FimEnquanto
@@ -286,15 +286,15 @@ Inicio
          Se Codigo=456 Entao
             Aumento15<-Salario * 0.075
             Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-            Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Aumento7.5 - Salario,",00 REAIS")
+            Escreval(" A DIFERENÇA ENTRE AMBOS FOI R$:  ",Aumento7.5 - Salario,",00 REAIS")
             FimSe
             Se Codigo=885 Entao
                Aumento15<-Salario * 0.1
                Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-               Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Aumento10 - Salario,",00 REAIS")
+               Escreval(" A DIFERENÇA ENTRE AMBOS FOI R$:  ",Aumento10 - Salario,",00 REAIS")
                FimSe
 
-      Escreva("Deseja Continuar? Digite S ou N ")
+      Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -304,7 +304,7 @@ Inicio
           Outrocaso
           Programa <- "S"
           Limpatela
-          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S ou N ")
           Leia(Opcao)
           FimEscolha
  FimEnquanto
@@ -328,8 +328,10 @@ Var
    L1, L2, L3: Real
 Inicio
       Programa<- "S"
-       Enquanto Programa <> "N" Faca
+       
+      Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: LADOS DE UM POLÍGONO ::::::::::::::::::::::::::")
+      Escreval(" DIGITE O NÚMERO DE LADOS DE UM POLÍGONO REGULAR")
 
 
 
@@ -364,21 +366,21 @@ Var
    Opcao, Programa, NomeProduto: Caracter
    Quantidade, PrecoUnitario: Real
 Inicio
-      Escreval(" Digite O Nome Do Produto: ")
+      Escreval(" DIGITE O NOME DO PRODUTO: ")
       Escreval("............................................")
       Leia(NomeProduto)
-      Escreval(" Digite A Quantidade Adquirida Do Produto: ") 
+      Escreval(" DIGITE A QUANTIDADE ADQUIRIDA DO PRODUTO: ") 
       Escreval("............................................")
       Leia(PrecoUnitario)
-      Escreval(" Digite O Preço Unitário Do Produto: ")
+      Escreval(" DIGITE O PREÇO UNITÁRIO DO PRODUTO R$: ")
       Escreval("............................................")
       Leia(Quantdade>10)
       Se Quantidade<= 5 Entao
       Se (Quantidade>5 E Quantidade<=10) Entao
-      Senao (Quantidade>10 E 
+      Senao Quantidade>10 E 
              
              
-       Escreva("Deseja Continuar? Digite S ou N ")
+       Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -388,7 +390,7 @@ Inicio
           Outrocaso
           Programa <- "S"
           Limpatela
-          Escreval("ATENÇÃO! As opções disponíveis são apenas S ou N ")
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S ou N ")
           Leia(Opcao)
           FimEscolha
 
