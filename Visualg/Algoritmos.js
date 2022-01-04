@@ -276,11 +276,6 @@ FimAlgoritmo
 
 
 
-
-
-
-
-
 Exercício 06
 Algoritmo "Exercício 06"
 // Uma empresa concederá um aumento de salário aos seus
@@ -293,7 +288,7 @@ Algoritmo "Exercício 06"
 //Para quaisquer outros códigos - aumento de 15%
 Var
    Opcao, Programa: Caractere
-   Salario, Codigo: Real
+   Salario, Codigo, Aumento5, Aumento7, Aumento10, Aumento15: Real
 Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
@@ -304,25 +299,41 @@ Inicio
       Escreval("PARA QUAISQUER OUTROS CÓDIGOS - AUMENTO DE 15%")
       Escreval(".....................................................................")
       Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
-      Escreval("............................................") 
+      Escreval("............................................")
       Leia(Salario)
       Escreval(" DIGITE O CÓDIGO DO CARGO: ")
       Escreval("............................................")
       Leia(Codigo)
       Se Codigo=310 Entao
-         Aumento15<-Salario * 0.05
-         Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-         Escreval(" A DIFERENÇA ENTRE AMBOS  SÃO R$:  ",Aumento5 - Salario,",00 REAIS")
+         Aumento5<-Salario + (Salario * 5/100)
+         Escreval("............................................")
+         Escreval(" FUNCIONÁRIO QUE RECEBIA R$ ",Salario," REAIS")
+         Escreval(" PASSA A RECEBER R$",Aumento5," REAIS , COM 5% DE AUMENTO.")
+         Escreval(" DIFERENÇA DE R$",Aumento5 - Salario," REAIS.")
+         Escreval("............................................")
          FimSe
          Se Codigo=456 Entao
-            Aumento15<-Salario * 0.075
-            Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-            Escreval(" A DIFERENÇA ENTRE AMBOS FOI R$:  ",Aumento7.5 - Salario,",00 REAIS")
+            Aumento7<-Salario + (Salario * 7.5/100)
+            Escreval("............................................")
+            Escreval(" FUNCIONÁRIO RECEBIA R$",Salario,",00 REAIS.")
+            Escreval(" PASSA A RECEBER R$",Aumento7," REAIS, COM 7% DE AUMENTO.")
+            Escreval(" DIFERENÇA DE R$",Aumento7 - Salario," REAIS.")
+            Escreval("............................................")
             FimSe
             Se Codigo=885 Entao
-               Aumento15<-Salario * 0.1
-               Escreval(" O SALÁRIO DO FUNCIONÁRIO QUE ERA R$ ",Salario,",COM O AUMENTO DE 5%, SERÁ R$",Aumento15,",00 REAIS")
-               Escreval(" A DIFERENÇA ENTRE AMBOS FOI R$:  ",Aumento10 - Salario,",00 REAIS")
+               Aumento10<- Salario + (Salario * 10/100)
+               Escreval("............................................")
+               Escreval(" FUNCIONÁRIO QUE RECEBIA R$",Salario,"REAIS.")
+               Escreval(" PASSA A RECEBER R$",Aumento10," REAIS, COM 10% DE AUMENTO.")
+               Escreval(" DIFERENÇA DE R$",Aumento10 - Salario," REAIS.")
+               Escreval("............................................")
+               Senao
+                   Aumento15<- Salario + (Salario * 15/100)
+                   Escreval("............................................")
+                   Escreval(" FUNCIONÁRIO QUE RECEBIA R$",Salario," REAIS.")
+                   Escreval(" PASSA A RECEBER R$",Aumento15," REAIS, COM 15% DE AUMENTO .")
+                   Escreval(" DIFERENÇA DE R$",Aumento15 - Salario," REAIS.")
+                   Escreval("............................................")
                FimSe
 
       Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
@@ -342,13 +353,24 @@ Inicio
  Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S ou N ")
+          Leia(Opcao)
+          FimEscolha
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
+FimAlgoritmo
+
 
 
 
 
 Exercício 07
-algoritmo "Exercício 07"
-//Escreva um programa para ler o número de lados de um polígono regular. Calcular e imprimir o seguinte: 
+//Escreva um programa para ler o número de lados de um polígono regular. Calcular e imprimir o seguinte:
 //Se  o número de lados for  inferior a 3 escrever NÃO É UM POLÍGONO
 //Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor da área
 //Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área
@@ -356,13 +378,26 @@ algoritmo "Exercício 07"
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 Var
    Opcao, Programa: Caractere
-   L1, L2, L3: Real
+   NumeroLados, NumeroMedidas: Real
 Inicio
       Programa<- "S"
-       
+
       Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: LADOS DE UM POLÍGONO ::::::::::::::::::::::::::")
       Escreval(" DIGITE O NÚMERO DE LADOS DE UM POLÍGONO REGULAR")
+      Leia(Lados)
+      Se Lados<3 Entao
+      Escreval("NÃO É UM POLÍGONO")
+      FimSe
+        Se Lados=3 Entao
+        Escreval("TRIÂNGULO")
+        FimSe
+          Se Lados=4 Entao
+          Escreval("QUADRADO")
+          FimSe
+            Se Lados=5 Entao
+            Escreval("PENTÁGONO")
+            FimSe
 
 
 
@@ -788,7 +823,7 @@ var
 inicio
   Escreva("Digite  o salário do funcionário:   ")
   Leia(Salario)
-  Aumento<- Salario + (Salario * 0.15/100)
+  Aumento<- Salario + (Salario * 15/100)
   Escreval("O salário do funcionário era R$ " ,Salario, " com o aumento de 15% agora será R$ " ,Aumento)
 Fimalgoritmo
 
