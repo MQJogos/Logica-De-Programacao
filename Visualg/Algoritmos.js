@@ -129,8 +129,14 @@ Inicio
      Escreval("............................................")
      Leia(GolsTime2)
      Se GolsTime1 = GolsTime2 Entao
-     Escreval(" O Time porque fizeram 
+     Escreval(" HOUVE EMPATE ")
      FimSe
+       Se GolsTime1 > GolsTime2 Entao
+       Escreval(NomeTime1,"VENCEU COM",GolsTime1)
+       FimSe
+         Se GolsTime1 < GolTime2 Entao 
+         Escreval(NomeTime2,"VENCEU COM",GolsTime2)
+
  FimAlgoritmo
 
 
