@@ -430,22 +430,47 @@ algoritmo "Exercício 08"
 //Se quantidade > 10 o desconto será de 5%
 Var
    Opcao, Programa, NomeProduto: Caracter
-   Quantidade, PrecoUnitario: Real
+   Quantidade, ValorUnitario, ValorTotal, Desconto2, Desconto3, Desconto5: Real
 Inicio
+      Programa<- "S"
+       Enquanto Programa <> "N" Faca
+      Escreval(":::::::::::::::::: ATACADISTA GUANABARA ::::::::::::::::::::")
+      Escreval("............................................")
       Escreval(" DIGITE O NOME DO PRODUTO: ")
       Escreval("............................................")
       Leia(NomeProduto)
-      Escreval(" DIGITE A QUANTIDADE ADQUIRIDA DO PRODUTO: ") 
       Escreval("............................................")
-      Leia(PrecoUnitario)
+      Escreval(" DIGITE A QUANTIDADE ADQUIRIDA DO PRODUTO: ")
+      Escreval("............................................")
+      Leia(ValorUnitario)
+      Escreval("............................................")
       Escreval(" DIGITE O PREÇO UNITÁRIO DO PRODUTO R$: ")
       Escreval("............................................")
-      Leia(Quantdade>10)
-      Se Quantidade<= 5 Entao
-      Se (Quantidade>5 E Quantidade<=10) Entao
-      Senao Quantidade>10 E 
-             
-             
+      Leia(Quantidade)
+      ValorTotal<- ValorUnitario * Quantidade
+             Se Quantidade<=5 Entao
+                Desconto2<- ValorTotal - (ValorTotal * 2/100)
+                Escreval("............................................")
+                Escreval(" VALOR DA COMPRA R$",ValorTotal," REAIS.")
+                Escreval(" VALOR TOTAL COM 2% DE DESCONTO R$",Desconto2," REAIS.")
+                Escreval("............................................")
+                FimSe
+            Se (Quantidade>5) E (Quantidade<=10) Entao
+                Desconto3<- ValorTotal - (ValorTotal * 3/100)
+                Escreval("............................................")
+                Escreval(" VALOR DA COMPRA R$",ValorTotal," REAIS.")
+                Escreval(" VALOR TOTAL COM 3% DE DESCONTO R$",Desconto3," REAIS.")
+                Escreval("............................................")
+                FimSe
+            Se  Quantidade>10 Entao
+                Desconto5<- ValorTotal - (ValorTotal * 5/100)
+                Escreval("............................................")
+                Escreval(" VALOR DA COMPRA R$",ValorTotal," REAIS.")
+                Escreval(" VALOR TOTAL COM 5% DE DESCONTO R$",Desconto5," REAIS.")
+                Escreval("............................................")
+                FimSe
+
+
        Escreva("DESEJA CONTINUAR? DIGITE S ou N ")
           Leia(Opcao)
           Escolha Opcao
@@ -459,11 +484,12 @@ Inicio
           Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S ou N ")
           Leia(Opcao)
           FimEscolha
-
  FimEnquanto
- Escreval("¨........PAUSA PARA O CAFÉ!!!........")       
-             
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
+
 FimAlgoritmo
+
+
 
 
 
