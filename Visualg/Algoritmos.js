@@ -104,14 +104,12 @@ FimAlgoritmo
 
 
 
-Exercício 03
-algoritmo "Exercício 03"
-//Ler o nome de 2 times e o número de gols marcados na partida (para cada time). 
+Algoritmo "Exercício 03"
+//Ler o nome de 2 times e o número de gols marcados na partida (para cada time).
 //Escrever o nome do vencedor. Caso não haja vencedor deverá ser impressa a palavra EMPATE.
 Var
- Opcao, Programa: Caractere
- NomeTime1, NomeTime2, 
- GolsTime1, GolsTime2, Resultado: Real
+ Opcao, Programa, NomeTime1, NomeTime2: Caractere
+ GolsTime1, GolsTime2: Real
 Inicio
      Programa<- "S"
        Enquanto Programa <> "N" Faca
@@ -128,16 +126,34 @@ Inicio
      Escreval(" DIGITE O NÚMERO DE GOLS DO 2° TIME: ")
      Escreval("............................................")
      Leia(GolsTime2)
-     Se GolsTime1 = GolsTime2 Entao
-     Escreval(" HOUVE EMPATE ")
-     FimSe
+       Se GolsTime1 = GolsTime2 Entao
+        Escreval(":::::::::::::::::::::::::: EMPATE:::::::::::::::::::::::::: ")
+     Senao
        Se GolsTime1 > GolsTime2 Entao
-       Escreval(NomeTime1,"VENCEU COM",GolsTime1)
+       Escreval(":::::::",NomeTime1," VENCEU COM ",GolsTime1," GOL(S):::::::::")
        FimSe
-         Se GolsTime1 < GolTime2 Entao 
-         Escreval(NomeTime2,"VENCEU COM",GolsTime2)
-
+         Se GolsTime1 < GolsTime2 Entao
+         Escreval(":::::::",NomeTime2," VENCEU COM ",GolsTime2," GOL(S):::::::::")
+       FimSe
+      FimSe
+      
+      Escreva("DESEJA CONTINUAR? DIGITE S OU N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S OU N")
+          Leia(Opcao)
+          FimEscolha
+ FimEnquanto
+ Escreval("¨........PAUSA PARA O CAFÉ!!!........")
  FimAlgoritmo
+
 
 
 
