@@ -378,7 +378,7 @@ Exercício 07
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 Var
    Opcao, Programa: Caractere
-   NumeroLados, NumeroMedidas: Real
+   TotalLados, Medida1, Medida2, Medida3, Medida4, Medida5: Real
 Inicio
       Programa<- "S"
 
@@ -389,8 +389,11 @@ Inicio
       Se Lados<3 Entao
       Escreval("NÃO É UM POLÍGONO")
       FimSe
-        Se Lados=3 Entao
+        Se TotalLados=3 Entao
         Escreval("TRIÂNGULO")
+        Escreval(" DIGITE A MEDIDA DO 1° LADO ")
+        Leia("Medida1")
+        Escreval(" DIGITE A MEDIDA DO 2° LADO ")
         FimSe
           Se Lados=4 Entao
           Escreval("QUADRADO")
