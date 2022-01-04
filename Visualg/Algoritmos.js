@@ -119,9 +119,18 @@ Inicio
      Escreval(" DIGITE O NOME DO 1° TIME: ")
      Escreval("............................................")
      Leia(NomeTime1)
+     Escreval(" DIGITE O NÚMERO DE GOLS DO 1° TIME: ")
+     Escreval("............................................")
+     Leia(GolsTime1)
      Escreval(" DIGITE O NOME DO 2° TIME: ")
      Escreval("............................................")
      Leia(NomeTime2)
+     Escreval(" DIGITE O NÚMERO DE GOLS DO 2° TIME: ")
+     Escreval("............................................")
+     Leia(GolsTime2)
+     Se GolsTime1 = GolsTime2 Entao
+     Escreval(" O Time porque fizeram 
+     FimSe
  FimAlgoritmo
 
 
