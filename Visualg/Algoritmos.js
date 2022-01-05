@@ -463,25 +463,29 @@ Exercício 07
 //Se o número de lados for superior a 5 escrever POLÍGONO NÃO IDENTIFICADO
 Var
    Opcao, Programa: Caractere
-   TotalLados, Medida1, Medida2, Medida3, Medida4, Medida5: Real
+   TotalLados, Lado1, Lado2, Lado3, Lado4, Lado5: Real
 Inicio
       Programa<- "S"
 
       Enquanto Programa <> "N" Faca
       Escreval(":::::::::::::::::::::::::::: LADOS DE UM POLÍGONO ::::::::::::::::::::::::::")
       Escreval(" DIGITE O NÚMERO DE LADOS DE UM POLÍGONO REGULAR")
-      Leia(Lados)
-      Se Lados<3 Entao
+      Leia(TotalLados)
+      Se TotalLados<3 Entao
       Escreval("NÃO É UM POLÍGONO")
       FimSe
+        Se TotalLados>5 Entao
+        Escreval("POLÍGONO NÃo IDENTIFICADO")
+        FimSe
         Se TotalLados=3 Entao
         Escreval("TRIÂNGULO")
-        Escreval(" DIGITE A MEDIDA DO 1° LADO ")
-        Leia("Medida1")
-        Escreval(" DIGITE A MEDIDA DO 2° LADO ")
+        Escreval(" DIGITE AS 3 RETAS DO TRIÂNGULO ")
+        Leia(Lado1,Lado2,Lado3)
         FimSe
-          Se Lados=4 Entao
+          Se TotalLados=4 Entao
           Escreval("QUADRADO")
+          Escreval(" DIGITE O VALOR DE CADA UM DOS 4 LADOS DO QUADRADO")
+          Leia(Lado1, Lado2, Lado3, Lado4)
           FimSe
             Se Lados=5 Entao
             Escreval("PENTÁGONO")
