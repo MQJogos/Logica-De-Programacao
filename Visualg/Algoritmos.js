@@ -1,3 +1,70 @@
+VIDEO AULA 09
+
+Exercício 01
+//Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
+
+
+
+
+
+
+
+
+
+Exercício 02
+//Desenvolver um algoritmo que efetue a soma de todos os números pares 
+//que se encontram no conjunto dos números de 1 até 500.
+
+
+
+
+
+
+
+
+
+
+
+Exercício 03
+//Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
+//três e que se encontram no conjunto dos números de 1 até 500.
+
+
+
+
+
+
+
+
+
+
+
+Exercício 04
+//Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de
+//N. Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N.
+
+
+
+
+
+
+
+
+
+
+
+Exercício 05
+//Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de
+//A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
+
+
+
+
+
+
+
+
+
 VIDEO 08
 Algoritmo "Exercício 01"
 //Crie um programa que leia 3 valores e escreva o maior deles.
@@ -224,37 +291,32 @@ FimAlgoritmo
 
 
 Exercício 05
-algoritmo "Exercício 05"
-//Faça um algoritmo para ler um número que é um código de usuário. 
+Algoritmo "Exercício 05"
+//Faça um algoritmo para ler um número que é um código de usuário.
 // Caso este código seja diferente de 1234 deve ser apresentada a
-// mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve 
-// ser lido outro valor que é a senha. Se esta senha estiver incorreta 
-// (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’. 
+// mensagem ‘Usuário inválido!’. Caso o Código seja correto, deve
+// ser lido outro valor que é a senha. Se esta senha estiver incorreta
+// (a certa é 9999) deve ser mostrada a mensagem ‘senha incorreta’.
 // Caso a senha esteja correta, deve ser mostrada a mensagem ‘Acesso permitido’.
 Var
   Opcao, Programa: Caractere
-  Codigo: Inteiro
+  Codigo, Senha: Inteiro
 Inicio
       Programa<- "S"
        Enquanto Programa <> "N" Faca
-      Escreval(":::::::::::::::::::::::::::: TELA DE ACESO ::::::::::::::::::::::::::")
+      Escreval(":::::::::::::::::::::::::::: TELA DE ACESSO ::::::::::::::::::::::::::")
       Escreval(" DIGITE O CÓDIGO DE USUÁRIO")
       Leia(Codigo)
-         Se Codigo <> 1234 Entao
-          Escreval(" USUÁRIO INVÁLIDO ")
-        Senao
-          Escreval(" DIGITE A SENHA ")
-        FimSe
-        Se Senha<>9999 Entao
-          Escreval("SENHA INCORRETA")
-        Senao
+      Escreval(" DIGITE A SENHA ")
+      Leia(Senha)
+      Se (Codigo=1234) E (Senha=9999) Entao
           Escreval(" ACESSO PERMITIDO " )
-      Escreval("............................................")
+        Senao
+          Escreval("SENHA INCORRETA")
+          Escreval("............................................")
       FimSe
 
-
-
-      Escreva("DESEJA CONTINUAR? DIGITE S ou N  ")
+       Escreva("DESEJA CONTINUAR? DIGITE S ou N  ")
           Leia(Opcao)
           Escolha Opcao
           Caso "S"
@@ -270,8 +332,6 @@ Inicio
      FimEnquanto
  Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
-
-
 
 
 
