@@ -2,7 +2,11 @@ VIDEO AULA 09
 
 Exercício 01
 //Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
+Var
+    
+Inicio
 
+FimAlgoritmo
 
 
 
@@ -14,7 +18,11 @@ Exercício 01
 Exercício 02
 //Desenvolver um algoritmo que efetue a soma de todos os números pares 
 //que se encontram no conjunto dos números de 1 até 500.
+Var
 
+Inicio
+
+FimAlgoritmo
 
 
 
@@ -28,8 +36,11 @@ Exercício 02
 Exercício 03
 //Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
 //três e que se encontram no conjunto dos números de 1 até 500.
+Var
 
+Inicio
 
+FimAlgoritmo
 
 
 
@@ -42,7 +53,17 @@ Exercício 03
 Exercício 04
 //Escrever um algoritmo que leia um valor para uma variável N de 1 a 10 e calcule a tabuada de
 //N. Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N.
-
+Var
+   N, Contador: Inteiro
+Inicio
+   Escreval(" Digite um número pra ver sua tabuada: ")
+   Leia(N)
+   Contador<-1
+   Enquanto (Contador<10) Faca
+   Escreval(N, " X ", Contador, " =", N*Contador)
+   
+   FimEnquanto
+FimAlgoritmo
 
 
 
@@ -56,6 +77,11 @@ Exercício 04
 Exercício 05
 //Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de
 //A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
+Var
+
+Inicio
+
+FimAlgoritmo
 
 
 
@@ -64,8 +90,7 @@ Exercício 05
 
 
 
-
-VIDEO 08
+VIDEO Aula 08
 Algoritmo "Exercício 01"
 //Crie um programa que leia 3 valores e escreva o maior deles.
 //(considere que não serão informados valores iguais)
