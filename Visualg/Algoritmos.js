@@ -3,7 +3,7 @@ VIDEO AULA 09
 Exercício 01
 //Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
 Var
-    
+   Numero, Contador : Inteiro
 Inicio
 
 FimAlgoritmo
@@ -19,7 +19,7 @@ Exercício 02
 //Desenvolver um algoritmo que efetue a soma de todos os números pares 
 //que se encontram no conjunto dos números de 1 até 500.
 Var
-
+   Numero, Contador: Inteiro
 Inicio
 
 FimAlgoritmo
@@ -37,7 +37,7 @@ Exercício 03
 //Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
 //três e que se encontram no conjunto dos números de 1 até 500.
 Var
-
+   Numero, Contador: Inteiri
 Inicio
 
 FimAlgoritmo
@@ -78,7 +78,7 @@ Exercício 05
 //Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de
 //A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
 Var
-
+  A: Inteiro
 Inicio
 
 FimAlgoritmo
