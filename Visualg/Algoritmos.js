@@ -90,7 +90,7 @@ Inicio
    Enquanto (Contador <= 500) Faca
    Escreva(Contador, "° VALOR = ")
    Leia(N)
-   Soma <- Soma + N
+   Soma <- Soma + Contador
    Contador<- Contador + 2
    FimEnquanto
    Escreval(" A SOMA DE TODOS OS VALORES FOI ",SOMA)
