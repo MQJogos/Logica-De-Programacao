@@ -55,7 +55,7 @@ FimAlgoritmo
 
 
 VIDEO AULA 09
-
+https://www.youtube.com/watch?v=uOKeuz3uq6A
 Exercício 01
 //Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
 Var
