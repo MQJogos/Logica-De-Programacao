@@ -136,12 +136,18 @@ Exercício 04
 //N. Mostre a tabuada na forma: 0 x N = 0, 1 x N = 1N, 2 x N = 2N, ..., 10 x N = 10N.
 Var
    N, Contador: Inteiro
+   Continuar: Caractere
 Inicio
-   Escreval(" Digite um número pra ver sua tabuada: ")
+   Continuar<- "S"
+   Enquanto (Continuar = "S") Faca 
+   Escreval(" ENTRE COM UM NÚMERO PARA EXBIR SUA TABUADA: ")
    Leia(N)
-   Contador<-Contador<10) Faca
-   Escreval(N, " X ", Contador, " =", N*Contador)
-   
+   Para Contador De 1 Ate 10 Passo 1 Faca
+     Escreval(Contador, " x", N, " = ",Contador * N)
+   FimPara
+     Escreval(" DESEJA CONTINUAR? DIGITE S ou N")
+     Leia(Continuar)
+     LimpaTela
    FimEnquanto
 FimAlgoritmo
 
