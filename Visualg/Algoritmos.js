@@ -3,10 +3,18 @@ VIDEO AULA 09
 Exercício 01
 //Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
 Var
-   Numero, Contador : Inteiro
+   Contador, N: Inteiro
 Inicio
-
+   Contador<- 1
+   Soma<- 0
+   Enquanto (Contador <= 200) Faca
+   Escreva(Contador, "° VALOR = ")
+   Leia(N)
+   Contador<- Contador + 3
+   FimEnquanto
+   Escreval(" TERMINEI DE SOMAR OS NÚMEROS ÍMPARES ")
 FimAlgoritmo
+
 
 
 
@@ -19,9 +27,17 @@ Exercício 02
 //Desenvolver um algoritmo que efetue a soma de todos os números pares 
 //que se encontram no conjunto dos números de 1 até 500.
 Var
-   Numero, Contador: Inteiro
+   Contador, N, Soma: Inteiro
 Inicio
-
+   Contador<- 1
+   Soma<- 0
+   Enquanto (Contador <= 500) Faca
+   Escreva(Contador, "° VALOR = ")
+   Leia(N)
+   Soma <- Soma + N
+   Contador<- Contador + 2
+   FimEnquanto
+   Escreval(" A SOMA DE TODOS OS VALORES FOI ",SOMA)
 FimAlgoritmo
 
 
@@ -37,10 +53,19 @@ Exercício 03
 //Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
 //três e que se encontram no conjunto dos números de 1 até 500.
 Var
-   Numero, Contador: Inteiri
+   Contador, N, Soma: Inteiro
 Inicio
-
+   Contador<- 1
+   Soma<- 0
+   Enquanto (Contador <= 500) Faca
+   Escreva(Contador, "° VALOR = ")
+   Leia(N)
+   Soma <- Soma + N
+   Contador<- Contador + 3
+   FimEnquanto
+   Escreval(" A SOMA DE TODOS OS VALORES FOI ",SOMA)
 FimAlgoritmo
+
 
 
 
@@ -58,8 +83,7 @@ Var
 Inicio
    Escreval(" Digite um número pra ver sua tabuada: ")
    Leia(N)
-   Contador<-1
-   Enquanto (Contador<10) Faca
+   Contador<-Contador<10) Faca
    Escreval(N, " X ", Contador, " =", N*Contador)
    
    FimEnquanto
@@ -79,8 +103,10 @@ Exercício 05
 //A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
 Var
   A: Inteiro
+  Resulto: 
 Inicio
-
+  Escreval("DIGITE UM VALOR INICIAL")
+  Leia(A)
 FimAlgoritmo
 
 
