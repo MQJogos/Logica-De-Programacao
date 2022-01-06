@@ -160,15 +160,19 @@ FimAlgoritmo
 
 
 
-Exercício 05
+Algoritmo"Exercício 05"
 //Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de
 //A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
 Var
-  A: Inteiro
-  Resulto: 
+  A, C, Fat: Inteiro
 Inicio
+  Fat<-1
   Escreval("DIGITE UM VALOR INICIAL")
   Leia(A)
+  Para C De A Ate 1 Passo -1 Faca
+     Fat<-Fat*C
+  FimPara
+  Escreva("FATORIAL DE", A, " = ", Fat)
 FimAlgoritmo
 
 
