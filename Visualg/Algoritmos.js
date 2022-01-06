@@ -1,3 +1,59 @@
+VÍDEO AULA 10
+Exercício 01
+//Escreva um algoritmo que calcule a média dos números digitados pelo usuário, 
+//se eles principais pares.
+// Termine a leitura se o usuário digitar zero (0) 
+Var
+
+Inicio
+
+FimAlgoritmo
+
+Exercício 02 
+//Escreva um algoritmo que leia valores inteiros e encontre o maior e o menor deles. 
+//Termine a leitura se o usuário digitar zero (0); 
+Var
+
+Inicio
+
+FimAlgoritmo
+
+Exercício 03
+//Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
+//Não final, mostre o total de salários pagos aos homens e o total pago às
+//mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
+//sempre que ler os dados de um funcionário. 
+Var
+
+Inicio
+
+FimAlgoritmo
+
+
+Exercício 04 
+//Faça um algoritmo que leia a idade de vários alunos de uma turma. 
+//O programa vai parar quando for digitada a age 999. 
+//No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
+Var
+
+Inicio
+
+FimAlgoritmo
+
+
+
+Exercício 05 
+//Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
+// O programa vai perguntar se o usuário quer ou não continuar. 
+// Sem final, mostre: 
+Var
+
+Inicio
+
+FimAlgoritmo
+
+
+
 VIDEO AULA 09
 
 Exercício 01
