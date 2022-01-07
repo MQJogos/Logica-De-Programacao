@@ -18,7 +18,7 @@ Inicio
 
 FimAlgoritmo
 
-Exercício 03
+Algoritmo "Exercício03"
 //Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
 //Não final, mostre o total de salários pagos aos homens e o total pago às
 //mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
@@ -26,7 +26,10 @@ Exercício 03
 Var
 
 Inicio
-
+     Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO [M/F]")
+     Leia(Genero)
+     Escreval(" DIGIITE  O GENERO? [M/F]")
+     Leia(Genero)
 FimAlgoritmo
 
 
@@ -57,21 +60,20 @@ FimAlgoritmo
 VIDEO AULA 09
 https://www.youtube.com/watch?v=uOKeuz3uq6A
 Exercício 01
-//Escrever um algoritmo que gera e escreve os números ímpares entre 1 e 200.
+Algoritmo "Exercício01"
+//Escrever um algoritmo que gera e escreve
+// os números ímpares entre 1 e 200.
 Var
-   Contador, N: Inteiro
+   Contador: Inteiro
 Inicio
-   Contador<- 1
-   Soma<- 0
-   Enquanto (Contador <= 200) Faca
-   Escreva(Contador, "° VALOR = ")
-   Leia(N)
-   Contador<- Contador + 3
-   FimEnquanto
-   Escreval(" TERMINEI DE SOMAR OS NÚMEROS ÍMPARES ")
+     Escreval(" ESTE SÃO OS NÚMEROS ÍMPARES ENTRE 1 E 200 ")
+     Contador <- 1
+     Enquanto (Contador <= 200) Faca
+       Escreval(Contador)
+       Contador<- Contador + 2
+     FimEnquanto
+
 FimAlgoritmo
-
-
 
 
 
@@ -80,22 +82,23 @@ FimAlgoritmo
 
 
 Exercício 02
-//Desenvolver um algoritmo que efetue a soma de todos os números pares 
+Algoritmo "Exercício02"
+//Desenvolver um algoritmo que efetue a soma de todos os números pares
 //que se encontram no conjunto dos números de 1 até 500.
 Var
-   Contador, N, Soma: Inteiro
+   Contador, Soma: Inteiro
 Inicio
-   Contador<- 1
-   Soma<- 0
-   Enquanto (Contador <= 500) Faca
-   Escreva(Contador, "° VALOR = ")
-   Leia(N)
-   Soma <- Soma + Contador
-   Contador<- Contador + 2
-   FimEnquanto
-   Escreval(" A SOMA DE TODOS OS VALORES FOI ",SOMA)
+     Contador <- 0
+     Soma<-0
+     Enquanto (Contador <= 500) Faca
+       Escreval(Contador)
+       Contador<- Contador + 2
+       Soma<-Soma+Contador
+     FimEnquanto
+     Escreval("..............................................................")
+     Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS PARES DE 1 ATÉ 500 ")
+     Escreval("..............................................................")
 FimAlgoritmo
-
 
 
 
@@ -109,20 +112,20 @@ Exercício 03
 //Desenvolver um algoritmo que efetue a soma de todos os números ímpares que são múltiplos de
 //três e que se encontram no conjunto dos números de 1 até 500.
 Var
-   Contador, N, Soma: Inteiro
+Var
+   Contador, Soma: Inteiro
 Inicio
-   Contador<- 1
-   Soma<- 0
-   Enquanto (Contador <= 500) Faca
-   Escreva(Contador, "° VALOR = ")
-   Leia(N)
-   Soma <- Soma + N
-   Contador<- Contador + 3
-   FimEnquanto
-   Escreval(" A SOMA DE TODOS OS VALORES FOI ",SOMA)
+     Contador <- 1
+     Soma<-0
+     Enquanto (Contador <= 500) Faca
+       Escreval(Contador)
+       Contador<- Contador + 2
+       Soma<-Soma+Contador
+     FimEnquanto
+     Escreval("..............................................................")
+     Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS ÍMPARES DE 1 ATÉ 500 ")
+     Escreval("..............................................................")
 FimAlgoritmo
-
-
 
 
 
@@ -139,7 +142,7 @@ Var
    Continuar: Caractere
 Inicio
    Continuar<- "S"
-   Enquanto (Continuar = "S") Faca 
+   Enquanto (Continuar = "S") Faca
    Escreval(" ENTRE COM UM NÚMERO PARA EXBIR SUA TABUADA: ")
    Leia(N)
    Para Contador De 1 Ate 10 Passo 1 Faca
@@ -149,6 +152,7 @@ Inicio
      Leia(Continuar)
      LimpaTela
    FimEnquanto
+   Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
 
 
@@ -159,21 +163,40 @@ FimAlgoritmo
 
 
 
-
-Algoritmo"Exercício 05"
+Algoritmo "Exercício05"
 //Escreva um algoritmo que leia um valor inicial A e imprima a seqüência de valores do cálculo de
 //A! e o seu resultado. Ex: 5! = 5 X 4 X 3 X 2 X 1 = 120
 Var
   A, C, Fat: Inteiro
+  Opcao, Programa: Caractere
 Inicio
+  Programa<- "S"
+  Enquanto Programa <> "N" Faca
   Fat<-1
-  Escreval("DIGITE UM VALOR INICIAL")
+  Escreval(" DIGITE UM VALOR INICIAL")
   Leia(A)
   Para C De A Ate 1 Passo -1 Faca
      Fat<-Fat*C
   FimPara
-  Escreva("FATORIAL DE", A, " = ", Fat)
+  Escreval(" FATORIAL DE", A, " = ", Fat)
+  Escreval(" DESEJA CONTINUAR? DIGITE S OU N ")
+          Leia(Opcao)
+          Escolha Opcao
+          Caso "S"
+          Programa <- "S"
+          Caso "N"
+          Programa <- "N"
+          Outrocaso
+          Programa <- "S"
+          Limpatela
+          Escreval("ATENÇÃO! AS OPÇÕES DISPONÍVEIS SÃO APENAS S OU N")
+          Leia(Opcao)
+          FimEscolha
+     FimEnquanto
+     Escreval("¨........PAUSA PARA O CAFÉ!!!........")
 FimAlgoritmo
+
+
 
 
 
