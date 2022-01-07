@@ -4,7 +4,7 @@ Exercício 01
 //se eles principais pares.
 // Termine a leitura se o usuário digitar zero (0) 
 Var
-
+Numero,Media
 Inicio
 
 FimAlgoritmo
