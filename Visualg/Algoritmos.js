@@ -26,12 +26,16 @@ Algoritmo "Exercício03"
 //mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
 //sempre que ler os dados de um funcionário. 
 Var
-
+Resposta, Genero: Caractere
+Salario: Real
 Inicio
      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO [M/F]")
-     Leia(Genero)
+     Leia(Salario)
      Escreval(" DIGIITE  O GENERO? [M/F]")
      Leia(Genero)
+     Escreva("QUER CONTINUAR? [S/N])
+     Leia(Resposta)
+     Ate (Resposta = "N")
 FimAlgoritmo
 
 
@@ -40,10 +44,13 @@ Exercício 04
 //O programa vai parar quando for digitada a age 999. 
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
-
+  Resposta<- Resposta
 Inicio
+     Enquanto (Resposta = "S") Faca
+     FimEnquanto
+     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
+FimAlgoritmo   
 
-FimAlgoritmo
 
 
 
@@ -52,10 +59,13 @@ Exercício 05 
 // O programa vai perguntar se o usuário quer ou não continuar. 
 // Sem final, mostre: 
 Var
-
+     Resposta<- Resposta
 Inicio
-
+     Enquanto (Resposta = "S")
+     FimEnquanto
+     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
 FimAlgoritmo
+
 
 
 
