@@ -13,9 +13,11 @@ Exercício 02 
 //Escreva um algoritmo que leia valores inteiros e encontre o maior e o menor deles. 
 //Termine a leitura se o usuário digitar zero (0); 
 Var
-
+  Resposta<- Resposta
 Inicio
-
+     Enquanto (Resposta = "S")
+     FimEnquanto
+     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
 FimAlgoritmo
 
 Algoritmo "Exercício03"
