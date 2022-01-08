@@ -180,18 +180,18 @@ Exercício 04
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
   Idade, 
-  Resposta, TotAlunos, ContAlunos: Integer
+  Resposta, TotAlunos, Idade: Integer
 Inicio
      Resposta->0
-     ContAluno <
+     TORA
      Enquanto (Resposta = 0) Faca
      FimEnquanto
      Escreval(" DIGITE A IDADE DO(A) ALUNO(A) ")
      Leia(Idade)
-     Se (Idade<0) Entao
-         ContAlunos<- ContAlunos + 1
-     FimSe
-     Escreval(" Total De Alunos Digitados = ", ContAlunos)
+     TotalAlunos<-TotalAlunos + Idade
+     MediaAlunos<-
+     
+     Escreval(" Total De Alunos Digitados = ", TotalAlunos)
 
 FimAlgoritmo   
 
