@@ -78,14 +78,34 @@ O maior peso entre os homens
 
 VÍDEO AULA 10
 Exercício 01
-//Escreva um algoritmo que calcule a média dos números digitados pelo usuário, 
+Algoritmo  "Exercício01"
+//Escreva um algoritmo que calcule a média dos números digitados pelo usuário,
 //se eles principais pares.
 // Termine a leitura se o usuário digitar zero (0) 
 Var
-
+    Resposta: Inteiro
+    Numeros, TotalPar, Media: Real
 Inicio
-
+      Resposta<-1
+      Enquanto Resposta <> 0 Faca
+      Escreval(" ENTRE COM UM NÚMERO: ")
+      Leia(Numeros)
+      Escreval(" VOCÊ QUER CONTINUAR?")
+      Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
+      Leia(Resposta)
+      Media<- (Numeros/TotalPar)
+      Se (Numeros %2 = 0) Entao
+          TotalPar <- TotalPar + 1
+          FimSe
+          
+      FimEnquanto
+      Escreval("..................................................")
+      Escreval("                  RESULTADO FINAL                 ")
+      Escreval("..................................................")
+      Escreval("O TOTAL DE NÚMEROS PARES DIGITADOS É  = ", TotalPar)
+      Escreval("A MÉDIA DOS NÚMEROS DIGITADO É = ",Media)
 FimAlgoritmo
+
 
 Algoritmo "Exercício02" 
 //Escreva um algoritmo que leia valores inteiros e encontre o maior e o menor deles. 
