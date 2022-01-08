@@ -146,15 +146,15 @@ Var
     Genero: Caractere
     Resposta: Inteiro
 Inicio
+     Salario<-0
      Resposta<-1
       Enquanto Resposta <> 0 Faca
      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
      Leia(Salario)
      Escreval(" DIGIITE  O GENERO? [F/H]")
      Leia(Genero)
-     Salario<-0
-     Se Genero = "F" Entao
-          TotalSalarioMulheres <- Salario + 1
+     Enquanto (Genero = "F") Faca
+          Salario <- Salario + 1
           FimSe
      Se Genero = "H" Entao
           TotalSalariosHomens <- Salario + 1
