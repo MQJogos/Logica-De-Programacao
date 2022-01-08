@@ -1,8 +1,7 @@
 VÍDEO AULA 11 "PRÁTICA - Estruturas de repetição 3"
 Atividade 01
-Desenvolva um programa usando a estrutura “para” que mostre na tela a
-seguinte contagem: 
-     0 5 10 15 20 25 30 35 40 Acabou!
+//Desenvolva um programa usando a estrutura “para” que mostre na tela a
+//seguinte contagem:   0 5 10 15 20 25 30 35 40 Acabou!
 
 
 
@@ -17,9 +16,8 @@ seguinte contagem:
 
 
 Atividade 02
-Desenvolva um programa usando a estrutura “para” que mostre na tela a
-seguinte contagem:
-     100 90 80 70 60 50 40 30 20 10 0 Acabou!
+//Desenvolva um programa usando a estrutura “para” que mostre na tela a
+//seguinte contagem:100 90 80 70 60 50 40 30 20 10 0 Acabou!
 
 
 
@@ -32,8 +30,8 @@ seguinte contagem:
 
 
 Atividade 03
-Escreva um programa que leia um número qualquer e mostre a tabuada desse
-número, usando a estrutura “para”.
+//Escreva um programa que leia um número qualquer e mostre a tabuada desse
+//número, usando a estrutura “para”.
 Ex: Digite um valor: 5
 5 x 1 = 5
 5 x 2 = 10
@@ -87,13 +85,13 @@ Var
     Numeros, TotalPar, Media: Real
 Inicio
       Resposta<-1
+      Media<- (Numeros/TotalPar)
       Enquanto Resposta <> 0 Faca
       Escreval(" ENTRE COM UM NÚMERO: ")
       Leia(Numeros)
       Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
       Leia(Resposta)
-      Media<- (Numeros/TotalPar)
       Se (Numeros %2 = 0) Entao
           TotalPar <- TotalPar + 1
           FimSe
