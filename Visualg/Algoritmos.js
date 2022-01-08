@@ -1,42 +1,85 @@
+VÍDEO AULA 11
+
+
+
+
+
 VÍDEO AULA 10
 Exercício 01
 //Escreva um algoritmo que calcule a média dos números digitados pelo usuário, 
 //se eles principais pares.
 // Termine a leitura se o usuário digitar zero (0) 
 Var
-Numero,Media
+
 Inicio
 
 FimAlgoritmo
 
-Exercício 02 
+Algoritmo "Exercício02" 
 //Escreva um algoritmo que leia valores inteiros e encontre o maior e o menor deles. 
 //Termine a leitura se o usuário digitar zero (0); 
 Var
-  Resposta<- Resposta
+ Numero, Maior, Menor: Real
+ Resposta: Inteiro
+
 Inicio
-     Enquanto (Resposta = "S")
-     FimEnquanto
-     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
+      Resposta<-1
+      Enquanto Resposta <> 0 Faca
+      Escreva(" ENTRE COM UM NÚMERO: ")
+      Leia(Numero)
+      Escreval(" VOCÊ QUER CONTINUAR?")
+      Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
+      Leia(Resposta)
+      Se (Numero > Maior) Entao
+          Maior <- Numero
+          FimSe
+      Se (Numero < Menor) Entao
+          Menor <- Numero
+          FimSe
+      FimEnquanto
+      Escreval("..................................................")
+      Escreval("                  RESULTADO FINAL                 ")
+      Escreval("..................................................")
+      Escreval("............MAIOR NÚMERO =   ", Maior)
+      Escreval("............MENOR NÚMERO =   ", Menor)
+
 FimAlgoritmo
+
 
 Algoritmo "Exercício03"
 //Desenvolva um aplicativo que leia o salário e o sexo de vários funcionários.
-//Não final, mostre o total de salários pagos aos homens e o total pago às
+//No final, mostre o total de salários pagos aos homens e o total pago às
 //mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
 //sempre que ler os dados de um funcionário. 
 Var
-Resposta, Genero: Caractere
-Salario: Real
+    Salario, TotalSalariosHomens, TotalSalarioMulheres: Real
+    Genero: Caractere
+    Resposta: Inteiro
 Inicio
-     Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO [M/F]")
+     Resposta<-1
+      Enquanto Resposta <> 0 Faca
+     Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
      Leia(Salario)
-     Escreval(" DIGIITE  O GENERO? [M/F]")
+     Escreval(" DIGIITE  O GENERO? [F/H]")
      Leia(Genero)
-     Escreva("QUER CONTINUAR? [S/N])
-     Leia(Resposta)
-     Ate (Resposta = "N")
+     Salario<-0
+     Se Genero = "F" Entao
+          TotalSalarioMulheres <- Salario + 1
+          FimSe
+     Se Genero = "H" Entao
+          TotalSalariosHomens <- Salario + 1
+          FimSe
+     Escreval(" VOCÊ QUER CONTINUAR?")
+      Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
+      Leia(Resposta)
+      FimEnquanto
+      Escreval("..................................................")
+      Escreval("                  RESULTADO FINAL                 ")
+      Escreval("..................................................")
+      Escreval("..........TOTAL DE SALARIOS DAS MULHERES R$ ", TotalSalarioMulheres)
+      Escreval("..........TOTAL DE SALARIOS DOS HOMENS R$ ", TotalSalariosHomens)
 FimAlgoritmo
+
 
 
 Exercício 04 
