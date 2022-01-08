@@ -156,10 +156,10 @@ Inicio
      Escreval(" DIGIITE  O GENERO? [H/M]")
      Leia(Genero)
      Se (Genero = "M") Entao
-          TotalSalMulheres<- Salario + Salario + 1
+          TotalSalMulheres<- TotalSalMulheres + Salario
           FimSe
      Se Genero = "H" Entao
-          TotalSalHomens<- Salario + Salario + 1
+          TotalSalHomens<- TotalSalHomens + Salario
           FimSe
      Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
@@ -174,27 +174,28 @@ FimAlgoritmo
 
 
 
+
 Exercício 04 
 //Faça um algoritmo que leia a idade de vários alunos de uma turma. 
 //O programa vai parar quando for digitada a age 999. 
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
-  Idade, 
-  Resposta, TotAlunos, Idade: Integer
+  Resposta<- Resposta
 Inicio
-     Resposta->0
-     TORA
-     Enquanto (Resposta = 0) Faca
-     FimEnquanto
-     Escreval(" DIGITE A IDADE DO(A) ALUNO(A) ")
-     Leia(Idade)
-     TotalAlunos<-TotalAlunos + Idade
-     MediaAlunos<-
-     
-     Escreval(" Total De Alunos Digitados = ", TotalAlunos)
-
-FimAlgoritmo   
-
+     Resposta<-0
+      Media<- (Idades/TotalPar)
+      Enquanto Resposta <> 999 Faca
+      Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
+      Leia(Idade)
+      Escreval(" VOCÊ QUER CONTINUAR?")
+      Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
+      Leia(Resposta)
+      TotalAluno<-TotalAluno + Idade
+      FimEnquanto
+      Escreval("..................................................")
+      Escreval("                  RESULTADO FINAL                 ")
+      Escreval("..................................................")
+      Escreval("............MAIOR NÚMERO =   ", Maior)
 
 
 
