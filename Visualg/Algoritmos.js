@@ -179,11 +179,20 @@ Exercício 04
 //O programa vai parar quando for digitada a age 999. 
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
-  Resposta<- Resposta
+  Idade, 
+  Resposta, TotAlunos, ContAlunos: Integer
 Inicio
-     Enquanto (Resposta = "S") Faca
+     Resposta->0
+     ContAluno <
+     Enquanto (Resposta = 0) Faca
      FimEnquanto
-     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
+     Escreval(" DIGITE A IDADE DO(A) ALUNO(A) ")
+     Leia(Idade)
+     Se (Idade<0) Entao
+         ContAlunos<- ContAlunos + 1
+     FimSe
+     Escreval(" Total De Alunos Digitados = ", ContAlunos)
+
 FimAlgoritmo   
 
 
