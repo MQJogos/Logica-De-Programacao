@@ -142,7 +142,7 @@ Algoritmo "Exercício03"
 //mulheres. O programa vai perguntar ao usuário se ele quer continuar ou não
 //sempre que ler os dados de um funcionário. 
 Var
-    Salario, TotalSalariosHomens, TotalSalarioMulheres: Real
+    Salario, TotalSalHomens, TotalSalMulheres: Real
     Genero: Caractere
     Resposta: Inteiro
 Inicio
@@ -151,13 +151,13 @@ Inicio
       Enquanto Resposta <> 0 Faca
      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
      Leia(Salario)
-     Escreval(" DIGIITE  O GENERO? [F/H]")
+     Escreval(" DIGIITE  O GENERO? [H/M]")
      Leia(Genero)
-     Enquanto (Genero = "F") Faca
-          Salario <- Salario + 1
+     Se (Genero = "M") Entao
+          TotalSalMulheres<- Salario + Salario + 1
           FimSe
      Se Genero = "H" Entao
-          TotalSalariosHomens <- Salario + 1
+          TotalSalHomens<- Salario + Salario + 1
           FimSe
      Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
@@ -166,8 +166,8 @@ Inicio
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
-      Escreval("..........TOTAL DE SALARIOS DAS MULHERES R$ ", TotalSalarioMulheres)
-      Escreval("..........TOTAL DE SALARIOS DOS HOMENS R$ ", TotalSalariosHomens)
+      Escreval("..........TOTAL DE SALARIOS DAS MULHERES R$ ", TotalSalMulheres)
+      Escreval("..........TOTAL DE SALARIOS DOS HOMENS R$ ", TotalSalHomens)
 FimAlgoritmo
 
 
