@@ -147,6 +147,8 @@ Var
     Resposta: Inteiro
 Inicio
      Salario<-0
+     TotalSalHomens<-0
+     TotalSalMulheres<-0
      Resposta<-1
       Enquanto Resposta <> 0 Faca
      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
