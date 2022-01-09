@@ -69,7 +69,7 @@ Atividade_Refaça 05
 //A média de peso entre as mulheres O maior peso entre os homens
 Var
   Peso: Real
-  Genero: Caractere
+  Resposta: Caractere
 Inicio
 
 FimAlgoritmo
