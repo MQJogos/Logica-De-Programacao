@@ -4,12 +4,11 @@ Atividade 01
 //seguinte contagem:   0 5 10 15 20 25 30 35 40 Acabou!
 
 Var
-  Peso: Real
-  Resposta: Inteiro
+ Contador: Inteiro
 Inicio
-
-  Para
-  
+   Para Contador <-0 ate 40 Passo 5 Faca
+      Escreval(Contador)
+      Escreval("ACABOU !")
   FimPara
   
 FimAlgoritmo
@@ -29,12 +28,11 @@ Atividade 02
 //seguinte contagem:100 90 80 70 60 50 40 30 20 10 0 Acabou!
 
 Var
-  Peso: Real
-  Resposta: Inteiro
+ Contador: Inteiro
 Inicio
-
-  Para
-  
+   Para Contador <-100 ate 0 Passo -10 Faca
+      Escreval(Contador)
+      Escreval("ACABOU !")
   FimPara
   
 FimAlgoritmo
@@ -80,13 +78,13 @@ Faça um programa usando a estrutura “para” que leia um número inteiro
 positivo e mostre na tela uma contagem de 0 até o valor digitado: 
 Ex: Digite um valor: 9
 Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
-Var
-  Peso: Real
-  Resposta: Inteiro
+ 
+ Var
+ Contador: Inteiro
 Inicio
-
-  Para
-  
+   Para Contador <-0 ate 9 Passo 1 Faca
+      Escreval(Contador)
+      Escreval("FIM !")
   FimPara
   
 FimAlgoritmo
