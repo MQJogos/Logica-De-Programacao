@@ -3,7 +3,16 @@ Atividade 01
 //Desenvolva um programa usando a estrutura “para” que mostre na tela a
 //seguinte contagem:   0 5 10 15 20 25 30 35 40 Acabou!
 
+Var
+  Peso: Real
+  Resposta: Inteiro
+Inicio
 
+  Para
+  
+  FimPara
+  
+FimAlgoritmo
 
 
 
@@ -19,7 +28,16 @@ Atividade 02
 //Desenvolva um programa usando a estrutura “para” que mostre na tela a
 //seguinte contagem:100 90 80 70 60 50 40 30 20 10 0 Acabou!
 
+Var
+  Peso: Real
+  Resposta: Inteiro
+Inicio
 
+  Para
+  
+  FimPara
+  
+FimAlgoritmo
 
 
 
@@ -37,6 +55,16 @@ Ex: Digite um valor: 5
 5 x 2 = 10
 5 x 3 = 15 ...
 
+Var
+  Peso: Real
+  Resposta: Inteiro
+Inicio
+
+  Para
+  
+  FimPara
+  
+FimAlgoritmo
 
 
 
@@ -52,7 +80,16 @@ Faça um programa usando a estrutura “para” que leia um número inteiro
 positivo e mostre na tela uma contagem de 0 até o valor digitado: 
 Ex: Digite um valor: 9
 Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
+Var
+  Peso: Real
+  Resposta: Inteiro
+Inicio
 
+  Para
+  
+  FimPara
+  
+FimAlgoritmo
 
 
 
