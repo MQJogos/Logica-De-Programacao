@@ -69,9 +69,12 @@ Atividade_Refaça 05
 //A média de peso entre as mulheres O maior peso entre os homens
 Var
   Peso: Real
-  Resposta: Caractere
+  Resposta: Inteiro
 Inicio
 
+  Repita
+  
+  Ate(Resposta = 0)
 FimAlgoritmo
 
 
@@ -83,11 +86,10 @@ Algoritmo  "Exercício01"
 //se eles principais pares.
 // Termine a leitura se o usuário digitar zero (0) 
 Var
-    Resposta: Caractere
+    Resposta: Inteiro
     Numeros, TotalPar, Media: Real
 Inicio
-      Resposta<-1
-      Media<- (Numeros/TotalPar)
+      
       Repita
       
       Escreval(" ENTRE COM UM NÚMERO INTEIRO: ")
@@ -120,6 +122,7 @@ Var
 Inicio
       
       Repita
+      
       Escreva(" ENTRE COM UM NÚMERO: ")
       Leia(Numero)
       Escreval(" VOCÊ QUER CONTINUAR?")
@@ -131,7 +134,9 @@ Inicio
       Se (Numero < Menor) Entao
           Menor <- Numero
           FimSe
-       Ate(Numeros = 0)
+          
+       Ate(Resposta = 0)
+
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -169,7 +174,9 @@ Inicio
      Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
       Leia(Resposta)
-       Ate(Numero = 0)
+
+       Ate(Resposta = 0)
+
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -186,6 +193,7 @@ Exercício 04
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
   Numero : Inteiro
+  Resposta: 0
 Inicio
       Repita
              Resposta<-0
@@ -197,7 +205,7 @@ Inicio
              Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
              Leia(Resposta)
              TotalAluno<-TotalAluno + Idade
-      Ate
+      Ate(Resposta = 0)
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -212,7 +220,7 @@ O nome da mulher mais jovem A média de idade do grupo
 Quantos homens tem mais de 30 anos Quantas mulheres tem menos de 18 anos
 Var
  Idades, TotalAlunos, MediaIdade: Real
- Numero: Inteiro
+ Resposta: Inteiro
 
 Inicio
 
@@ -224,7 +232,9 @@ Inicio
            Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
            Leia(Resposta)
            MediaIdade<- Idades/TotalAlunos
-       Ate(N = 999)
+      
+       Ate(Resposta = 999)
+
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
