@@ -83,7 +83,7 @@ Algoritmo  "Exercício01"
 //se eles principais pares.
 // Termine a leitura se o usuário digitar zero (0) 
 Var
-    Resposta: Inteiro
+    Resposta: Caractere
     Numeros, TotalPar, Media: Real
 Inicio
       Resposta<-1
@@ -98,7 +98,7 @@ Inicio
           TotalPar <- TotalPar + 1
           FimSe
           
-      Ate(Numeros = 0)
+      Ate(Resposta = "N")
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
