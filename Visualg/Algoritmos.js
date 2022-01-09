@@ -51,17 +51,16 @@ Algoritmo"Atividade03"
 Ex: Digite um valor: 
 
 Var
-     Contador, Numero, R: Inteiro
+     Numero, Multiplicador, Resultado: Inteiro
 Inicio
-     Repita
-          R<- Numero * Contador
+     Para Multiplicador De 1 Ate 10 Faca
+          Resultado<- Multiplicador * Numero
           Escreval(" DIGITE UM VALOR: ",Numero)
-          Escreval(Numero, " x ", Contador, " = ", R)
+          Leia(Numero)
+          Escreval(Numero, " x ", Multiplicador, " = ", Resultado)
           Contador <- Contador + 1
-    Ate (Contador > 10)
-  Para
-  
-  FimPara
+    FimPara
+    Escreval("
   
 FimAlgoritmo
 
