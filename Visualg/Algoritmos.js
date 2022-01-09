@@ -198,6 +198,38 @@ Inicio
       Escreval("............MAIOR NÚMERO =   ", Maior)
 
 
+Algoritmo  "Exercício05"
+//Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.O programa vai perguntar se o usuário quer ou não continuar. No final, mostre: O nome da pessoa mais velha
+O nome da mulher mais jovem A média de idade do grupo
+Quantos homens tem mais de 30 anos Quantas mulheres tem menos de 18 anos
+Var
+ Idades, TotalAlunos, MediaIdade: Real
+ Resposta: Inteiro
+
+Inicio
+      Resposta<-0
+
+      Enquanto Resposta <> 999 Faca
+      Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
+      Leia(Idades)
+      TotalAlunos<-TotalAlunos + 1
+      Escreval(" VOCÊ QUER CONTINUAR?")
+      Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
+      Leia(Resposta)
+      MediaIdade<- Idades/TotalAlunos
+      FimEnquanto
+      Escreval("..................................................")
+      Escreval("                  RESULTADO FINAL                 ")
+      Escreval("..................................................")
+      Escreval(" EXISTEM NA TURMA, UM TOTAL DE ", TotalAlunos, " ALUNOS(AS)")
+      Escreval(" A MÉDIA DE IDADE DO GRUPO É ", MediaIdade, " ANOS")
+      Escreval("...........................................................")
+
+
+FimAlgoritmo
+
+
+
 
 Exercício 05 
 //Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
