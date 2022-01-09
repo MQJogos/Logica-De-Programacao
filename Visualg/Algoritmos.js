@@ -54,8 +54,7 @@ Ex: Digite um valor: 5
 5 x 3 = 15 ...
 
 Var
-  Peso: Real
-  Resposta: Inteiro
+  Contador1, Contador2: Inteiro
 Inicio
 
   Para
