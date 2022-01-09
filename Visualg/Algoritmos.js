@@ -45,18 +45,20 @@ FimAlgoritmo
 
 
 
-Atividade 03
+Algoritmo"Atividade03"
 //Escreva um programa que leia um número qualquer e mostre a tabuada desse
 //número, usando a estrutura “para”.
-Ex: Digite um valor: 5
-5 x 1 = 5
-5 x 2 = 10
-5 x 3 = 15 ...
+Ex: Digite um valor: 
 
 Var
-  Contador1, Contador2: Inteiro
+     Contador, Numero, R: Inteiro
 Inicio
-
+     Repita
+          R<- Numero * Contador
+          Escreval(" DIGITE UM VALOR: ",Numero)
+          Escreval(Numero, " x ", Contador, " = ", R)
+          Contador <- Contador + 1
+    Ate (Contador > 10)
   Para
   
   FimPara
@@ -1742,7 +1744,7 @@ algoritmo "diasdasemana"
 // Autor :
 // Data : 21/12/2021
 // Seção de Declarações 
-var
+var 
 
 inicio
  Escreval("Domingo")
