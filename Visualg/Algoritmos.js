@@ -63,14 +63,16 @@ Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
 
 
 
-Atividade 05
-Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura
-“para”. No final, mostre na tela: 
-Quantas mulheres foram cadastradas 
-Quantos homens pesam mais de 100Kg 
-A média de peso entre as mulheres 
-O maior peso entre os homens
+Atividade_Refaça 05
+//Crie um programa que leia sexo e peso de 8 pessoas, usando a estrutura “para”. No final, mostre na tela: 
+//Quantas mulheres foram cadastradas Quantos homens pesam mais de 100Kg 
+//A média de peso entre as mulheres O maior peso entre os homens
+Var
+  Peso: Real
+  Genero: Caractere
+Inicio
 
+FimAlgoritmo
 
 
 
@@ -86,7 +88,7 @@ Var
 Inicio
       Resposta<-1
       Media<- (Numeros/TotalPar)
-      Enquanto Resposta <> 0 Faca
+      Repita
       Escreval(" ENTRE COM UM NÚMERO: ")
       Leia(Numeros)
       Escreval(" VOCÊ QUER CONTINUAR?")
@@ -96,7 +98,7 @@ Inicio
           TotalPar <- TotalPar + 1
           FimSe
           
-      FimEnquanto
+      Ate(Numeros = 0)
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -113,8 +115,8 @@ Var
  Resposta: Inteiro
 
 Inicio
-      Resposta<-1
-      Enquanto Resposta <> 0 Faca
+      
+      Repita
       Escreva(" ENTRE COM UM NÚMERO: ")
       Leia(Numero)
       Escreval(" VOCÊ QUER CONTINUAR?")
@@ -126,7 +128,7 @@ Inicio
       Se (Numero < Menor) Entao
           Menor <- Numero
           FimSe
-      FimEnquanto
+       Ate(Numeros = 0)
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -144,13 +146,13 @@ Algoritmo "Exercício03"
 Var
     Salario, TotalSalHomens, TotalSalMulheres: Real
     Genero: Caractere
-    Resposta: Inteiro
+    Numero: Inteiro
 Inicio
      Salario<-0
      TotalSalHomens<-0
      TotalSalMulheres<-0
-     Resposta<-1
-      Enquanto Resposta <> 0 Faca
+     
+     Repita
      Escreval(" DIGITE O SALÁRIO DO FUNCIONÁRIO R$")
      Leia(Salario)
      Escreval(" DIGIITE  O GENERO? [H/M]")
@@ -164,7 +166,7 @@ Inicio
      Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
       Leia(Resposta)
-      FimEnquanto
+       Ate(Numero = 0)
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -180,17 +182,18 @@ Exercício 04
 //O programa vai parar quando for digitada a age 999. 
 //No final, a maioria dos alunos existem na turma e qual é a média de idade do grupo. 
 Var
-  Resposta<- Resposta
+  Numero : Inteiro
 Inicio
-     Resposta<-0
-      Media<- (Idades/TotalPar)
-      Enquanto Resposta <> 999 Faca
-      Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
-      Leia(Idade)
-      Escreval(" VOCÊ QUER CONTINUAR?")
-      Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
-      Leia(Resposta)
-      TotalAluno<-TotalAluno + Idade
+      Repita
+             Resposta<-0
+             Media<- (Idades/TotalPar)
+             Enquanto Resposta <> 999 Faca
+             Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
+             Leia(Idade)
+             Escreval(" VOCÊ QUER CONTINUAR?")
+             Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
+             Leia(Resposta)
+             TotalAluno<-TotalAluno + Idade
       FimEnquanto
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
@@ -204,20 +207,19 @@ O nome da mulher mais jovem A média de idade do grupo
 Quantos homens tem mais de 30 anos Quantas mulheres tem menos de 18 anos
 Var
  Idades, TotalAlunos, MediaIdade: Real
- Resposta: Inteiro
+ Numero: Inteiro
 
 Inicio
-      Resposta<-0
 
-      Enquanto Resposta <> 999 Faca
-      Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
-      Leia(Idades)
-      TotalAlunos<-TotalAlunos + 1
-      Escreval(" VOCÊ QUER CONTINUAR?")
-      Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
-      Leia(Resposta)
-      MediaIdade<- Idades/TotalAlunos
-      FimEnquanto
+      Repita
+           Escreva(" ENTRE COM A IDADE DO(A) ALUNO(A): ")
+           Leia(Idades)
+           TotalAlunos<-TotalAlunos + 1
+           Escreval(" VOCÊ QUER CONTINUAR?")
+           Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
+           Leia(Resposta)
+           MediaIdade<- Idades/TotalAlunos
+       Ate(N = 999)
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -236,13 +238,13 @@ Exercício 05 
 // O programa vai perguntar se o usuário quer ou não continuar. 
 // Sem final, mostre: 
 Var
-     Resposta<- Resposta
+     Numero: Imteger
 Inicio
-     Enquanto (Resposta = "S")
-     FimEnquanto
+    Repita
+     
      Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
+     Ate(Numero = 0)
 FimAlgoritmo
-
 
 
 
