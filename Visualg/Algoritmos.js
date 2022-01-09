@@ -89,16 +89,19 @@ Inicio
       Resposta<-1
       Media<- (Numeros/TotalPar)
       Repita
-      Escreval(" ENTRE COM UM NÚMERO: ")
+      
+      Escreval(" ENTRE COM UM NÚMERO INTEIRO: ")
       Leia(Numeros)
       Escreval(" VOCÊ QUER CONTINUAR?")
       Escreval(" DIGITE 1 PARA SIM OU 0 PARA NÃO = ")
       Leia(Resposta)
+      TotalPar<- TotalPar + Numeros
       Se (Numeros %2 = 0) Entao
-          TotalPar <- TotalPar + 1
+          Media<- Numeros/TotalPar
           FimSe
           
-      Ate(Resposta = "N")
+      Ate(Resposta = 0)
+
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
@@ -194,12 +197,14 @@ Inicio
              Escreval(" DIGITE 0 PARA SIM OU 999 PARA FINALIZAR ")
              Leia(Resposta)
              TotalAluno<-TotalAluno + Idade
-      FimEnquanto
+      Ate
       Escreval("..................................................")
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
-      Escreval("............MAIOR NÚMERO =   ", Maior)
-
+      Escreval(" EXISTEM NA TURMA, UM TOTAL DE ", TotalAlunos, " ALUNOS(AS)")
+      Escreval(" A MÉDIA DE IDADE DO GRUPO É =", MediaIdade, " ANOS")
+      Escreval("...........................................................")
+FimAlgoritmo
 
 Algoritmo  "Exercício05"
 //Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.O programa vai perguntar se o usuário quer ou não continuar. No final, mostre: O nome da pessoa mais velha
