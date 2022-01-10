@@ -8,9 +8,9 @@ Var
 Inicio
    Para Contador <-0 ate 40 Passo 5 Faca
       Escreval(Contador)
-      Escreval("ACABOU !")
+      
   FimPara
-  
+      Escreval("ACABOU !")
 FimAlgoritmo
 
 
@@ -32,9 +32,9 @@ Var
 Inicio
    Para Contador <-100 ate 0 Passo -10 Faca
       Escreval(Contador)
-      Escreval("ACABOU !")
+      
   FimPara
-  
+      Escreval("ACABOU !")
 FimAlgoritmo
 
 
@@ -45,23 +45,22 @@ FimAlgoritmo
 
 
 
-Algoritmo"Atividade03"
+Algoritmo "Atividade03"
 //Escreva um programa que leia um número qualquer e mostre a tabuada desse
 //número, usando a estrutura “para”.
-Ex: Digite um valor: 
+//Ex: Digite um valor:
 
 Var
-     Numero, Multiplicador, Resultado: Inteiro
+     N, Contador: Inteiro
 Inicio
-     Para Multiplicador De 1 Ate 10 Faca
-          Resultado<- Multiplicador * Numero
-          Escreval(" DIGITE UM VALOR: ",Numero)
-          Leia(Numero)
-          Escreval(Numero, " x ", Multiplicador, " = ", Resultado)
-          Contador <- Contador + 1
-    FimPara
-    Escreval("
-  
+
+     Escreval(" DIGITE UM VALOR PARA EXBIR SUA TABUADA: ")
+     Leia(N)
+     Para Contador De 1 Ate 10 Passo 1 Faca
+     Escreval(Contador, " x", N, " = ",Contador * N)
+     FimPara
+     Escreval("........PAUSA PARA O CAFÉ!!!........")
+
 FimAlgoritmo
 
 
@@ -84,9 +83,9 @@ Contagem: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, FIM!
 Inicio
    Para Contador <-0 ate 9 Passo 1 Faca
       Escreval(Contador)
-      Escreval("FIM !")
+      
   FimPara
-  
+      Escreval("FIM !") 
 FimAlgoritmo
 
 
@@ -249,6 +248,7 @@ Inicio
       Escreval("...........................................................")
 FimAlgoritmo
 
+
 Algoritmo  "Exercício05"
 //Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.O programa vai perguntar se o usuário quer ou não continuar. No final, mostre: O nome da pessoa mais velha
 O nome da mulher mais jovem A média de idade do grupo
@@ -281,23 +281,114 @@ Inicio
 FimAlgoritmo
 
 
-
-
-Exercício 05 
+ 
+Exercício 05
 //Desenvolva um algoritmo que leia o nome, a idade e o sexo de várias pessoas.
-// O programa vai perguntar se o usuário quer ou não continuar. 
-// Sem final, mostre: 
+//O programa vai perguntar se o usuário quer ou não continuar. No final, mostre: 
+//O nome da pessoa mais velha
+//O nome da mulher mais jovem
+//A média de idade do grupo
+//Quantos homens tem mais de 30 anos
+//Quantas mulheres tem menos de 18 anos
 Var
-     Numero: Imteger
+    Genero, Nome: Caractere
+    Peso, TotalF, TotalM, IdadeM, IdadeF, MediaIdade: Real
+    Idade, Resposta: Inteiro
 Inicio
-    Repita
+     Idade<-1
+     Resposta<- "S"
      
-     Escreval(" O MAIOR VALOR DIGITADO FOI ",MAIOR)
-     Ate(Numero = 0)
+Repita
+     Escreval(" DIGITE O NOME: ")
+     Leia(Nome)
+     Escreval(" DIGITE A IDADE: ")
+     Leia(Idade)
+     
+     Escreval(" GENERO [F/M]: ")
+     Leia(Genero)
+     Escreval(" VOCÊ QUER CONTINUAR?")
+     Escreval(" DIGITE S/N ")
+     Leia(Resposta)
+     LimpaTela
+
+     Idade<-Idade + 1
+
+      //A média de idade do grupo
+     //Media<-IdadeTotal/Idade
+     //O nome da pessoa mais velha Se
+     // Se (Idade > MaiorIdade) Entao
+         // MaiorIdade <- Idade
+         // FimSe
+      //Se (Idade > MaiorIdade) Entao
+          //MaiorIdade <- Idade
+          //FimSe
+      //Se (Idade < MenorIdade) Entao
+          //MenorIdade <- Idade
+          //FimSe
+      //O nome da mulher mais jovem
+      Se (Genero = "F") E (Idade< 18) Entao
+      Escreval(" A MULHER COM MENOS DE 18 ANOS É A",Nome)
+      FimSe
+
+       Ate(Resposta = "N")
+
+    // Escreval("........RESULATO FINAL:........")
+
+     //Escreval(" O IDADE TOTAL DO GRUPO  ",IdadeTotal," SÃO ANOS")
+   //  Escreval(" POR TER ", MaiorIdade," ANOS,", Nome," TEM A MAIOR IDADE DO GRUPO ")
+   // Escreval(" POR TER ", IdadeMenorF," ANOS,", Nome," TEM A MENOR IDADE ENTRE AS MULHERES ")
+   //  Escreval(" TOTAL DE MULHERES CADASTRADAS: ", TotalF)
+   //  Escreval(" A MÉDIA DE PESO ENTRE AS MULHERES: ", MediaPesoF)
 FimAlgoritmo
 
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+var
+    SX, R, S,N, F, M:CARACTERE
+    IDADE, CABELO, TOTHC18, TOTML25: INTEIRO
+inicio
+// Seção de Comandos 
+   TOTHC18 <- 0
+   TOTML25 <- 0
+   REPITA
 
+         ESCREVAL("---------------------------------------")
+         ESCREVAL("          SELETOR DE PESSOAS           ")
+         ESCREVAL("---------------------------------------")
+         ESCREVA("QUAL O SEXO? [F/M] ")
+   LEIA (SX)
+        ESCREVA("QUAL A IDADE? ")
+   LEIA (IDADE)
+        ESCREVAL("QUAL A COR DO CABELO? ")
+        ESCREVAL("--------------------")
+        ESCREVAL("[1] PRETO")
+        ESCREVAL("[2] CASTANHO")
+        ESCREVAL("[3] LOIRO")
+        ESCREVAL("[4] RUIVO")
+   LEIA (CABELO)
+        ESCREVA("QUER CONTINUAR? [S/N]")
+   LEIA (R)
 
+   SE (SX = "M") E (IDADE>18) E (CABELO=2) ENTAO
+           TOTHC18 <- TOTHC18 + 1
+   FIMSE
+   SE  (SX = "F") E (IDADE>=25) E (IDADE<=30) E (CABELO=3) ENTAO
+           TOTML25 <- TOTML25 + 1
+
+   FIMSE
+   LIMPATELA
+   ATE (R = "N")
+
+   ESCREVAL("-------------------------------------")
+   ESCREVAL(" RESULTADO FINAL")
+   ESCREVAL("-------------------------------------")
+   ESCREVAL("TOTAL DE HOMENS COM MAIS DE 18 E CABELOS CASTANHOS ",TOTHC18)
+   ESCREVAL("TOTAL DE MULHERES ENTRE 25 E 30 ANOS E CABELOS LOIROS",TOTML25)
+   
+fimalgoritmo
+
+----------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
 VIDEO AULA 09
 https://www.youtube.com/watch?v=uOKeuz3uq6A
 Exercício 01
