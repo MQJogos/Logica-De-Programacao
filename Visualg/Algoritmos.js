@@ -1,3 +1,154 @@
+VÍDEO AULA 14
+
+VÍDEO AULA 13 - FUNÇÕES
+Nesta aula, é abordado um assunto muito interessante, a respeito de funções pronta do VisualG, não teremos exercícios para este tópico, mas esperamos que o entendimento do aluno esteja muito claro e sem dúvidas a respeito deste tópico.
+
+
+
+
+
+
+
+
+
+
+
+Atividade 01
+Crie um programa que tenha uma função Media(), que vai receber as 2 notas de
+um aluno e retornar a sua média para o programa principal. Escreva o valor retornado no programa principal.
+
+
+
+
+
+
+
+
+
+Atividade 02
+Faça um programa que possua uma função chamada Potencia(), que vai receber
+dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
+exponenciação. 
+Ex: Potencia(5,2) vai calcular 52 = 25
+
+
+
+
+
+
+
+
+
+
+
+Atividade 03 - DESAFIO
+Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+números como parâmetro e depois vai retornar a soma de todos os valores no
+intervalo entre os valores recebidos. (Aqui você vai precisar de um laço de repetição dentro da função)
+Ex: 
+SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21 
+SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
+
+VÍDEO AULA 12 
+Atividade 01Crie um programa que tenha um procedimento Gerador() que, quando chamado,
+mostre a mensagem "Olá, Mundo!" com algum componente visual (linhas) 
+Ex: Ao chamar Gerador() aparece: 
++-------=======------+
+       Olá, Mundo!
++-------=======------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atividade 02
+Crie um programa que melhore o procedimento Gerador() da questão anterior
+para que mostre uma mensagem personalizada, passada como parâmetro.
+Ex: Ao chamar Gerador("Aprendendo Portugol") aparece: 
++-------=======------+ 
+ Aprendendo Portugol 
++-------=======------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atividade 03
+
+Crie um programa que melhore o procedimento Gerador() da questão anterior
+para que mostre uma mensagem várias vezes. Esse programa vai receber a mensagem que será exibida na tela e o número de vezes que ela será repetida.
+ Ex: Ao chamar Gerador("Aprendendo Portugol", 4) aparece: 
++-------=======------+ 
+ Aprendendo Portugol 
+ Aprendendo Portugol 
+ Aprendendo Portugol 
+ Aprendendo Portugol 
++-------=======------+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atividade 04
+Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+valores para um procedimento Somador() que vai calcular e mostrar a soma entre
+eles.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Atividade 05
+Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
+valores para um procedimento Maior() que vai verificar qual deles é o maior e
+mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
+informando essa característica
+
+
+------------------------------------------------------------------------------------------------------------
+
 VÍDEO AULA 11 "PRÁTICA - Estruturas de repetição 3"
 Atividade 01
 //Desenvolva um programa usando a estrutura “para” que mostre na tela a
