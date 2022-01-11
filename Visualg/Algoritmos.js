@@ -253,31 +253,47 @@ Atividade_Refaça 05
 //Quantas mulheres foram cadastradas Quantos homens pesam mais de 100Kg 
 //A média de peso entre as mulheres O maior peso entre os homens
 Var
-  Contador, TotalF, TotalCem: Inteiro
-  MediaF, Peso, PesoF: Real
-  Genero: Caracter
+    Genero: Caracter
+    Peso, PesoM, PesoF, MediaPesoF, Maior,TotalF, TotalM, TotalCem: Real
+    Contador: Inteiro
 Inicio
-     TotalF<-0
-     
-     Para Contador <- 1 Ate 8 Faca
-      Escreval(" QUAL O GENERO [F/M] ")
-      Leia(Genero)
-      Escreval(" QUAL O PESO KG: ")
-      Leia(Peso)
+     Para Contador De 1 Ate 8 Faca
+     Escreval(" GÊNERO DO(A) USUÁRIO(A) [F/M]: ")
+     Leia(Genero)
+     Escreval(" PESO [KG]: ")
+     Leia(Peso)
+     LimpaTela
+     Se (Genero = "M") Entao
+           TotalM <- TotalM + 1
+           PesoM <- PesoM + Peso
 
-      Se (Genero = "F") Entao
-      TotalF<- TotalF + 1
-      PesoF<-  PesoF + 1
-      MediaF<- TotalF/PesoF
-      Fim
-      
-      Se (Genero = "M") E (Peso>100) Entao
+     FimSe
+     
+     //Quantos homens pesam mais de 100Kg
+     Se (Genero = "M") E (Peso>100) Entao
       TotalCem<- TotalCem + 1
-      Fim
+      FimSe
       
-  FimPara
-  
-  Ate(Resposta = 0)
+     //O maior peso entre os homens
+     Se (PesoM > Maior) Entao
+          Maior <- PesoM
+     FimSe
+          
+     //Quantas mulheres foram cadastradas
+     Se (Genero = "F") Entao
+           TotalF <- TotalF + 1
+           PesoF <- PesoF + Peso
+           
+     //A média de peso entre as mulheres
+           MediaPesoF<-(PesoF/TotalF)
+     FimSe
+
+     FimPara
+     Escreval("........RESULATO FINAL:........")
+     Escreval(" FORAM CADASTRADAS ", TotalF, " MULHERES")
+     Escreval(TotalCem," HOMENS PESAM MAIS DE 100 Kg")
+     Escreval(MediaPesoF," KG, É A MÉDIA DE PESO ENTRE AS MULHERES ")
+     Escreval(Maior," KG, É O MAIOR PESO ENTRE OS HOMENS ")
 FimAlgoritmo
 
 
