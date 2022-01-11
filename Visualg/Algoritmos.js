@@ -253,11 +253,29 @@ Atividade_Refaça 05
 //Quantas mulheres foram cadastradas Quantos homens pesam mais de 100Kg 
 //A média de peso entre as mulheres O maior peso entre os homens
 Var
-  Peso: Real
-  Resposta: Inteiro
+  Contador, TotalF, TotalCem: Inteiro
+  MediaF, Peso, PesoF: Real
+  Genero: Caracter
 Inicio
+     TotalF<-0
+     
+     Para Contador <- 1 Ate 8 Faca
+      Escreval(" QUAL O GENERO [F/M] ")
+      Leia(Genero)
+      Escreval(" QUAL O PESO KG: ")
+      Leia(Peso)
 
-  Repita
+      Se (Genero = "F") Entao
+      TotalF<- TotalF + 1
+      PesoF<-  PesoF + 1
+      MediaF<- TotalF/PesoF
+      Fim
+      
+      Se (Genero = "M") E (Peso>100) Entao
+      TotalCem<- TotalCem + 1
+      Fim
+      
+  FimPara
   
   Ate(Resposta = 0)
 FimAlgoritmo
