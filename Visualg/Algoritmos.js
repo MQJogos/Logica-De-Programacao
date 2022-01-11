@@ -56,7 +56,17 @@ Ex: Ao chamar Gerador() aparece:
 +-------=======------+
        Olá, Mundo!
 +-------=======------+
+Algoritmo "Atividade01"
+Var
 
+Procedimento Topo()
+Inicio
+    Escreval("+---------========-----------+")
+    Escreval("         Olá Mundo.           ")
+    Escreval("+---------========-----------+")
+
+    FimProcedimento
+FimAlgoritmo
 
 
 
@@ -78,6 +88,15 @@ Ex: Ao chamar Gerador("Aprendendo Portugol") aparece:
 +-------=======------+ 
  Aprendendo Portugol 
 +-------=======------+
+
+Procedimento Topo()
+Inicio
+    Escreval("+---------========-----------+")
+    Escreval("         Olá Mundo.           ")
+    Escreval("+---------========-----------+")
+
+    FimProcedimento
+FimAlgoritmo
 
 
 
@@ -107,6 +126,15 @@ para que mostre uma mensagem várias vezes. Esse programa vai receber a mensagem
  Aprendendo Portugol 
 +-------=======------+
 
+Procedimento Topo()
+Inicio
+    Escreval("+---------========-----------+")
+    Escreval("         Olá Mundo.           ")
+    Escreval("+---------========-----------+")
+
+    FimProcedimento
+FimAlgoritmo
+
 
 
 
@@ -125,6 +153,16 @@ Atividade 04
 Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Somador() que vai calcular e mostrar a soma entre
 eles.
+
+Procedimento Topo()
+Inicio
+    Escreval("+---------========-----------+")
+    Escreval("         Olá Mundo.           ")
+    Escreval("+---------========-----------+")
+
+    FimProcedimento
+FimAlgoritmo
+
 
 
 
@@ -145,6 +183,14 @@ Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Maior() que vai verificar qual deles é o maior e
 mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
 informando essa característica
+Procedimento Topo()
+Inicio
+    Escreval("+---------========-----------+")
+    Escreval("         Olá Mundo.           ")
+    Escreval("+---------========-----------+")
+
+    FimProcedimento
+FimAlgoritmo
 
 
 ------------------------------------------------------------------------------------------------------------
