@@ -266,8 +266,7 @@ Inicio
      Se (Genero = "M") Entao
            TotalM <- TotalM + 1
            PesoM <- PesoM + Peso
-    //O maior peso entre os homens
-           Maior<-Peso
+
      FimSe
      
      //Quantos homens pesam mais de 100Kg
@@ -275,8 +274,10 @@ Inicio
       TotalCem<- TotalCem + 1
       FimSe
       
-     
-    
+     //O maior peso entre os homens
+     Se (Genero = "M") E(Peso > Maior) Entao
+          Maior <- Peso
+     FimSe
           
      //Quantas mulheres foram cadastradas
      Se (Genero = "F") Entao
