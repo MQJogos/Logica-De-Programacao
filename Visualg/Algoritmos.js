@@ -461,8 +461,21 @@ Repita
      Escreval(" DIGITE S/N ")
      Leia(Resposta)
      LimpaTela
+//Quantos homens tem mais de 30 anos
+     Se (Genero = "M") E (Idade>30) Entao
+           Maior30 <- Idade
+     FimSe
+//Quantas mulheres tem menos de 18 anos
+     Se  (Genero = "F") E (Idade<18) Entao
+           Menor18 <- Idade
+     FimSe
 
+//
      Idade<-Idade + 1
+  //O nome da pessoa mais velha
+     Se (Idade > Maior) Entao
+         Maior<- Idade
+         FimSe
 
       //A média de idade do grupo
      //Media<-IdadeTotal/Idade
@@ -487,7 +500,7 @@ Repita
 
      //Escreval(" O IDADE TOTAL DO GRUPO  ",IdadeTotal," SÃO ANOS")
    //  Escreval(" POR TER ", MaiorIdade," ANOS,", Nome," TEM A MAIOR IDADE DO GRUPO ")
-   // Escreval(" POR TER ", IdadeMenorF," ANOS,", Nome," TEM A MENOR IDADE ENTRE AS MULHERES ")
+   //  Escreval(" POR TER ", IdadeMenorF," ANOS,", Nome," TEM A MENOR IDADE ENTRE AS MULHERES ")
    //  Escreval(" TOTAL DE MULHERES CADASTRADAS: ", TotalF)
    //  Escreval(" A MÉDIA DE PESO ENTRE AS MULHERES: ", MediaPesoF)
 FimAlgoritmo
