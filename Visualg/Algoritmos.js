@@ -395,7 +395,7 @@ Inicio
       Escreval("                  RESULTADO FINAL                 ")
       Escreval("..................................................")
       Escreval(" EXISTEM NA TURMA, UM TOTAL DE ", TotalAlunos, " ALUNOS(AS)")
-      Escreval(" A MÉDIA DE IDADE DO GRUPO É =", MediaIdade, " ANOS")
+      Escreval(" A MÉDIA DE IDADE DO GRUPO É ", MediaIdade, " ANOS")
       Escreval("...........................................................")
 FimAlgoritmo
 
