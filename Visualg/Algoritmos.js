@@ -50,6 +50,7 @@ SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
 SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 VÍDEO AULA 12 
+
 Atividade 01Crie um programa que tenha um procedimento Gerador() que, quando chamado,
 mostre a mensagem "Olá, Mundo!" com algum componente visual (linhas) 
 Ex: Ao chamar Gerador() aparece: 
@@ -59,14 +60,15 @@ Ex: Ao chamar Gerador() aparece:
        
 Algoritmo "Atividade01"
 Var
-   Mensagem: Caractere
    
-Procedimento Gerador( Var Mensagem : Caractere ) 
+   
+Procedimento Gerador( ) 
 Inicio
    
-    Escreval("         Olá Mundo.           ")
-    Leia(Mensagem)
+   
+    
     FimProcedimento
+    
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
     Escreval("+---------========-----------+")
@@ -87,20 +89,24 @@ FimAlgoritmo
 
 
 
-Atividade 02
+Algoritmo "Atividade 02"
 Crie um programa que melhore o procedimento Gerador() da questão anterior
 para que mostre uma mensagem personalizada, passada como parâmetro.
 Ex: Ao chamar Gerador("Aprendendo Portugol") aparece: 
 +-------=======------+ 
  Aprendendo Portugol 
 +-------=======------+
+
+Algoritmo "Atividade02"
+
+        
 Var
-   Msg : Caractere
+  
    
-Procedimento Gerador( Var Mensagem : Caractere ) 
+Procedimento Gerador( ) 
 Inicio
     Escreval("+---------========-----------+")
-    Escreval("         Apredendo Portugol.           ")
+    Escreval("         Apredendo Portugol.  ")
     Escreval("+---------========-----------+")
 
     FimProcedimento
@@ -134,15 +140,22 @@ para que mostre uma mensagem várias vezes. Esse programa vai receber a mensagem
  Aprendendo Portugol 
 +-------=======------+
 
-Var
-Msg: Caractere  
+Algoritmo "Atividade03"   
+        
+Var 
+
+Msg: Caractere
+
 Procedimento Gerador(Var Mensagem: Caractere)
 Inicio
     Escreval("+---------========-----------+")
-    Escreval("         Olá Mundo.           ")
+    Escreval("       Aprendendo Portuol     ")
     Escreval("+---------========-----------+")
 
-    FimProcedimento
+    FimProcedimento 
+    
+    Inicio
+      Mensagem<Msg * 4
 FimAlgoritmo
 
 
@@ -163,6 +176,8 @@ Atividade 04
 Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Somador() que vai calcular e mostrar a soma entre
 eles.
+
+Algoritmo "Atividade04"
 
 Var
   X, Y: Inteiro
@@ -200,7 +215,7 @@ valores para um procedimento Maior() que vai verificar qual deles é o maior e
 mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
 informando essa característica
 
-
+Algoritmo "Atividade05"
 
 Var
   X, Y: Inteiro
