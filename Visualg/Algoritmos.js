@@ -165,13 +165,18 @@ valores para um procedimento Somador() que vai calcular e mostrar a soma entre
 eles.
 
 Var
-  Soma:
+  X, Y: Inteiro
 Procedimento Somador(A, B: Inteiro)
 Inicio
-    Escreval("O VALOR A É", A)
-    Escreval("O VALOR B É", B)
     Escreval("A SOMA VALE", A+B)
 FimProcedimento
+Inicio
+    Escreval("DIGITE O VALOR X: ")
+    Leia(X)
+    Escreval("DIGITE O VALOR Y: ")
+    Leia(Y)
+    Escreva
+    Somador(X, Y)
 FimAlgoritmo
 
 
@@ -194,15 +199,31 @@ Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Maior() que vai verificar qual deles é o maior e
 mostrá-lo na tela. Caso os dois valores sejam iguais, mostrar uma mensagem
 informando essa característica
-Procedimento Topo()
+
+
+
+Var
+  X, Y: Inteiro
+Procedimento Somador(A, B: Inteiro)
 Inicio
-    Escreval("+---------========-----------+")
-    Escreval("         Olá Mundo.           ")
-    Escreval("+---------========-----------+")
-
-    FimProcedimento
+    Se (A = B) Entao
+        Escreval (" ERRO!!!OS DOIS VALORES SÃO IGUAIS")
+    FimSe 
+    Se (A > B) Entao
+        Escreval(" O VALOR ",A, " É  MAIOR QUE, B)
+    Senao
+        Escreval(" O VALOR ",B, " É  MAIOR QUE", A)
+    FimSe
+    
+FimProcedimento
+Inicio
+    Escreval("DIGITE O VALOR X: ")
+    Leia(X)
+    Escreval("DIGITE O VALOR Y: ")
+    Leia(Y)
+    Escreva
+    Somador(X, Y)
 FimAlgoritmo
-
 
 ------------------------------------------------------------------------------------------------------------
 
