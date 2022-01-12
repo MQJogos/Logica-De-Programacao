@@ -56,18 +56,22 @@ Ex: Ao chamar Gerador() aparece:
 +-------=======------+
        Olá, Mundo!
 +-------=======------+
+       
 Algoritmo "Atividade01"
 Var
    Mensagem: Caractere
+   
+Procedimento Gerador( Var Mensagem : Caractere ) 
 Inicio
-    Procedimento Gerador() 
-    Escreval("    Olá Mundo.   ")
+   
+    Escreval("         Olá Mundo.           ")
     Leia(Mensagem)
+    FimProcedimento
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
     Escreval("+---------========-----------+")
 
-    FimProcedimento
+    
 FimAlgoritmo
 
 
@@ -91,12 +95,12 @@ Ex: Ao chamar Gerador("Aprendendo Portugol") aparece:
  Aprendendo Portugol 
 +-------=======------+
 Var
-   Mensagem : Caractere
+   Msg : Caractere
    
-Procedimento Gerador()
+Procedimento Gerador( Var Mensagem : Caractere ) 
 Inicio
     Escreval("+---------========-----------+")
-    Escreval("         Olá Mundo.           ")
+    Escreval("         Apredendo Portugol.           ")
     Escreval("+---------========-----------+")
 
     FimProcedimento
@@ -131,8 +135,8 @@ para que mostre uma mensagem várias vezes. Esse programa vai receber a mensagem
 +-------=======------+
 
 Var
-  
-Procedimento Gerador(Mensagem: Caractere)
+Msg: Caractere  
+Procedimento Gerador(Var Mensagem: Caractere)
 Inicio
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
