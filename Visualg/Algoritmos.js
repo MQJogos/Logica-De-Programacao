@@ -68,7 +68,7 @@ Inicio
    
     
     FimProcedimento
-    
+ Inicio   
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
     Escreval("+---------========-----------+")
@@ -98,18 +98,17 @@ Ex: Ao chamar Gerador("Aprendendo Portugol") aparece:
 +-------=======------+
 
 Algoritmo "Atividade02"
-
         
 Var
-  
    
 Procedimento Gerador( ) 
+Inicio 
+
+    FimProcedimento
 Inicio
     Escreval("+---------========-----------+")
     Escreval("         Apredendo Portugol.  ")
     Escreval("+---------========-----------+")
-
-    FimProcedimento
 FimAlgoritmo
 
 
@@ -153,9 +152,8 @@ Inicio
     Escreval("+---------========-----------+")
 
     FimProcedimento 
-    
-    Inicio
-      Mensagem<Msg * 4
+Inicio
+      Mensagem<-Msg * 4
 FimAlgoritmo
 
 
@@ -221,15 +219,18 @@ Var
   X, Y: Inteiro
 Procedimento Somador(A, B: Inteiro)
 Inicio
-    Se (A = B) Entao
-        Escreval (" ERRO!!!OS DOIS VALORES SÃO IGUAIS")
-    FimSe 
-    Se (A > B) Entao
-        Escreval(" O VALOR ",A, " É  MAIOR QUE, B)
-    Senao
+     Se A = B Entao
+          Escreval(" ERRO!!!OS DOIS VALORES SÃO IGUAIS")
+     Senao
+       Se (A > B) E (B < A) E (A <> B) Entao
+        Escreval(" O VALOR ",A, " É  MAIOR QUE", B)
+      Senao
         Escreval(" O VALOR ",B, " É  MAIOR QUE", A)
     FimSe
+    FimSe
     
+
+
 FimProcedimento
 Inicio
     Escreval("DIGITE O VALOR X: ")
