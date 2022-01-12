@@ -58,9 +58,11 @@ Ex: Ao chamar Gerador() aparece:
 +-------=======------+
 Algoritmo "Atividade01"
 Var
-
-Procedimento Topo()
+   Mensagem: Caractere
 Inicio
+    Procedimento Gerador() 
+    Escreval("    Olá Mundo.   ")
+    Leia(Mensagem)
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
     Escreval("+---------========-----------+")
@@ -88,8 +90,10 @@ Ex: Ao chamar Gerador("Aprendendo Portugol") aparece:
 +-------=======------+ 
  Aprendendo Portugol 
 +-------=======------+
-
-Procedimento Topo()
+Var
+   Mensagem : Caractere
+   
+Procedimento Gerador()
 Inicio
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
@@ -126,7 +130,9 @@ para que mostre uma mensagem várias vezes. Esse programa vai receber a mensagem
  Aprendendo Portugol 
 +-------=======------+
 
-Procedimento Topo()
+Var
+  
+Procedimento Gerador(Mensagem: Caractere)
 Inicio
     Escreval("+---------========-----------+")
     Escreval("         Olá Mundo.           ")
@@ -154,13 +160,12 @@ Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Somador() que vai calcular e mostrar a soma entre
 eles.
 
-Procedimento Topo()
+Procedimento Somador(A, B: Inteiro)
 Inicio
-    Escreval("+---------========-----------+")
-    Escreval("         Olá Mundo.           ")
-    Escreval("+---------========-----------+")
-
-    FimProcedimento
+    Escreval("O VALOR A É", A)
+    Escreval("O VALOR B É", B)
+    Escreval("A SOMA VALE", A+B)
+FimProcedimento
 FimAlgoritmo
 
 
