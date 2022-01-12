@@ -164,6 +164,8 @@ Desenvolva um algoritmo que leia dois valores pelo teclado e passe esses
 valores para um procedimento Somador() que vai calcular e mostrar a soma entre
 eles.
 
+Var
+  Soma:
 Procedimento Somador(A, B: Inteiro)
 Inicio
     Escreval("O VALOR A É", A)
