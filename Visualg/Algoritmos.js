@@ -42,23 +42,26 @@ Atividade 02
 Faça um programa que possua uma função chamada Potencia(), que vai receber
 dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
 exponenciação. 
-Ex: Potencia(5,2) vai calcular 52 = 25
+Ex: Potencia(5,2) vai calcular 5^2 = 25
 
 Var
-   Nota1, Nota2, Med: Real
+   Base, Expoente, Cont, Res: Inteiro
    
-Funcao Media(N1, N2: Real): Real
+Funcao Potecial(Bas, Exp Inteiro): Inteiro
 Inicio
-      Retorne (N1 + N2)/2
+      Enquanto (Cont<Expoente) Faca
+                Res<-Res*Expoente
+                Cont<-Cont+1
+      FimEnquanto
 FimFuncao
 
 Inicio
-      Escreval(" DIGITE A PRIMEIRA NOTA: ")
-      Leia(Nota1)
-      Escreval(" DIGITE A SEGUNDA NOTA: ")
-      Leia(Nota2)
-      Med <-Media(Nota1, Nota2)
-      Escreval(" A MÉDIA ENTRE ",NOTA1, " E ", NOTA2, " É = ", MED)
+      Escreval(" DIGITE O VALOR DA BASE: ")
+      Leia(Base)
+      Escreval(" DIGITE O VALOR DO EXPOENTE: ")
+      Leia(Expoente)
+      Res <- 1
+      Escreval(Base, " ^ ", Expoente, " = ", Res)
 FimAlgoritmo
 
 
