@@ -13,7 +13,7 @@ Nesta aula, é abordado um assunto muito interessante, a respeito de funções p
 
 
 
-Atividade 01
+Algoritmo "Atividade 01"
 Crie um programa que tenha uma função Media(), que vai receber as 2 notas de
 um aluno e retornar a sua média para o programa principal. Escreva o valor retornado no programa principal.
 Var
@@ -23,9 +23,6 @@ Funcao Media(N1, N2: Real): Real
 Inicio
       Retorne (N1 + N2)/2
 FimFuncao
-
-
-
 
 Inicio
       Escreval(" DIGITE A PRIMEIRA NOTA: ")
@@ -47,6 +44,22 @@ dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
 exponenciação. 
 Ex: Potencia(5,2) vai calcular 52 = 25
 
+Var
+   Nota1, Nota2, Med: Real
+   
+Funcao Media(N1, N2: Real): Real
+Inicio
+      Retorne (N1 + N2)/2
+FimFuncao
+
+Inicio
+      Escreval(" DIGITE A PRIMEIRA NOTA: ")
+      Leia(Nota1)
+      Escreval(" DIGITE A SEGUNDA NOTA: ")
+      Leia(Nota2)
+      Med <-Media(Nota1, Nota2)
+      Escreval(" A MÉDIA ENTRE ",NOTA1, " E ", NOTA2, " É = ", MED)
+FimAlgoritmo
 
 
 
@@ -64,6 +77,26 @@ intervalo entre os valores recebidos. (Aqui você vai precisar de um laço de re
 Ex: 
 SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21 
 SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
+
+
+Var
+   Nota1, Nota2, Med: Real
+   
+Funcao Media(N1, N2: Real): Real
+Inicio
+      Retorne (N1 + N2)/2
+FimFuncao
+
+Inicio
+      Escreval(" DIGITE A PRIMEIRA NOTA: ")
+      Leia(Nota1)
+      Escreval(" DIGITE A SEGUNDA NOTA: ")
+      Leia(Nota2)
+      Med <-Media(Nota1, Nota2)
+      Escreval(" A MÉDIA ENTRE ",NOTA1, " E ", NOTA2, " É = ", MED)
+FimAlgoritmo
+
+
 
 VÍDEO AULA 12 
 
