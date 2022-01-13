@@ -20,7 +20,7 @@ Var
    Nota1, Nota2, Med: Real
    
 Funcao Media(N1, N2: Real): Real
-Inicio
+Inicio5
       Retorne (N1 + N2)/2
 FimFuncao
 
@@ -78,22 +78,20 @@ SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 
 Var
-   Nota1, Nota2, Med: Real
-   
-Funcao Media(N1, N2: Real): Real
+    Valo1, Valor2, Soma, Resposta: Inteiro
 Inicio
-      Retorne (N1 + N2)/2
-FimFuncao
-
-Inicio
-      Escreval(" DIGITE A PRIMEIRA NOTA: ")
-      Leia(Nota1)
-      Escreval(" DIGITE A SEGUNDA NOTA: ")
-      Leia(Nota2)
-      Med <-Media(Nota1, Nota2)
-      Escreval(" A MÉDIA ENTRE ",NOTA1, " E ", NOTA2, " É = ", MED)
+      
+      Escreval(" DIGITE O PRIMEIRO VALOR: ")
+      Leia(Base)
+      Escreval(" DIGITE O SEGUNDO VALOR: ")
+      Leia(Expoente)
+      Resposta <-1
+      Enquanto (Contador<Expoente) Faca
+                Resposta<-Resposta*Expoente
+                Contador<-Contador+1
+      FimEnquanto
+      Escreval(Base, " ^ ", Expoente, " = ", Resposta)
 FimAlgoritmo
-
 
 
 VÍDEO AULA 12 
