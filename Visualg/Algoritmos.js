@@ -45,23 +45,18 @@ exponenciação.
 Ex: Potencia(5,2) vai calcular 5^2 = 25
 
 Var
-   Base, Expoente, Cont, Res: Inteiro
-   
-Funcao Potecial(Bas, Exp Inteiro): Inteiro
-Inicio
-      Enquanto (Cont<Expoente) Faca
-                Res<-Res*Expoente
-                Cont<-Cont+1
-      FimEnquanto
-FimFuncao
-
+   Base, Expoente, Contador, Resposta: Inteiro
 Inicio
       Escreval(" DIGITE O VALOR DA BASE: ")
       Leia(Base)
       Escreval(" DIGITE O VALOR DO EXPOENTE: ")
       Leia(Expoente)
-      Res <- 1
-      Escreval(Base, " ^ ", Expoente, " = ", Res)
+      Resposta <-1
+      Enquanto (Contador<Expoente) Faca
+                Resposta<-Resposta*Expoente
+                Contador<-Contador+1
+      FimEnquanto
+      Escreval(Base, " ^ ", Expoente, " = ", Resposta)
 FimAlgoritmo
 
 
