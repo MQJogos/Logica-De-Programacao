@@ -14,13 +14,15 @@ Nesta aula, é abordado um assunto muito interessante, a respeito de funções p
 
 
 Algoritmo "Atividade 01"
-Crie um programa que tenha uma função Media(), que vai receber as 2 notas de
-um aluno e retornar a sua média para o programa principal. Escreva o valor retornado no programa principal.
+//Crie um programa que tenha uma função Media(),
+//que vai receber as 2 notas de
+//um aluno e retornar a sua média para o programa principal.
+//Escreva o valor retornado no programa principal.
 Var
    Nota1, Nota2, Med: Real
-   
+
 Funcao Media(N1, N2: Real): Real
-Inicio5
+Inicio
       Retorne (N1 + N2)/2
 FimFuncao
 
@@ -30,7 +32,7 @@ Inicio
       Escreval(" DIGITE A SEGUNDA NOTA: ")
       Leia(Nota2)
       Med <-Media(Nota1, Nota2)
-      Escreval(" A MÉDIA ENTRE ",NOTA1, " E ", NOTA2, " É = ", MED)
+      Escreval(" A MÉDIA ENTRE ",Nota1, " E ", Nota2, " É = ", Med)
 FimAlgoritmo
 
 
@@ -38,11 +40,12 @@ FimAlgoritmo
 
 
 
-Atividade 02
-Faça um programa que possua uma função chamada Potencia(), que vai receber
-dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
-exponenciação. 
-Ex: Potencia(5,2) vai calcular 5^2 = 25
+Algoritmo "Atividade02"
+//Faça um programa que possua uma função chamada Potencia(),
+//que vai receber
+//dois parâmetros numéricos (base e expoente) e vai calcular o resultado da
+//exponenciação.
+//Ex: Potencia(5,2) vai calcular 5^2 = 25
 
 Var
    Base, Expoente, Contador, Resposta: Inteiro
@@ -53,7 +56,7 @@ Inicio
       Leia(Expoente)
       Resposta <-1
       Enquanto (Contador<Expoente) Faca
-                Resposta<-Resposta*Expoente
+                Resposta<-Resposta*Base
                 Contador<-Contador+1
       FimEnquanto
       Escreval(Base, " ^ ", Expoente, " = ", Resposta)
