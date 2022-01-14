@@ -80,6 +80,8 @@ SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 Var
     Valo1, Valor2, Soma, Resposta: Inteiro
 Inicio
+      Para Contador<-Valor1 ate Valor2 Passo 1 Faca
+      Escreval(Contador)
       
       Escreval(" DIGITE O PRIMEIRO VALOR: ")
       Leia(Base)
