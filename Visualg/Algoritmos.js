@@ -81,19 +81,18 @@ Var
     Valo1,Valor2,Contador,Soma : Inteiro
 Inicio
       Para Contador<-Valor1 ate Valor2 Faca
-      Escreval(Contador)
-      
-      //Escreval(" DIGITE O PRIMEIRO VALOR: ")
-      //Leia(Base)
-      //Escreval(" DIGITE O SEGUNDO VALOR: ")
-     // Leia(Expoente)
-      //Resposta <-1
-     // Enquanto (Contador<Expoente) Faca
-                //Resposta<-Resposta*Expoente
-                //Contador<-Contador+1
+      Escreval(" DIGITE O 1° VALOR : ")
+      Leia(Valor1)
+      Escreval(" DIGITE O 2° Valor: ")
+      Leia(Valor2)
+      Contador<- Contador + 1
+      Soma<-Soma+Contador
       FimPara
-      //Escreval(Base, " ^ ", Expoente, " = ", Resposta)
+      Escreval("..............................................................")
+      Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS PARES DE 1 ATÉ 500 ")
+      Escreval("..............................................................")
 FimAlgoritmo
+      
 
 
 VÍDEO AULA 12 
