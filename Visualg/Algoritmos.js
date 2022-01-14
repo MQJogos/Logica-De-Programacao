@@ -78,21 +78,21 @@ SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 
 Var
-    Valo1, Valor2, Soma, Resposta: Inteiro
+    Valo1, Valor2: Inteiro
 Inicio
-      Para Contador<-Valor1 ate Valor2 Passo 1 Faca
+      Para Contador<-Valor1 ate Valor2 Faca
       Escreval(Contador)
       
-      Escreval(" DIGITE O PRIMEIRO VALOR: ")
-      Leia(Base)
-      Escreval(" DIGITE O SEGUNDO VALOR: ")
-      Leia(Expoente)
-      Resposta <-1
-      Enquanto (Contador<Expoente) Faca
-                Resposta<-Resposta*Expoente
-                Contador<-Contador+1
-      FimEnquanto
-      Escreval(Base, " ^ ", Expoente, " = ", Resposta)
+      //Escreval(" DIGITE O PRIMEIRO VALOR: ")
+      //Leia(Base)
+      //Escreval(" DIGITE O SEGUNDO VALOR: ")
+     // Leia(Expoente)
+      //Resposta <-1
+     // Enquanto (Contador<Expoente) Faca
+                //Resposta<-Resposta*Expoente
+                //Contador<-Contador+1
+      FimPara
+      //Escreval(Base, " ^ ", Expoente, " = ", Resposta)
 FimAlgoritmo
 
 
