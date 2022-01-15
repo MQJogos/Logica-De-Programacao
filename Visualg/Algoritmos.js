@@ -49,6 +49,13 @@ Algoritmo "Atividade02"
 
 Var
    Base, Expoente, Contador, Resposta: Inteiro
+  
+Funcao Potencia(Bas, Exp, Con, R: Inteiro): Inteiro
+Inicio
+      Retorne (N1 + N2)/2
+FimFuncao
+
+
 Inicio
       Escreval(" DIGITE O VALOR DA BASE: ")
       Leia(Base)
@@ -81,7 +88,17 @@ SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 
 Var
-    N1, N2,  Soma, Contador: Inteiro
+    N1, N2,  Somador, Contador: Inteiro
+    
+Funcao Media(N1, N2: Inteiro): Inteiro
+Inicio
+      SuperSomador (N1 + N2)/2
+FimFuncao   
+   
+    
+    
+    
+    
 Inicio
 
 
