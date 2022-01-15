@@ -81,20 +81,28 @@ SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 
 Var
-    Valo1,Valor2,Contador,Soma : Inteiro
+    N1, N2,  Soma, Contador: Inteiro
 Inicio
-      Para Contador<-Valor1 ate Valor2 Faca
-      Escreval(" DIGITE O 1° VALOR : ")
-      Leia(Valor1)
-      Escreval(" DIGITE O 2° Valor: ")
-      Leia(Valor2)
-      Contador<- Contador + 1
-      Soma<-Soma+Contador
-      FimPara
-      Escreval("..............................................................")
-      Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS PARES DE 1 ATÉ 500 ")
-      Escreval("..............................................................")
+
+
+     Escreval(" DIGITE O 1º VALOR")
+     Leia(N1)
+     Escreval(" DIGITE O 2º VALOR")
+     Leia(N2)
+     Para Contador <- N1 Ate N2 Faca
+          Escreval(Contador)
+          Contador <- Contador + 1
+          Soma <-Soma + Contador
+     FimPara
+
+
+
+       Escreval("..............................................................")
+       Escreval(Soma)
+       Escreval(" ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , N1, " E", N2)
+       Escreval("..............................................................")
 FimAlgoritmo
+
       
 
 
