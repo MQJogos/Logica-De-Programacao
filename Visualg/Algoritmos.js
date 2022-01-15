@@ -49,13 +49,6 @@ Algoritmo "Atividade02"
 
 Var
    Base, Expoente, Contador, Resposta: Inteiro
-  
-Funcao Potencia(Bas, Exp, Con, R: Inteiro): Inteiro
-Inicio
-      Retorne (N1 + N2)/2
-FimFuncao
-
-
 Inicio
       Escreval(" DIGITE O VALOR DA BASE: ")
       Leia(Base)
@@ -75,31 +68,51 @@ FimAlgoritmo
 
 
 
-
-
-
-Atividade 03 - DESAFIO
-Crie um programa que tenha uma função SuperSomador(), que vai receber dois
-números como parâmetro e depois vai retornar a soma de todos os valores no
-intervalo entre os valores recebidos. (Aqui você vai precisar de um laço de repetição dentro da função)
-Ex: 
-SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21 
-SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
+Algoritmo "Atividade03"
+//Crie um programa que tenha uma função SuperSomador(), que vai receber dois
+//números como parâmetro e depois vai retornar a soma de todos os valores no
+//fintervalo entre os valores recebidos. (Aqui você vai precisar de um laço de repetição dentro da função)
+//Ex:
+//SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
+//SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
 
 Var
-    N1, N2,  Somador, Contador: Inteiro
-    
-Funcao Media(N1, N2: Inteiro): Inteiro
+    N1, N2,  Soma, Contador: Inteiro
 Inicio
-      SuperSomador (N1 + N2)/2
-FimFuncao   
-   
+
+
+     Escreval(" DIGITE O 1º VALOR")
+     Leia(N1)
+     Escreval(" DIGITE O 2º VALOR")
+     Leia(N2)
+     Para Contador <- N1 Ate N2 Faca
+          Escreval(Contador)
+          Contador <- Contador + 1
+          Soma <-Soma + Contador
+     FimPara
+
+
+
+     //Escreval("..............................................................")
+       Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , N1, " E", N2)
+    // Escreval("..............................................................")
+FimAlgoritmo
+
+
+
+
+
+
+
+
+
+
     
     
     
     
-Inicio
+
 
 
      Escreval(" DIGITE O 1º VALOR")
