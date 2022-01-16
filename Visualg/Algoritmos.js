@@ -49,6 +49,12 @@ Algoritmo "Atividade02"
 
 Var
    Base, Expoente, Contador, Resposta: Inteiro
+
+Funcao Potencia(X,Y : Inteiro):Inteiro
+Inicio
+       Retorne X^Y
+FimFuncao
+
 Inicio
       Escreval(" DIGITE O VALOR DA BASE: ")
       Leia(Base)
@@ -68,6 +74,8 @@ FimAlgoritmo
 
 
 
+
+
 Algoritmo "Atividade03"
 //Crie um programa que tenha uma função SuperSomador(), que vai receber dois
 //números como parâmetro e depois vai retornar a soma de todos os valores no
@@ -76,12 +84,11 @@ Algoritmo "Atividade03"
 //SuperSomador(1, 6) vai somar 1 + 2 + 3 + 4 + 5 + 6 e vai retornar 21
 //SuperSomador(15, 19) vai somar 15 + 16 + 17 + 18 + 19 e vai retornar 85
 
-
 Var
-    V1, V2,  Soma, I, Aux, Menor: Inteiro
+    V1, V2, Soma,Contador, Aux, Menor: Inteiro
 Inicio
 Funcao SuperSomador(X,Y : Inteiro):Inteiro
-     
+
 Inicio
 
      Se X > Y Entao
@@ -92,73 +99,42 @@ Inicio
      Se X < Y Entao
      Aux<-Y - X
      Menor<-X
-     
+
      Senao
      Escreval(" NÃO EXISTE INTERVALO!")
      Interrompa
-     
+
      FimSe
      FimSe
-     
+
      Soma<- Menor
 
-     Para I De 1 Ate Aux Passo 1 Contador Faca
-     
-     Soma <-Soma + Menor + I
+     Para Contador De 1 Ate Aux Passo 1  Faca
+
+     Soma <-Soma + Menor + Contador
 
      FimPara
      Retorne (Soma)
      FimFuncao
-     
+
      Escreval(" DIGITE O 1º VALOR")
      Leia(V1)
      Escreval(" DIGITE O 2º VALOR")
      Leia(V2)
 
      Soma<-SuperSomador(V1, V2)
-   
+
      Se Soma = 0 Entao
      Interrompa
      Senao
        Escreval("..............................................................")
-       Escreval(" A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , V1, " E", V2," É ",Soma)
+       Escreval(" A SOMA ENTRE OS NÚMEROS ",V1, " E ",V2," É ",Soma)
        Escreval("..............................................................")
      FimSe
 FimAlgoritmo
 
 
 
-
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-     Escreval(" DIGITE O 1º VALOR")
-     Leia(N1)
-     Escreval(" DIGITE O 2º VALOR")
-     Leia(N2)
-     Para Contador <- N1 Ate N2 Faca
-          Escreval(Contador)
-          Contador <- Contador + 1
-          Soma <-Soma + Contador
-     FimPara
-
-
-
-       Escreval("..............................................................")
-       Escreval(Soma)
-       Escreval(" ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , N1, " E", N2)
-       Escreval("..............................................................")
-FimAlgoritmo
 
       
 
