@@ -78,25 +78,52 @@ Algoritmo "Atividade03"
 
 
 Var
-    N1, N2,  Soma, Contador: Inteiro
+    V1, V2,  Soma, I, Aux, Menor: Inteiro
+Inicio
+Funcao SuperSomador(X,Y : Inteiro):Inteiro
+     
 Inicio
 
+     Se X > Y Entao
+     Aux<- X - Y
+     Menor<- Y
 
-     Escreval(" DIGITE O 1º VALOR")
-     Leia(N1)
-     Escreval(" DIGITE O 2º VALOR")
-     Leia(N2)
-     Para Contador <- N1 Ate N2 Faca
-          Escreval(Contador)
-          Contador <- Contador + 1
-          Soma <-Soma + Contador
+     Senao
+     Se X < Y Entao
+     Aux<-Y - X
+     Menor<-X
+     
+     Senao
+     Escreval(" NÃO EXISTE INTERVALO!")
+     Interrompa
+     
+     FimSe
+     FimSe
+     
+     Soma<- Menor
+
+     Para I De 1 Ate Aux Passo 1 Contador Faca
+     
+     Soma <-Soma + Menor + I
+
      FimPara
+     Retorne (Soma)
+     FimFuncao
+     
+     Escreval(" DIGITE O 1º VALOR")
+     Leia(V1)
+     Escreval(" DIGITE O 2º VALOR")
+     Leia(V2)
 
-
-
-     //Escreval("..............................................................")
-       Escreval(Soma," ESTÁ É A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , N1, " E", N2)
-    // Escreval("..............................................................")
+     Soma<-SuperSomador(V1, V2)
+   
+     Se Soma = 0 Entao
+     Interrompa
+     Senao
+       Escreval("..............................................................")
+       Escreval(" A SOMA ENTRE TODOS OS NÚMEROS ENTRE" , V1, " E", V2," É ",Soma)
+       Escreval("..............................................................")
+     FimSe
 FimAlgoritmo
 
 
