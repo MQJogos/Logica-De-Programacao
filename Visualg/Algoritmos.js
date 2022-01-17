@@ -150,13 +150,18 @@ Algoritmo "Vetores09"
 
 Var
    Valor:Vetor[1..10] De Inteiro
-   Contador: Inteiro
+   Contador, TotalPar: Inteiro
 
 Inicio
+      TotalPar <- 0
       Para Contador <- 1 Ate 10 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
+           Se (Valor[Contador] % 2 = 0) Entao
+              TotalPar <- TotPar + 1 
+           FimSe
       FimPara
+      Escreval(" O TOTAL DE PARES FOI " , TotalPar)
 FimAlgoritmo
 
 
