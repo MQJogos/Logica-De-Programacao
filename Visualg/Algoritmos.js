@@ -4,11 +4,13 @@ Algoritmo "Vetores01"
 //um vetor numérico com 8 posições, conforme abaixo:
 
 Var
-   V:Vetor[1..8] De Inteiro
+   Valor:Vetor[1..8] De Inteiro
    Contador: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 8 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -19,12 +21,15 @@ Algoritmo "Vetores02"
 //atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
 
 Var
-   V:Vetor[1..10] De Inteiro
+   Valor:Vetor[1..10] De Inteiro
    Contador: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
+
 FimAlgoritmo
 
 
@@ -36,11 +41,13 @@ Algoritmo "Vetores03"
 //10 posições, conforme abaixo:
 
 Var
-   V:Vetor[1..10] De Inteiro
+   Valor:Vetor[1..10] De Inteiro
    Contador: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -50,11 +57,12 @@ Algoritmo "Vetores04"
 //atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
 
 Var
-   V:Vetor[1..10] De Inteiro
+   Valor:Vetor[1..10] De Inteiro
    Contador: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
+
       FimPara
 FimAlgoritmo
 
@@ -78,7 +86,7 @@ Algoritmo "Vetores06"
 //gerados aleatoriamente pelo computador e depois mostre os valores gerados na tela.
 
 Var
-   V:Vetor[1..7] De Inteiro
+   Valor:Vetor[1..7] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -98,7 +106,7 @@ Algoritmo "Vetores07"
 //na ordem inversa daquela em que eles foram informados.
 
 Var
-   V:Vetor[1..7] De Inteiro
+   Valor:Vetor[1..7] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -116,7 +124,7 @@ Algoritmo "Vetores08"
 // foram digitados valores que são múltiplos de 10.
 
 Var
-   V:Vetor[1..15] De Inteiro
+   Valor:Vetor[1..15] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -134,7 +142,7 @@ Algoritmo "Vetores09"
 // armazenados.
 
 Var
-   V:Vetor[1..10] De Inteiro
+   Valor:Vetor[1..10] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -152,7 +160,7 @@ Algoritmo "Vetores10"
 // quantas vezes a chave foi sorteada.
 
 Var
-   V:Vetor[1..30] De Inteiro
+   Valor:Vetor[1..30] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -174,7 +182,7 @@ Algoritmo "Vetores11"
 
 
 Var
-   V:Vetor[1..30] De Inteiro
+   Valor:Vetor[1..30] De Inteiro
    Contador: Inteiro
 
 Inicio
@@ -194,13 +202,16 @@ Algoritmo "Vetores12"
 
 
 Var
-   V:Vetor[1..10] De Inteiro
+   Valor:Vetor[1..10] De Inteiro
    Contador: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
       FimPara
 FimAlgoritmo
+
+
+
 
 VÍDEO AULA 13 - FUNÇÕES
 Nesta aula, é abordado um assunto muito interessante, a respeito de funções pronta do VisualG, não teremos exercícios para este tópico, mas esperamos que o entendimento do aluno esteja muito claro e sem dúvidas a respeito deste tópico.
