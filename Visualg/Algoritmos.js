@@ -4,10 +4,12 @@ Algoritmo "Vetores01"
 //um vetor numérico com 8 posições, conforme abaixo:
 
 Var
-   N:[1..8]
+   V:Vetor[1..8] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos 
+      Para Contador <- 1 Ate 8 Faca
+      FimPara
 FimAlgoritmo
 
 
@@ -17,10 +19,14 @@ Algoritmo "Vetores02"
 //atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
 
 Var
+   V:Vetor[1..10] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 10 Faca
+      FimPara
 FimAlgoritmo
+
 
 
 
@@ -29,11 +35,13 @@ Algoritmo "Vetores03"
 //não apenas atribuindo diretamente) um vetor numérico com
 //10 posições, conforme abaixo:
 
-
 Var
+   V:Vetor[1..10] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 10 Faca
+      FimPara
 FimAlgoritmo
 
 
@@ -41,10 +49,14 @@ Algoritmo "Vetores04"
 //  Crie um programa que preencha automaticamente (usando lógica, não apenas
 //atribuindo diretamente) um vetor numérico com 10 posições, conforme abaixo:
 
-Inicio
-// Seção de Comandos 
-FimAlgoritmo
+Var
+   V:Vetor[1..10] De Inteiro
+   Contador: Inteiro
 
+Inicio
+      Para Contador <- 1 Ate 10 Faca
+      FimPara
+FimAlgoritmo
 
 
 Algoritmo "Vetores05"
@@ -65,11 +77,16 @@ Algoritmo "Vetores06"
 // Crie um programa que preencha automaticamente um vetor numérico com 7 números
 //gerados aleatoriamente pelo computador e depois mostre os valores gerados na tela.
 
-
+Var
+   V:Vetor[1..7] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 7 Faca
+      FimPara
 FimAlgoritmo
+
+
 
 
 
@@ -80,12 +97,13 @@ Algoritmo "Vetores07"
 // No final, mostre uma listagem com todos os nomes informados,
 //na ordem inversa daquela em que eles foram informados.
 
-
-
 Var
+   V:Vetor[1..7] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 7 Faca
+      FimPara
 FimAlgoritmo
 
 
@@ -97,13 +115,15 @@ Algoritmo "Vetores08"
 // mostre o vetor inteiro na tela e em seguida mostre em que posições
 // foram digitados valores que são múltiplos de 10.
 
-
-
 Var
+   V:Vetor[1..15] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 15 Faca
+      FimPara
 FimAlgoritmo
+
 
 
 
@@ -113,12 +133,13 @@ Algoritmo "Vetores09"
 // final, mostre quais são os números pares que foram digitados e em que posições eles estão
 // armazenados.
 
-
-
 Var
+   V:Vetor[1..10] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 10 Faca
+      FimPara
 FimAlgoritmo
 
 
@@ -130,12 +151,15 @@ Algoritmo "Vetores10"
 // seu programa deve mostrar em que posições essa chave foi encontrada. Mostre também
 // quantas vezes a chave foi sorteada.
 
-
 Var
+   V:Vetor[1..30] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 8 Faca
+      FimPara
 FimAlgoritmo
+
 
 
 
@@ -150,9 +174,12 @@ Algoritmo "Vetores11"
 
 
 Var
+   V:Vetor[1..30] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 30 Faca
+      FimPara
 FimAlgoritmo
 
 
@@ -167,10 +194,14 @@ Algoritmo "Vetores12"
 
 
 Var
+   V:Vetor[1..10] De Inteiro
+   Contador: Inteiro
 
 Inicio
-// Seção de Comandos
+      Para Contador <- 1 Ate 10 Faca
+      FimPara
 FimAlgoritmo
+
 VÍDEO AULA 13 - FUNÇÕES
 Nesta aula, é abordado um assunto muito interessante, a respeito de funções pronta do VisualG, não teremos exercícios para este tópico, mas esperamos que o entendimento do aluno esteja muito claro e sem dúvidas a respeito deste tópico.
 
