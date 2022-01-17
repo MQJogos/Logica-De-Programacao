@@ -4,6 +4,7 @@ Algoritmo "Vetores01"
 //um vetor numérico com 8 posições, conforme abaixo:
 
 Var
+   N:[1..8]
 
 Inicio
 // Seção de Comandos 
