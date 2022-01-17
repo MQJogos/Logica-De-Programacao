@@ -204,7 +204,7 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 8 Faca
-           Escreva("DIGITE  A ", Contador, "@ IDADE: ")
+           Escreva("DIGITE  A ", Contador, "ª IDADE: ")
            Leia(ldade[Contador])
            Media[Contador]<-
       FimPara
@@ -227,7 +227,7 @@ Var
    Media[Contador]<-
 Inicio
       Para Contador <- 1 Ate 10 Faca
-           Escreva("DIGITE  A ", Contador, "@ NOTA: ")
+           Escreva("DIGITE  A ", Contador, "ª NOTA: ")
            Leia(Nota[Contador])
       FimPara
 FimAlgoritmo
