@@ -173,7 +173,7 @@ Var
    Contador: Inteiro
 
 Inicio
-      Para Contador <- 1 Ate 8 Faca
+      Para Contador <- 1 Ate 30 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
       FimPara
@@ -193,13 +193,15 @@ Algoritmo "Vetores11"
 
 
 Var
-   Valor:Vetor[1..30] De Inteiro
+   Idade: Vetor[1..8] De Inteiro
+   Media: Vetor[1..8] De Inteiro
    Contador: Inteiro
 
 Inicio
-      Para Contador <- 1 Ate 30 Faca
-           Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
+      Para Contador <- 1 Ate 8 Faca
+           Escreva("DIGITE  A ", Contador, "@ IDADE: ")
+           Leia(ldade[Contador])
+           Media[Contador]<-
       FimPara
 FimAlgoritmo
 
@@ -215,13 +217,13 @@ Algoritmo "Vetores12"
 
 
 Var
-   Valor:Vetor[1..10] De Inteiro
+   Nota:Vetor[1..10] De Inteiro
    Contador: Inteiro
-
+   Media[Contador]<-
 Inicio
       Para Contador <- 1 Ate 10 Faca
-           Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
+           Escreva("DIGITE  A ", Contador, "@ NOTA: ")
+           Leia(Nota[Contador])
       FimPara
 FimAlgoritmo
 
