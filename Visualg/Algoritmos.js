@@ -62,7 +62,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
-
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -91,6 +92,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 7 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -111,6 +114,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 7 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -129,6 +134,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 15 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -147,6 +154,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -165,6 +174,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 8 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -187,6 +198,8 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 30 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
 
@@ -207,8 +220,14 @@ Var
 
 Inicio
       Para Contador <- 1 Ate 10 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
       FimPara
 FimAlgoritmo
+
+
+
+
 
 
 
