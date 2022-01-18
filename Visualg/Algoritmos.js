@@ -95,6 +95,10 @@ Inicio
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
       FimPara
+      
+      Para Contador <- 1 Ate 7 Faca
+           Escreva("{", Valor[Contador], "}")
+      FimPara
 FimAlgoritmo
 
 
@@ -154,11 +158,15 @@ Var
 
 Inicio
       TotalPar <- 0
-      Para Contador <- 1 Ate 10 Faca
+      Para Contador 1 Ate 10 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
+      FimPara
+      
+      Para Contador 1 Ate 10 Faca
            Se (Valor[Contador] % 2 = 0) Entao
-              TotalPar <- TotPar + 1 
+              TotalPar <- TotalPar + 1
+              Escreval("VALOR PAR NA POSIÇÃO ", Contador)
            FimSe
       FimPara
       Escreval(" O TOTAL DE PARES FOI " , TotalPar)
@@ -224,7 +232,7 @@ Algoritmo "Vetores12"
 Var
    Nota:Vetor[1..10] De Inteiro
    Contador: Inteiro
-   Media[Contador]<-
+   Media[Conta]<-
 Inicio
       Para Contador <- 1 Ate 10 Faca
            Escreva("DIGITE  A ", Contador, "ª NOTA: ")
