@@ -214,7 +214,8 @@ Inicio
       Para Contador <- 1 Ate 8 Faca
            Escreva("DIGITE  A ", Contador, "ª IDADE: ")
            Leia(ldade[Contador])
-           Media[Contador]<-
+           SomaIdade<- SomaIdade + Idade
+           MediaIdade<- SomaIdade/8
       FimPara
 FimAlgoritmo
 
@@ -230,14 +231,26 @@ Algoritmo "Vetores12"
 
 
 Var
-   Nota:Vetor[1..10] De Inteiro
-   Contador: Inteiro
-   Media[Conta]<-
+   Notas:Vetor[1..10] De Real
+   Media: Vetor[1..10] De Real
+   SomaMedia, MediaTurma: Real
+   Cont, TotAcima: Inteiro
+   
 Inicio
-      Para Contador <- 1 Ate 10 Faca
-           Escreva("DIGITE  A ", Contador, "ª NOTA: ")
-           Leia(Nota[Contador])
+      Para Cont <- 1 Ate 10 Faca
+           Escreva("DIGITE  A ", Cont, "ª NOTA: ")
+           Leia(Notas[Cont])
+           Media[Cont]<- (Notas[Cont]/10)
+           SomaMedia <- SomaMedia + Nota[Cont]
       FimPara
+      MediaTurma <- SomaMedia/10
+      LimpaTela
+      Para Cont <- 1 Ate 10 Faca
+          Se (Notas > MediaTurma) Entao
+              TotAcima <- TotAcima + 1
+          FimSe
+      FimPara
+      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA QUE É MediaTurma")
 FimAlgoritmo
 
 
