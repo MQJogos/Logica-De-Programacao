@@ -72,13 +72,10 @@ Algoritmo "Vetores05"
 //  Crie um programa que preencha automaticamente (usando lógica, não apenas
 //atribuindo diretamente) um vetor numérico com 15 posições com os primeiros
 //elementos da sequência de Fibonacci:
-    
-Var
-   Valor:Vetor[1..15] De Inteiro
-   Contador: Inteiro
- 
+
+
 Inicio
-    Para Contador <- 1 Ate 15 Faca 
+// Seção de Comandos
 FimAlgoritmo
 
 
@@ -123,6 +120,9 @@ Inicio
       Para Contador <- 1 Ate 7 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
+           Se (Valor Mod 10 = 0) Entao
+               Escreva
+           FimSe
       FimPara
 FimAlgoritmo
 
@@ -137,13 +137,22 @@ Algoritmo "Vetores08"
 
 Var
    Valor:Vetor[1..15] De Inteiro
-   Contador: Inteiro
+   Contador,TotalDez: Inteiro
 
 Inicio
       Para Contador <- 1 Ate 15 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
       FimPara
+      
+      
+      Para Contador 1 Ate 15 Faca
+           Se (Valor[Contador] Mod 10 = 0) Entao
+              TotalDez <- TotalDez + 1
+              Escreval("VALOR PAR NA POSIÇÃO ", Contador)
+           FimSe
+      FimPara
+      Escreval(" O TOTAL DE VALORES MÚLTPLOS DE 10 É:  ", TotalDez)
 FimAlgoritmo
 
 
@@ -167,7 +176,7 @@ Inicio
       FimPara
       
       Para Contador 1 Ate 10 Faca
-           Se (Valor[Contador] % 2 = 0) Entao
+           Se (Valor[Contador] Mod 2 = 0) Entao
               TotalPar <- TotalPar + 1
               Escreval("VALOR PAR NA POSIÇÃO ", Contador)
            FimSe
