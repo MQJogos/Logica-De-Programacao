@@ -151,13 +151,27 @@ Algoritmo "Vetores07"
 //na ordem inversa daquela em que eles foram informados.
 
 Var
-   Valor:Vetor[1..7] De Caractere
-   Contador: Caractere
+   Nome:Vetor[1..7] De Caractere
+   Cont, Pessoa, Auxiliar: Caractere
 
 Inicio
-      Para Contador <- 1 Ate 7 Faca
-           Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Nome[Contador])
+      Para Cont<- 1 Ate 7 Faca
+           Escreva("DIGITE  O ", Cont, "° NOME: ")
+           Leia(Nome[Cont])
+      FimPara
+
+      Para Cont <- 1 Ate 6 Faca
+         Para Pessoa <- Cont+1 Ate 7 Faca
+              Se(Nome[Cont] > Nome[Pessoa]) Entao
+              Auxiliar <- Nome[Cont]
+              Nome[Cont] <- Nome[Pessoa]
+              Nome[Pessoa] <- Auxiliar
+              FimSe
+         FimPara
+      FimPara
+      
+      Para Cont<- 1 Ate 10 Faca
+         Escreva("{", Nome [Cont],"}")
       FimPara
 FimAlgoritmo
 
