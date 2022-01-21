@@ -73,9 +73,14 @@ Algoritmo "Vetores05"
 //atribuindo diretamente) um vetor numérico com 15 posições com os primeiros
 //elementos da sequência de Fibonacci:
 
-
+Var
+   Valor,V1,V2,V3:Vetor[3..15]
+   Contador: Inteiro
 Inicio
-// Seção de Comandos
+    Para Contador <- 3 Ate 15 Faca
+           Escreva("DIGITE  O ", Contador, "° VALOR: ")
+           Leia(Valor[Contador])
+      FimPara
 FimAlgoritmo
 
 
