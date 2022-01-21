@@ -1,3 +1,33 @@
+VÍDEO AULA 15
+//1)  Crie  um  programa  que  leia  uma  matriz  4x4  e  imprima  os  valores  dessa  matriz.  
+//(considere que  esse  programa  só  receberá  números  de  dígitos  iguais) exemplo  de  
+//saída  na  tela: 1 9 7 6 2 0 5 3 8 5 1 8 4 5 4 4 outro  exemplo  de  saída  na  tela: 12 99
+// 78 66 21 40 75 73 86 55 61 85 47 56 64 84 _________________________________________________________________________
+Var
+
+Inicio
+
+FimAlgoritmo
+
+
+
+//2)  Faça  um  algoritmo  que  leia  9  uma  matriz  3x3.  
+//Posteriormente,  percorra  esta  matriz  e imprima  somente  
+//os  números  que  são  pares. _________________________________________________________________________ 
+
+
+
+//3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número  
+//repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________ 
+
+
+
+//4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
+//Posteriormente,  imprima  somente  os  números  que  
+//estão  nas  duas  matrizes.
+
+
+
 VÍDEO AULA 14
 Algoritmo "Vetores01"
 // 1) Faça um programa que preencha automaticamente (com qualquer valor)
