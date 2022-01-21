@@ -243,18 +243,20 @@ Algoritmo "Vetores10"
 // quantas vezes a chave foi sorteada.
 
 Var
-   Valor:Vetor[1..30] De Inteiro
-   Sorteio:Vetor[1..15] De Inteiro
-   Cont, Chave: Inteiro
-
+   Valor:Vetor[1..15] De Inteiro
+   Cont, Chave, Sorteados: Inteiro
+   
 Inicio
-        Para Contador <-1 ate 30 Faca
-        Leia(Cont[Valor])
-      
-  FimPara
-      Para Contador <- 1 Ate 30 Faca
-           Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
+        Para Cont <-1 ate 15 Faca
+        Sorteados <- Randl(30)
+        Escreval(" DIGITE UM NÚMERO: ")
+        Leia(Chave)
+        FimPara
+        
+        Para Cont<- 1 Ate 15 Faca
+           Se (Chave > Sorteados) Entao
+              IgualChave <- IgualChave + 1
+           FimSe
       FimPara
 FimAlgoritmo
 
