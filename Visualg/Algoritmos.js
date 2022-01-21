@@ -244,9 +244,14 @@ Algoritmo "Vetores10"
 
 Var
    Valor:Vetor[1..30] De Inteiro
-   Contador: Inteiro
+   Sorteio:Vetor[1..15] De Inteiro
+   Cont, Chave: Inteiro
 
 Inicio
+        Para Contador <-1 ate 30 Faca
+        Leia(Cont[Valor])
+      
+  FimPara
       Para Contador <- 1 Ate 30 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
            Leia(Valor[Contador])
