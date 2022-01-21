@@ -113,16 +113,13 @@ Algoritmo "Vetores07"
 //na ordem inversa daquela em que eles foram informados.
 
 Var
-   Valor:Vetor[1..7] De Inteiro
-   Contador: Inteiro
+   Valor:Vetor[1..7] De Caractere
+   Contador: Caractere
 
 Inicio
       Para Contador <- 1 Ate 7 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
-           Se (Valor Mod 10 = 0) Entao
-               Escreva
-           FimSe
+           Leia(Nome[Contador])
       FimPara
 FimAlgoritmo
 
@@ -262,7 +259,7 @@ Inicio
               TotAcima <- TotAcima + 1
           FimSe
       FimPara
-      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA QUE É MediaTurma")
+      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA QUE É", MediaTurma)
 FimAlgoritmo
 
 
