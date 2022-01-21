@@ -281,14 +281,14 @@ Var
    Notas:Vetor[1..10] De Real
    Media: Vetor[1..10] De Real
    SomaMedia, MediaTurma: Real
-   Cont, TotAcima: Inteiro
+   Cont, TotAcima, MaiorNota: Inteiro
    
 Inicio
       Para Cont <- 1 Ate 10 Faca
            Escreva("DIGITE  A ", Cont, "ª NOTA: ")
            Leia(Notas[Cont])
            Media[Cont]<- (Notas[Cont]/10)
-           SomaMedia <- SomaMedia + Nota[Cont]
+           SomaMedia <- SomaMedia + Notas[Cont]
       FimPara
       MediaTurma <- SomaMedia/10
       LimpaTela
@@ -297,7 +297,11 @@ Inicio
               TotAcima <- TotAcima + 1
           FimSe
       FimPara
-      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA QUE É", MediaTurma)
+      Escreval(" LISTAGEM DE NOTAS ")
+      Escreval("--------------------------")
+      Escreval(" A MÉDIA DA TURMA É ", TotAcima, ", MediaTurma)
+      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA")
+      Escreval(" A MAIOR NOTA DIGITADA É ", TotAcima, "NA POSIÇÃO ",MaiorNota)
 FimAlgoritmo
 
 
