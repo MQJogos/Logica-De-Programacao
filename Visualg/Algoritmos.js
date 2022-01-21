@@ -104,12 +104,15 @@ Algoritmo "Vetores05"
 //elementos da sequência de Fibonacci:
 
 Var
-   Valor,V1,V2,V3:Vetor[3..15]
+   Valor1,Valor2,Valor3:Vetor[3..15]
    Contador: Inteiro
 Inicio
+    Valor1 <-0
+    Escreval(Valor1)
+    Valor2 <-1
+    Escreval(Valor2)
     Para Contador <- 3 Ate 15 Faca
-           Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
+           Escreval(Valor3)
       FimPara
 FimAlgoritmo
 
