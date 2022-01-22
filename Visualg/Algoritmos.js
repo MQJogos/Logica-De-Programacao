@@ -6,9 +6,13 @@ Algoritmo Matriz01
 // 78 66 21 40 75 73 86 55 61 85 47 56 64 84 _________________________________________________________________________
 
 Var
-
+    Matriz: Vetor[ ] De Inteiro
+    Linha, Coluna: Inteiro
 Inicio
-
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+      Fim Para
+    FimPara
 FimAlgoritmo
 
 
