@@ -328,7 +328,7 @@ Inicio
       Escreval(" LISTAGEM DE NOTAS ")
       Escreval("--------------------------")
       Escreval(" A MÉDIA DA IDADE DAS PESSOAS CADADSTRADAS É  ", MediaIdade)
-      Escreval(" NAS POSIÇÕES", Contador "TEMOS PESSOAS COM MAIS DE 25 ANOS ")
+      Escreval(" NA POSIÇÃO", Contador, "TEMOS PESSOAS COM MAIS DE 25 ANOS ")
       Escreval(" A MAIOR IDADE DIGITADA FOI ",MaiorIdade)
 FimAlgoritmo
 
