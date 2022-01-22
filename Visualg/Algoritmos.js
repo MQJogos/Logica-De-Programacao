@@ -243,23 +243,29 @@ Algoritmo "Vetores10"
 // quantas vezes a chave foi sorteada.
 
 Var
-   Valor:Vetor[1..15] De Inteiro
-   Cont, Chave, Sorteados: Inteiro
-   
+   Numero:Vetor[1..15] De Inteiro
+   Cont, Sorteados, Chave, IgualChave: Inteiro
+
 Inicio
-        Para Cont <-1 ate 15 Faca
-        Sorteados <- Randl(30)
-        Escreval(" DIGITE UM NÚMERO: ")
+        Para Cont <-1 Ate 1 Faca
+        Escreva(" DIGITE UM NÚMERO: ")
         Leia(Chave)
+        Se (Chave = Sorteados) Entao
+        IgualChave <- IgualChave + 1
+        FimSe
         FimPara
         
-        Para Cont<- 1 Ate 15 Faca
-           Se (Chave > Sorteados) Entao
-              IgualChave <- IgualChave + 1
-           FimSe
-      FimPara
-FimAlgoritmo
+        Para Cont <-1 Ate 15 Faca
+        Sorteados <- RandI(30)
+        Escreval(Sorteados)
+        FimPara
 
+
+
+        Escreva(" A CHAVE ",Chave," FOI ENCONTRADA NA POSIÇÃO ",Cont)
+
+
+FimAlgoritmo
 
 
 
@@ -276,7 +282,7 @@ Algoritmo "Vetores11"
 Var
    Idade: Vetor[1..8] De Inteiro
    Media: Vetor[1..8] De Inteiro
-   Contador: Inteiro
+   Contador,SomaIdade, MediaIdade, MaiorIdade : Inteiro
 
 Inicio
       Para Contador <- 1 Ate 8 Faca
@@ -285,6 +291,12 @@ Inicio
            SomaIdade<- SomaIdade + Idade
            MediaIdade<- SomaIdade/8
       FimPara
+      
+      Escreval(" LISTAGEM DE NOTAS ")
+      Escreval("--------------------------")
+      Escreval(" A MÉDIA DA IDADE DAS PESSOAS CADADSTRADAS É  ", MediaIdade)
+      Escreval(" NAS POSIÇÕES", Contador "TEMOS PESSOAS COM MAIS DE 25 ANOS ")
+      Escreval(" A MAIOR IDADE DIGITADA FOI ",MaiorIdade)
 FimAlgoritmo
 
 
