@@ -26,8 +26,8 @@ Var
     Matriz: Vetor[ ] De Inteiro
     Linha, Coluna: Inteiro
 Inicio
-    Para Linha <- 1 Ate 4 Faca
-      Para Coluna<- 1 Ate 4 Faca
+    Para Linha <- 1 Ate 3 Faca
+      Para Coluna<- 1 Ate 3 Faca
       Fim Para
     FimPara
 FimAlgoritmo
@@ -40,8 +40,8 @@ Var
     Matriz: Vetor[ ] De Inteiro
     Linha, Coluna: Inteiro
 Inicio
-    Para Linha <- 1 Ate 4 Faca
-      Para Coluna<- 1 Ate 4 Faca
+    Para Linha <- 1 Ate 2 Faca
+      Para Coluna<- 1 Ate 3 Faca
       Fim Para
     FimPara
 FimAlgoritmo
@@ -222,16 +222,16 @@ Var
    Contador,TotalDez: Inteiro
 
 Inicio
+      TotalDez <- 0
       Para Contador <- 1 Ate 15 Faca
            Escreva("DIGITE  O ", Contador, "° VALOR: ")
-           Leia(Valor[Contador])
+           Leia(Valor[Contador])      
       FimPara
       
-      
-      Para Contador 1 Ate 15 Faca
+      Para Contador <-1 Ate 7 Faca
            Se (Valor[Contador] Mod 10 = 0) Entao
               TotalDez <- TotalDez + 1
-              Escreval("VALOR PAR NA POSIÇÃO ", Contador)
+              Escreval("VALOR MÚLTIPLO DE 10 NA POSIÇÃO ", Contador)
            FimSe
       FimPara
       Escreval(" O TOTAL DE VALORES MÚLTPLOS DE 10 É:  ", TotalDez)
