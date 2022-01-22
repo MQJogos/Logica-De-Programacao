@@ -23,9 +23,13 @@ FimAlgoritmo
 Algoritmo Matriz02
 
 Var
-
+    Matriz: Vetor[ ] De Inteiro
+    Linha, Coluna: Inteiro
 Inicio
-
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+      Fim Para
+    FimPara
 FimAlgoritmo
 
 //3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número  
@@ -33,9 +37,13 @@ FimAlgoritmo
 Algoritmo Matriz03
 
 Var
-
+    Matriz: Vetor[ ] De Inteiro
+    Linha, Coluna: Inteiro
 Inicio
-
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+      Fim Para
+    FimPara
 FimAlgoritmo
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
@@ -44,9 +52,13 @@ FimAlgoritmo
 Algoritmo Matriz04
 
 Var
-
+    Matriz: Vetor[ ] De Inteiro
+    Linha, Coluna: Inteiro
 Inicio
-
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+      Fim Para
+    FimPara
 FimAlgoritmo
 
 VÍDEO AULA 14
