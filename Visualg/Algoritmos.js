@@ -11,8 +11,19 @@ Var
 Inicio
     Para Linha <- 1 Ate 4 Faca
       Para Coluna<- 1 Ate 4 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
       Fim Para
     FimPara
+    
+    
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+         Escreva (Matriz[Linha,Coluna] :5)
+      Fim Para
+      Escreval()
+    FimPara
+    
 FimAlgoritmo
 
 
@@ -28,9 +39,21 @@ Var
 Inicio
     Para Linha <- 1 Ate 3 Faca
       Para Coluna<- 1 Ate 3 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
       Fim Para
     FimPara
+    
+    
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+         Escreva (Matriz[Linha,Coluna] :5)
+      Fim Para
+      Escreval()
+    FimPara
+    
 FimAlgoritmo
+
 
 //3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número  
 //repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________ 
@@ -42,9 +65,21 @@ Var
 Inicio
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
       Fim Para
     FimPara
+    
+    
+    Para Linha <- 1 Ate 2 Faca
+      Para Coluna<- 1 Ate 3 Faca
+         Escreva (Matriz[Linha,Coluna] :5)
+      Fim Para
+      Escreval()
+    FimPara
+    
 FimAlgoritmo
+
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
 //Posteriormente,  imprima  somente  os  números  que  
@@ -57,9 +92,24 @@ Var
 Inicio
     Para Linha <- 1 Ate 4 Faca
       Para Coluna<- 1 Ate 4 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
       Fim Para
     FimPara
+    
+    
+    Para Linha <- 1 Ate 4 Faca
+      Para Coluna<- 1 Ate 4 Faca
+         Escreva (Matriz[Linha,Coluna] :5)
+      Fim Para
+      Escreval()
+    FimPara
+    
 FimAlgoritmo
+
+
+
+
 
 VÍDEO AULA 14
 Algoritmo "Vetores01"
