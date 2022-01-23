@@ -280,24 +280,22 @@ Var
    Cont, Sorteados, Chave, IgualChave: Inteiro
 
 Inicio
-        Para Cont <-1 Ate 1 Faca
+        IgualChave<- 0
         Escreva(" DIGITE UM NÚMERO: ")
         Leia(Chave)
-        Se (Chave = Sorteados) Entao
-        IgualChave <- IgualChave + 1
-        FimSe
-        FimPara
         
         Para Cont <-1 Ate 15 Faca
         Sorteados <- RandI(30)
         Escreval(Sorteados)
         FimPara
 
-
-
-        Escreva(" A CHAVE ",Chave," FOI ENCONTRADA NA POSIÇÃO ",Cont)
-
-
+        Para Cont <- Ate 15 Faca
+           Se (Chave = Sorteados[Cont]) Entao
+            IgualChave <- IgualChave + 1
+            Escreval("VALOR CHAVE NA POSIÇÃO ",Cont)
+           FimSe
+        FimPara
+        Escreva(" A CHAVE ",Chave," FOI ENCONTRADA NA POSIÇÃO ", IgualChave)
 FimAlgoritmo
 
 
