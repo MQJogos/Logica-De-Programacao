@@ -86,11 +86,17 @@ Inicio
 
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
-         Escreva (Matriz[Linha,Coluna] :5)
+           Se(Matriz[Linha,Coluna] = Matriz[Linha,Coluna]) Entao
+            Escreva("{",Matriz[Linha,Coluna]:2,"}")
+             Repetido <- Repetido + 1
+             Escreval("POSSUI ", Repetido, " VALORES REPETIDOS" ) 
+         Senao
+            Escreva(Matriz[Linha,Coluna]:5)
+            Escreval("NÃO POSSUI VALORES REPETIDOS" )
+         FimSe
       FimPara
       Escreval()
     FimPara
-
 FimAlgoritmo
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
