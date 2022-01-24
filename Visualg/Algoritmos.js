@@ -86,7 +86,7 @@ Inicio
 
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
-           Se(Matriz[Vetor] = Matriz[Vetor]) Entao
+           Se Coluna = Coluna Entao
               Repetido <- Repetido + 1
               Escreva (Matriz[Linha,Coluna] :5)
               Escreval(Repetido, " POSSUI VALORES REPETIDOS" )
