@@ -1,85 +1,97 @@
 VÍDEO AULA 15
-Algoritmo Matriz01
-//1)  Crie  um  programa  que  leia  uma  matriz  4x4  e  imprima  os  valores  dessa  matriz.  
-//(considere que  esse  programa  só  receberá  números  de  dígitos  iguais) exemplo  de  
+Algoritmo "Matriz01"
+//1)  Crie  um  programa  que  leia  uma  matriz  4x4  e  imprima  os  valores  dessa  matriz.
+//(considere que  esse  programa  só  receberá  números  de  dígitos  iguais) exemplo  de
 //saída  na  tela: 1 9 7 6 2 0 5 3 8 5 1 8 4 5 4 4 outro  exemplo  de  saída  na  tela: 12 99
 // 78 66 21 40 75 73 86 55 61 85 47 56 64 84 _________________________________________________________________________
 
 Var
-    Matriz: Vetor[ ] De Inteiro
+    Matriz: Vetor[1..4, 1..4] De Inteiro
     Linha, Coluna: Inteiro
 Inicio
     Para Linha <- 1 Ate 4 Faca
       Para Coluna<- 1 Ate 4 Faca
          Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
          Leia(Matriz[Linha, Coluna])
-      Fim Para
+      FimPara
     FimPara
-    
-    
+
+
     Para Linha <- 1 Ate 4 Faca
       Para Coluna<- 1 Ate 4 Faca
-         Escreva (Matriz[Linha,Coluna] :5)
-      Fim Para
+         Escreva (Matriz[Linha,Coluna]:5)
+      FimPara
       Escreval()
     FimPara
-    
+
 FimAlgoritmo
 
 
 
-//2)  Faça  um  algoritmo  que  leia  9  uma  matriz  3x3.  
-//Posteriormente,  percorra  esta  matriz  e imprima  somente  
-//os  números  que  são  pares. _________________________________________________________________________ 
-Algoritmo Matriz02
+
+Algoritmo "Matriz02"
+//2)  Faça  um  algoritmo  que  leia  9  uma  matriz  3x3.
+//Posteriormente,  percorra  esta  matriz  e imprima  somente
+//os  números  que  são  pares. __________________________________________
 
 Var
-    Matriz: Vetor[ ] De Inteiro
-    Linha, Coluna: Inteiro
+    Matriz: Vetor[1..3, 1..3 ] De Inteiro
+    Linha, Coluna, TotPar: Inteiro
 Inicio
+     TotPar<- 0
+     Para Linha <- 1 Ate 3 Faca
+      Para Coluna<- 1 Ate 3 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
+      FimPara
+     FimPara
+
+
+    Escreval()
+    Escreval("MATRIZ:")
+    Escreval("---------------")
+
     Para Linha <- 1 Ate 3 Faca
       Para Coluna<- 1 Ate 3 Faca
-         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
-         Leia(Matriz[Linha, Coluna])
-      Fim Para
-    FimPara
-    
-    
-    Para Linha <- 1 Ate 4 Faca
-      Para Coluna<- 1 Ate 4 Faca
-         Escreva (Matriz[Linha,Coluna] :5)
-      Fim Para
+         Se(Matriz[Linha,Coluna] Mod 2 = 0) Entao
+            Escreva("{",Matriz[Linha,Coluna]:2,"}")
+            TotPar <- TotPar + 1
+         Senao
+            Escreva(Matriz[Linha,Coluna]:5)
+         FimSe
+      FimPara
       Escreval()
     FimPara
+    Escreval("AO TODO FORAM DIGITADOS ", TotPar, " VALORES PARES" )
+FimAlgoritmo
     
 FimAlgoritmo
 
 
-//3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número  
-//repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________ 
-Algoritmo Matriz03
+Algoritmo "Matriz03"
+//3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número
+//repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________
 
 Var
-    Matriz: Vetor[ ] De Inteiro
+    Matriz: Vetor[1..2, 1..3 ] De Inteiro
     Linha, Coluna: Inteiro
 Inicio
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
          Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
          Leia(Matriz[Linha, Coluna])
-      Fim Para
+      FimPara
     FimPara
-    
-    
+
+
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
          Escreva (Matriz[Linha,Coluna] :5)
-      Fim Para
+      FimPara
       Escreval()
     FimPara
-    
-FimAlgoritmo
 
+FimAlgoritmo
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
 //Posteriormente,  imprima  somente  os  números  que  
@@ -94,14 +106,14 @@ Inicio
       Para Coluna<- 1 Ate 4 Faca
          Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
          Leia(Matriz[Linha, Coluna])
-      Fim Para
+      FimPara
     FimPara
     
     
     Para Linha <- 1 Ate 4 Faca
       Para Coluna<- 1 Ate 4 Faca
          Escreva (Matriz[Linha,Coluna] :5)
-      Fim Para
+      FimPara
       Escreval()
     FimPara
     
@@ -326,26 +338,27 @@ Algoritmo "Vetores10"
 // quantas vezes a chave foi sorteada.
 
 Var
-   Numero:Vetor[1..15] De Inteiro
+   Vet:Vetor[1..30] De Inteiro
    Cont, Sorteados, Chave, IgualChave: Inteiro
 
 Inicio
         IgualChave<- 0
+        
         Escreva(" DIGITE UM NÚMERO: ")
         Leia(Chave)
-        
-        Para Cont <-1 Ate 15 Faca
-        Sorteados <- RandI(30)
-        Escreval(Sorteados)
+        Para Cont De 1 Ate 15 Faca
+           Sorteados <- RandI(30)
+           Escreval("{", Sorteados , "}")
+           Se (Sorteados = Chave) Entao
+              IgualChave <- IgualChave + 1
+          FimSe
         FimPara
+           Escreval("--------------------------")
+           Escreval(" A CHAVE ",Chave," NA POSIÇÃO ",IgualChave)
+           Escreval("--------------------------")
 
-        Para Cont <- Ate 15 Faca
-           Se (Chave = Sorteados[Cont]) Entao
-            IgualChave <- IgualChave + 1
-            Escreval("VALOR CHAVE NA POSIÇÃO ",Cont)
-           FimSe
-        FimPara
-        Escreva(" A CHAVE ",Chave," FOI ENCONTRADA NA POSIÇÃO ", IgualChave)
+
+
 FimAlgoritmo
 
 
@@ -363,22 +376,49 @@ Algoritmo "Vetores11"
 Var
    Idade: Vetor[1..8] De Inteiro
    Media: Vetor[1..8] De Inteiro
-   Contador,SomaIdade, MediaIdade, MaiorIdade : Inteiro
+   Contador,SomaIdade, Maior, Total25 : Inteiro
+   MediaIdade : Real
 
 Inicio
+      Contador<-0
+      Total25<-0
+      Maior<-0
+
       Para Contador <- 1 Ate 8 Faca
            Escreva("DIGITE  A ", Contador, "ª IDADE: ")
-           Leia(ldade[Contador])
-           SomaIdade<- SomaIdade + Idade
+           Leia(Idade[Contador])
+           SomaIdade<- SomaIdade + Idade[Contador]
            MediaIdade<- SomaIdade/8
+
+           Se (Idade[Contador] > 25) Entao
+               Total25 <- Total25  + 1
+           FimSe
+           
+           Se (Idade[Contador] >  Maior) Entao
+               Maior <- Idade[Contador]
+           FimSe
+           
+           Se (Idade[Contador] =  Maior) Entao
+               Senior <- Senior  + 1
+           FimSe
+           
       FimPara
       
-      Escreval(" LISTAGEM DE NOTAS ")
+      LimpaTela
+      Escreval(" LISTAGEM DE IDADES ")
       Escreval("--------------------------")
-      Escreval(" A MÉDIA DA IDADE DAS PESSOAS CADADSTRADAS É  ", MediaIdade)
-      Escreval(" NA POSIÇÃO", Contador, "TEMOS PESSOAS COM MAIS DE 25 ANOS ")
-      Escreval(" A MAIOR IDADE DIGITADA FOI ",MaiorIdade)
+      
+      Para Contador <- 1 Ate 8 Faca
+            Se (Idade[Contador] > 25) Entao
+                Escreval(" PESSOAS COM MAIS DE 25 ANOS NA POSIÇÃO ",Contador)
+            FimSe
+      FimPara
+      Escreval("--------------------------")
+      Escreval(" A MÉDIA DE IDADE DAS PESSOAS CADASTRADAS É  ",MediaIdade)
+      Escreval(" A MAIOR IDADE DIGITADA FOI ",Maior," NA POSIÇÃO ",Senior)
+
 FimAlgoritmo
+
 
 
 
@@ -394,28 +434,29 @@ Algoritmo "Vetores12"
 Var
    Notas:Vetor[1..10] De Real
    Media: Vetor[1..10] De Real
-   SomaMedia, MediaTurma: Real
-   Cont, TotAcima, MaiorNota: Inteiro
+   SomaMedia, MediaTurma, SomaNotas: Real
+   Cont, TotAcima, Maior: Inteiro
    
 Inicio
       Para Cont <- 1 Ate 10 Faca
            Escreva("DIGITE  A ", Cont, "ª NOTA: ")
            Leia(Notas[Cont])
-           Media[Cont]<- (Notas[Cont]/10)
-           SomaMedia <- SomaMedia + Notas[Cont]
-      FimPara
-      MediaTurma <- SomaMedia/10
-      LimpaTela
-      Para Cont <- 1 Ate 10 Faca
-          Se (Notas > MediaTurma) Entao
-              TotAcima <- TotAcima + 1
+           SomaNotas <- SomaNotas + Notas[Cont]
+           MediaTurma[Cont]<- SomaNotas/10)
+           
+           Se (Notas[Cont] > Maior) Entao
+               Maior <- Notas[Cont] 
           FimSe
+          
       FimPara
+     
+      LimpaTela
+      
       Escreval(" LISTAGEM DE NOTAS ")
       Escreval("--------------------------")
-      Escreval(" A MÉDIA DA TURMA É ", TotAcima, ", MediaTurma)
-      Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA")
-      Escreval(" A MAIOR NOTA DIGITADA É ", TotAcima, "NA POSIÇÃO ",MaiorNota)
+      Escreval(" A MÉDIA DA TURMA É ", MediaTurma)
+      //Escreval(" AO TODO TEMOS ", TotAcima, " ALUNOS ACIMA DA MÉDIA DA TURMA")
+      Escreval(" A MAIOR NOTA DIGITADA É ", Maior, "NA POSIÇÃO ",Cont)
 FimAlgoritmo
 
 
