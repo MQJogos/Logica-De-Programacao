@@ -83,20 +83,22 @@ Inicio
       FimPara
     FimPara
 
+    Escreval()
+    Escreval("MATRIZ:")
+    Escreval("---------------")
 
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
-           Se Coluna = Coluna Entao
+           Se (Coluna = Coluna)Entao
+              Escreva( " { ",Matriz[Linha,Coluna] :2 "}")
               Repetido <- Repetido + 1
-              Escreva (Matriz[Linha,Coluna] :5)
-              Escreval(Repetido, " POSSUI VALORES REPETIDOS" )
            Senao
                Escreva(Matriz[Linha,Coluna]:5)
            FimSe
       FimPara
       Escreval()
     FimPara
-    Escreval("NÃO POSSUI VALORES REPETIDOS" )
+    Escreval(Repetido,"POSSUI VALORES REPETIDOS" )
 FimAlgoritmo
 
 
