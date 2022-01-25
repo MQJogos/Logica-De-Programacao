@@ -74,8 +74,9 @@ Algoritmo "Matriz03"
 
 Var
     Matriz: Vetor[1..2, 1..3 ] De Inteiro
-    Linha, Coluna: Inteiro
+    Linha, Coluna, Repetido: Inteiro
 Inicio
+    Repetido<- 0
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
          Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
@@ -91,16 +92,16 @@ Inicio
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
            Se (Matriz[Linha] = Matriz[Linha])Entao
-              Escreva( " { ",Matriz[Linha,Coluna] :2 "}")
-              Escreval("POSSUI VALORES REPETIDOS" )
+              Escreva( " { ",Matriz[Linha,Coluna] :2, "}")
+              Repetidos <- Repetidos + 1
            Senao
-               Escreva( " { ",Matriz[Linha,Coluna] :2 "}")
+               Escreva( Matriz[Linha,Coluna] :5)
                Escreval("NÃO POSSUI VALORES REPETIDOS" )
            FimSe
       FimPara
       Escreval()
     FimPara
-    
+    Escreval(Repetidos,"POSSUI VALORES REPETIDOS" )
 FimAlgoritmo
 
 
