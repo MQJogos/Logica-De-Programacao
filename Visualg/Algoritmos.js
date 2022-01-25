@@ -74,9 +74,9 @@ Algoritmo "Matriz03"
 
 Var
     Matriz: Vetor[1..2, 1..3 ] De Inteiro
-    Linha, Coluna, Repetido: Inteiro
+    Linha, Coluna: Inteiro
 Inicio
-    Repetido<- 0
+
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
          Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
@@ -91,20 +91,51 @@ Inicio
 
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
-           Se (Matriz[Linha] = Matriz[Linha])Entao
-              Escreva( " { ",Matriz[Linha,Coluna] :2, "}")
-              Repetidos <- Repetidos + 1
+           Se ( Matriz[Linha,Coluna] = Matriz[Linha,Coluna] )Entao
+              Escreval("POSSUI VALORES REPETIDOS" )
            Senao
+           Se ( Matriz[Linha,Coluna] <> Matriz[Linha,Coluna] )Entao
                Escreva( Matriz[Linha,Coluna] :5)
                Escreval("NÃO POSSUI VALORES REPETIDOS" )
+           FimSe
            FimSe
       FimPara
       Escreval()
     FimPara
-    Escreval(Repetidos,"POSSUI VALORES REPETIDOS" )
+
 FimAlgoritmo
+Var
+    Matriz: Vetor[1..2, 1..3 ] De Inteiro
+    Linha, Coluna: Inteiro
+Inicio
 
+    Para Linha <- 1 Ate 2 Faca
+      Para Coluna<- 1 Ate 3 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
+         Leia(Matriz[Linha, Coluna])
+      FimPara
+    FimPara
+    LimpaTela
 
+    Escreval()
+    Escreval("MATRIZ:")
+    Escreval("---------------")
+
+    Para Linha <- 1 Ate 2 Faca
+      Para Coluna<- 1 Ate 3 Faca
+           Se ( Matriz[Linha,Coluna] = Matriz[Linha,Coluna] )Entao
+              Escreval("POSSUI VALORES REPETIDOS" )
+           Senao
+           Se ( Matriz[Linha,Coluna] <> Matriz[Linha,Coluna] )Entao
+               Escreva( Matriz[Linha,Coluna] :5)
+               Escreval("NÃO POSSUI VALORES REPETIDOS" )
+           FimSe
+           FimSe
+      FimPara
+      Escreval()
+    FimPara
+
+FimAlgoritmo
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
 //Posteriormente,  imprima  somente  os  números  que  
