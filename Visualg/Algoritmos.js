@@ -82,6 +82,7 @@ Inicio
          Leia(Matriz[Linha, Coluna])
       FimPara
     FimPara
+    LimpaTela
 
     Escreval()
     Escreval("MATRIZ:")
@@ -89,11 +90,11 @@ Inicio
 
     Para Linha <- 1 Ate 2 Faca
       Para Coluna<- 1 Ate 3 Faca
-           Se (Matriz[Linha,Coluna] = Matriz[Linha,Coluna])Entao
+           Se (Matriz[Linha] = Matriz[Linha])Entao
               Escreva( " { ",Matriz[Linha,Coluna] :2 "}")
               Escreval("POSSUI VALORES REPETIDOS" )
            Senao
-               Escreva(Matriz[Linha,Coluna]:5)
+               Escreva( " { ",Matriz[Linha,Coluna] :2 "}")
                Escreval("NÃO POSSUI VALORES REPETIDOS" )
            FimSe
       FimPara
