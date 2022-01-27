@@ -118,7 +118,12 @@ Inicio
      B<- MatrizB[LinhaB,ColunaB]
 
      Se (A = B) Entao
-     Escreva(MatrizA[LinhaA, ColunaA])
+     Escreval(MatrizA[LinhaA,ColunaA])
+     FimSe
+     FimPara
+     
+     
+    Se (LinhaA = 4) Entao
     
     
     
