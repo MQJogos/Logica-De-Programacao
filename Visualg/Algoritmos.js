@@ -340,26 +340,26 @@ Algoritmo "Vetores07"
 
 Var
    Nome:Vetor[1..7] De Caractere
-   Cont, Pessoa, Auxiliar: Caractere
-
+   I,J: Inteiro
+   Auxiliar: Caractere
 Inicio
-      Para Cont<- 1 Ate 7 Faca
-           Escreva("DIGITE  O ", Cont, "° NOME: ")
-           Leia(Nome[Cont])
+      Para I <- 1 Ate 7 Faca
+           Escreva("DIGITE  O ", I , "° NOME: ")
+           Leia(Nome[I])
       FimPara
 
-      Para Cont <- 1 Ate 6 Faca
-         Para Pessoa <- Cont+1 Ate 7 Faca
-              Se(Nome[Cont] > Nome[Pessoa]) Entao
-              Auxiliar <- Nome[Cont]
-              Nome[Cont] <- Nome[Pessoa]
-              Nome[Pessoa] <- Auxiliar
-              FimSe
-         FimPara
+      Para I <- 1 Ate 6 Faca
+           Para J <- I+1 Ate 7 Faca
+           Se (Nome[I] > Nome[J]) Entao
+           Auxiliar<- Nome[I]
+           Nome[I] <- Nome[J]
+           Nome[J] <- Auxiliar
+           FimSe
+           FimPara
       FimPara
       
-      Para Cont<- 1 Ate 10 Faca
-         Escreva("{", Nome [Cont],"}")
+      Para I <- 1 Ate 7 Faca
+           Escreva("{",Nome[I], "}")
       FimPara
 FimAlgoritmo
 
