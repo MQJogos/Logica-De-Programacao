@@ -73,17 +73,61 @@ Algoritmo "Matriz03"
 //repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________
 
 Var
-    Matriz: Vetor[1..2, 1..3 ] De Inteiro
-    Linha, Coluna: Inteiro
+    MatrizA: Vetor[1..2, 1..3 ] De Inteiro  
+    MatrizB: Vetor[1..2, 1..3 ] De Inteiro
+    LinhaA, ColunaA, LinhaB, ColunaB, A, B: Inteiro
+    
 Inicio
+LinhaB<-0
 
-    Para Linha <- 1 Ate 2 Faca
-      Para Coluna<- 1 Ate 3 Faca
-         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
-         Leia(Matriz[Linha, Coluna])
+Procedimento Matriz
+
+Inicio
+    Escreval("Matriz A")
+    Para LinhaA <- 1 Ate 4 Faca
+      Para ColunaA<- 1 Ate 4 Faca
+        Matriz[LinhaA, ColunaA]<-Randl(20)
+        Se(Coluna=4) Entao
+        Escreval(Matriz[LinhaA, ColunaA])
+        FimSe
+      FimPara
+    FimPara
+    
+    
+   Escreval(" ")
+   Escreval("Matriz B")
+    Para LinhaB <- 1 Ate 4 Faca
+      Para ColunaB<- 1 Ate 4 Faca
+        Matriz[LinhaB, ColunaB]<-Randl(20)
+        Se(ColunaB=4) Entao
+        Escreval(Matriz[LinhaB, ColunaB])
+        Senao
+        Escreva(Matriz[LinhaB, ColunaB])
+        FimSe
       FimPara
     FimPara
     LimpaTela
+    LinhaA<-1
+    ColunaA<-1
+    LinhaB<-1
+    ColunaB<-1
+
+    Enquanto (LinhaA<5) Faca
+     Para ColunaA De 1 Ate 4 Faca
+     A<- MatrizA[LinhaA,ColunaA]
+     B<- MatrizB[LinhaB,ColunaB]
+
+     Se (A = B) Entao
+     Escreva(MatrizA[LinhaA, ColunaA])
+    
+    
+    
+    
+    
+    
+    
+    
+    
 
     Escreval()
     Escreval("MATRIZ:")
