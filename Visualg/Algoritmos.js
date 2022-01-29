@@ -71,120 +71,87 @@ FimAlgoritmo
 Algoritmo "Matriz03"
 //3)  Faça  um  algoritmo  que  leia  uma  matriz  2x3  e  verifique  se  a  matriz  possui  algum número
 //repetido.  Informe  "Possui"  ou  "Não  Possui"  ao  final  do  algoritmo. _________________________________________________________________________
+Algoritmo "Matriz03"
 
 Var
-    MatrizA: Vetor[1..2, 1..3 ] De Inteiro  
-    MatrizB: Vetor[1..2, 1..3 ] De Inteiro
-    LinhaA, ColunaA, LinhaB, ColunaB, A, B: Inteiro
+    MatrizA: Vetor[1..2,1..3] De Inteiro
+    MatrizB: Vetor[1..2,1..3] De Inteiro
+    LinhaA,ColunaA: Inteiro
+    LinhaB,ColunaB: Inteiro
+    Repetiu: Logico
     
 Inicio
-LinhaB<-0
-
-Procedimento Matriz
-
-Inicio
-    Escreval("Matriz A")
-    Para LinhaA <- 1 Ate 4 Faca
-      Para ColunaA<- 1 Ate 4 Faca
-        Matriz[LinhaA, ColunaA]<-Randl(20)
-        Se(Coluna=4) Entao
-        Escreval(Matriz[LinhaA, ColunaA])
-        FimSe
+    Para LinhaA <- 1 Ate 2 Faca
+      Para ColunaA <- 1 Ate 3 Faca
+         Escreva (" DIGITE O VALOR DA POSIÇÃO [", LinhaA,",", ColunaA, "]: ")
+         Leia(MatrizA[LinhaA,ColunaA])
       FimPara
     FimPara
-    
-    
-   Escreval(" ")
-   Escreval("Matriz B")
-    Para LinhaB <- 1 Ate 4 Faca
-      Para ColunaB<- 1 Ate 4 Faca
-        Matriz[LinhaB, ColunaB]<-Randl(20)
-        Se(ColunaB=4) Entao
-        Escreval(Matriz[LinhaB, ColunaB])
-        Senao
-        Escreva(Matriz[LinhaB, ColunaB])
-        FimSe
-      FimPara
-    FimPara
-    LimpaTela
-    LinhaA<-1
-    ColunaA<-1
-    LinhaB<-1
-    ColunaB<-1
 
-    Enquanto (LinhaA<5) Faca
-     Para ColunaA De 1 Ate 4 Faca
-     A<- MatrizA[LinhaA,ColunaA]
-     B<- MatrizB[LinhaB,ColunaB]
+    Escreval("--------------------------------")
+    Escreval(" MATRIZ A ")
+    Escreval("--------------------------------")
 
-     Se (A = B) Entao
-     Escreval(MatrizA[LinhaA,ColunaA])
-     FimSe
-     FimPara
-     
-     
-    Se (LinhaA = 4) Entao
-    
-    
-    
-    
-    
-    
-    
-    
-    
-
-    Escreval()
-    Escreval("MATRIZ:")
-    Escreval("---------------")
-
-    Para Linha <- 1 Ate 2 Faca
-      Para Coluna<- 1 Ate 3 Faca
-           Se ( Matriz[Linha,Coluna] = Matriz[Linha,Coluna] )Entao
-              Escreval("POSSUI VALORES REPETIDOS" )
-           Senao
-           Se ( Matriz[Linha,Coluna] <> Matriz[Linha,Coluna] )Entao
-               Escreva( Matriz[Linha,Coluna] :5)
-               Escreval("NÃO POSSUI VALORES REPETIDOS" )
-           FimSe
-           FimSe
+    Para LinhaA <- 1 Ate 2 Faca
+      Para ColunaA<- 1 Ate 3 Faca
+         Escreva(MatrizA[LinhaA,ColunaA]:4)
       FimPara
       Escreval()
     FimPara
-
-FimAlgoritmo
-Var
-    Matriz: Vetor[1..2, 1..3 ] De Inteiro
-    Linha, Coluna: Inteiro
-Inicio
-
-    Para Linha <- 1 Ate 2 Faca
-      Para Coluna<- 1 Ate 3 Faca
-         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
-         Leia(Matriz[Linha, Coluna])
-      FimPara
-    FimPara
-    LimpaTela
-
-    Escreval()
-    Escreval("MATRIZ:")
-    Escreval("---------------")
-
-    Para Linha <- 1 Ate 2 Faca
-      Para Coluna<- 1 Ate 3 Faca
-           Se ( Matriz[Linha,Coluna] = Matriz[Linha,Coluna] )Entao
-              Escreval("POSSUI VALORES REPETIDOS" )
-           Senao
-           Se ( Matriz[Linha,Coluna] <> Matriz[Linha,Coluna] )Entao
-               Escreva( Matriz[Linha,Coluna] :5)
-               Escreval("NÃO POSSUI VALORES REPETIDOS" )
-           FimSe
-           FimSe
+    
+    
+//AGORA VEM O PULO DO GATO: O CAOS SE RESOLVE, COM A CRIAÇÃO DE UMA MATRIZ B COMPARATIVA...
+   Escreval("--------------------------------")
+   Escreval("MATRIZ COMPARATIVA")
+   Escreval("--------------------------------")
+   Para LinhaA <- 1 Ate 2 Faca
+      Para ColunaA <- 1 Ate 3 Faca
+         MatrizB[LinhaA,ColunaA] <- MatrizA[LinhaA,ColunaA]
+         Escreva(MatrizB[LinhaA,ColunaA]:4)
       FimPara
       Escreval()
     FimPara
+    LimpaTela
+ //APÓS CRIAÇÃO DA MATRIZ É O MOMENTO DE COMPARAÇAO DE ELEMENTOS...
+   Escreval("--------------------------------")
+   Escreval("COMPARAÇÃO DE ELEMENTOS")
+   Escreval("--------------------------------")
 
+   Repetiu <- Falso
+
+
+  Para LinhaA <- 1 Ate 2 Faca
+   Para ColunaA <- 1 Ate 3 Faca
+       Para LinhaB <-1 Ate 2 Faca
+          Para ColunaB <- 1 Ate 3 Faca
+
+             Se (LinhaA <> LinhaB) Ou (ColunaA <> ColunaB) Entao
+                Escreva(MatrizA[LinhaA, ColunaA]:5, "A", MatrizB[LinhaB, ColunaB]:5, "B")
+
+             Se (MatrizA[LinhaA, ColunaA] =  MatrizB[LinhaB, ColunaB]) Entao
+                Repetiu <- Verdadeiro
+
+                FimSe
+             FimSe
+          FimPara
+          Escreval("")
+          FimPara
+          Escreval("")
+          FimPara
+          FimPara
+
+        //INFORMAR "POSSUI" OU "NÃO POSSUI"
+         Se (Repetiu = Verdadeiro) Entao
+          Escreva("POSSUI")
+         Senao
+          Escreva("NÃO POSSUI")
+         FimSe
+
+
+ 
 FimAlgoritmo
+
+
 
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
 //Posteriormente,  imprima  somente  os  números  que  
@@ -192,26 +159,82 @@ FimAlgoritmo
 Algoritmo Matriz04
 
 Var
-    Matriz: Vetor[ ] De Inteiro
-    Linha, Coluna: Inteiro
-Inicio
-    Para Linha <- 1 Ate 4 Faca
-      Para Coluna<- 1 Ate 4 Faca
-         Escreva (" DIGITE O VALOR DA POSIÇÃO [", Linha,",", Coluna, "]: ")
-         Leia(Matriz[Linha, Coluna])
-      FimPara
-    FimPara
-    
-    
-    Para Linha <- 1 Ate 4 Faca
-      Para Coluna<- 1 Ate 4 Faca
-         Escreva (Matriz[Linha,Coluna] :5)
-      FimPara
-      Escreval()
-    FimPara
-    
-FimAlgoritmo
+     MatrizA: Vetor  [1..4, 1..4 ] De Inteiro
+     MatrizB : Vetor  [1..4, 1..4 ] De Inteiro
+     I, J, K, L, A,B:Inteiro
 
+Inicio
+K<-0
+
+Procedimento matriz
+
+Inicio
+Escreval("Matriz 1")
+Para I De 1 Ate 4 Faca
+  Para J De 1 Ate 4 Faca
+  MatrizA[I,J]<-RandI(20)
+  SE (J = 4) Entao
+  Escreval( MatrizA[I,J])
+  Senao
+  Escreva(MatrizA[I,J])
+  FimSe
+  FimPara
+FimPara
+
+Escreval(" ")
+Escreval("Matriz 2")
+Para I De 1 Ate 4 Faca
+  Para J De 1 ATE 4 Faca
+  MatrizB[I,J]<-RandI(20)
+  Se (J = 4) Entao
+  Escreval(MatrizB[I,J])
+  Senao
+  Escreva(MatrizB[I,J])
+  FimSe
+  FimPara
+FimPara
+Escreval(" ")
+//limpatela
+K<-1
+L<-1
+I<-1
+J<-1
+
+Enquanto (I < 5) Faca
+  Para J De 1 Ate 4 Faca
+  A<- MatrizA[K,L]
+  B<- MatrizB[I,J]
+
+  Se (A = B) Entao
+  Escreva(MatrizA[K,L])
+
+  FimSe
+  FimPara
+
+  Se (I = 4) Entao
+  K<-K+1
+  I<-0
+  FimSe
+  I<-I +1
+
+  SE (K = 5) Entao
+  L<-L+1
+  K<-1
+  FimSe
+
+  Se (L >= 5) Entao
+  Escreval(" POSSUI " )
+  Interrompa
+  FimSe
+  FimEnquanto
+
+  FimProcedimento
+
+  matriz
+
+
+  
+  FimAlgoritmo
 
 
 
