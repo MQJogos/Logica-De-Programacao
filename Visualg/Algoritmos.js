@@ -166,10 +166,12 @@ Var
 Inicio
 K<-0
 
-Procedimento matriz
+Procedimento Matriz
 
 Inicio
-Escreval("Matriz 1")
+Escreval("--------------- " )
+Escreval("    Matriz A: ")
+Escreval("--------------- " )
 Para I De 1 Ate 4 Faca
   Para J De 1 Ate 4 Faca
   MatrizA[I,J]<-RandI(20)
@@ -182,7 +184,9 @@ Para I De 1 Ate 4 Faca
 FimPara
 
 Escreval(" ")
-Escreval("Matriz 2")
+Escreval("---------------" )
+Escreval("    Matriz B:")
+Escreval("--------------- " )
 Para I De 1 Ate 4 Faca
   Para J De 1 ATE 4 Faca
   MatrizB[I,J]<-RandI(20)
@@ -194,12 +198,14 @@ Para I De 1 Ate 4 Faca
   FimPara
 FimPara
 Escreval(" ")
-//limpatela
+//LimpaTela
 K<-1
 L<-1
 I<-1
 J<-1
-
+  Escreval("----------------------- " )
+  Escreval(" ESTÃO NA DUAS MATRIZES: " )
+  Escreval("----------------------- " )
 Enquanto (I < 5) Faca
   Para J De 1 Ate 4 Faca
   A<- MatrizA[K,L]
@@ -223,19 +229,18 @@ Enquanto (I < 5) Faca
   FimSe
 
   Se (L >= 5) Entao
-  Escreval(" POSSUI " )
   Interrompa
   FimSe
+
   FimEnquanto
 
   FimProcedimento
 
-  matriz
+  Matriz
 
 
-  
+   Escreval("" )
   FimAlgoritmo
-
 
 
 
