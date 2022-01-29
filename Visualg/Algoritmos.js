@@ -65,7 +65,7 @@ Inicio
     Escreval("AO TODO FORAM DIGITADOS ", TotPar, " VALORES PARES" )
 FimAlgoritmo
     
-FimAlgoritmo
+
 
 
 Algoritmo "Matriz03"
@@ -156,7 +156,7 @@ FimAlgoritmo
 //4)  [DESAFIO]  ]Faça  um  algoritmo  que  possua  duas  matrizes  4x4  de  números  inteiros. 
 //Posteriormente,  imprima  somente  os  números  que  
 //estão  nas  duas  matrizes.
-Algoritmo Matriz04
+Algoritmo "Matriz04"
 
 Var
      MatrizA: Vetor  [1..4, 1..4 ] De Inteiro
