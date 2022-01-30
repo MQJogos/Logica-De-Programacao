@@ -15,5 +15,8 @@ Quatro Componentes bases da comunicão não violenta
 1 - K
 
 e liste algumas formas de realizar esses tipos de comunicações
-Comunicação Não-Violenta é um conceito elaborado pelo psicólogo Marshal Rosemberg para se comunicar melhor sob pressão subentendida no atual cenário do mercado de trabalho onde a produtidade, foco, metas e saúde
+Comunicação Não-Violenta é um conceito elaborado pelo psicólogo Marshal Rosemberg para se comunicar melhor aplicando 5 etapas:
+
+3 - Necessidade: 
+sob pressão subentendida no atual cenário do mercado de trabalho onde a produtidade, foco, metas e saúde
 
