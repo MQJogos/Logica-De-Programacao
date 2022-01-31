@@ -12,11 +12,8 @@ Formule um resumo sobre
 
 Quatro Componentes bases da comunicão não violenta
 
-1 - K
-
-e liste algumas formas de realizar esses tipos de comunicações
-Comunicação Não-Violenta é um conceito elaborado pelo psicólogo Marshal Rosemberg para se comunicar melhor aplicando 5 etapas:
-
-3 - Necessidade: 
-sob pressão subentendida no atual cenário do mercado de trabalho onde a produtidade, foco, metas e saúde
-
+Comunicação Assertiva ou Comunicação Não-Violenta é um conceito elaborado pelo psicólogo Marshal Rosemberg, com o objetivo de ser praticado, uma comunicação eficiente dentro e fora do ambiente de trabalho, este conceito é realizado em quatro etapas:
+1 - Observação: Paramos de avaliar e julgar as ações do outro e mudamos o foco.
+2 - Sentimentos: Preste muita atenção para não julgar e colocar a culpa do sentimento no outro.
+3 - Necessidade: Sob pressão subentendida no atual cenário do mercado de trabalho onde a produtividade, foco, metas e saúde
+4 -  
