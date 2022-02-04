@@ -1,3 +1,13 @@
+//Requisitos: 
+//1 - O usuário deve colocar quantos grupos vão ter no campeonato.
+//2 - O usuário deve colocar quantas vezes por grupo.
+//3 - O usuário deve escolher se quer colocar o nome dos tempos ou ser nomes classificados. (Caso o usuário queira nomes sorteados criar uma lista pré definida e usar a mesma para definir os nomes)
+//4 - Para fase de grupos todos os placas dos jogos serão sorteados(Pesquisar como gerar um número aleatório) no caso de vitória somar 3 pontos, empate 1, derrota 0 ponto
+//5 - Os 2 melhores tempos de cada grupo vão passar para os Playoffs
+//6 - Nos playoffs quem ganha a fase, Caso tenha empate o jogo vai para os pênaltis que será sorteado similar ao placar do jogo. Obs: 5 pênaltis para lado e caso tenha empate novamente será pênaltis alternados quem fizer e outro errar o tempo ganha.
+//7 - Playoff vai até os termos um Campeão.
+//8 - Imprimir dos resultados inclusive pênaltis
+
 Var
    Times: Vetor [1..8] De Caracter
    Jogo, Vitoria, Empate, Saldo, Pontos: Vetor[1..5 ] De Inteiro
