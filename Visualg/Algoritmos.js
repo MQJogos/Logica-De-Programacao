@@ -1,3 +1,39 @@
+Var
+   Times: Vetor [1..8] De Caracter
+   Jogo, Vitoria, Empate, Saldo, Pontos: Vetor[1..5 ] De Inteiro
+   Cont, Soma, Soma, Jogos : Inteiro
+   
+Inicio
+
+      Para Cont De 1 Ate 6 Faca 
+      Escreva("DIGITE O NOME DO ", Cont, "° TIME: ")
+      Leia(Times[Cont])
+      FimPara
+      
+      Para Cont De 1 Ate 6 Faca 
+      Escreva("DIGITE O NÚMERO DE JOGOS DO ", Cont, "° TIME: ")
+      Leia(Jogos[Cont])
+      FimPara
+      
+      Para Cont De 1 Ate 6 Faca 
+      Escreva("DIGITE O NÚMERO DE VITÓRIAS DO ",Cont,"° TIME: ")
+      Leia(Vitoria[Cont])
+      FimPara
+      
+      Para Cont De 1 Ate 6 Faca 
+      Escreva("DIGITE O NÚMERO DE EMPATES DO ",Cont, "° TIME: ")
+      Leia(Empate[Cont])
+      FimPara
+      
+      Para Cont De 1 Ate 6 Faca 
+      Escreva("DIGITE O SALDO DE GOLS DO ",Cont, "° TIME: ")
+      Leia(Saldo[Cont])
+      FimPara
+      
+FimAlgoritmo
+   
+
+
 VÍDEO AULA 15
 Algoritmo "Matriz01"
 //1)  Crie  um  programa  que  leia  uma  matriz  4x4  e  imprima  os  valores  dessa  matriz.
